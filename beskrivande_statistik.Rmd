@@ -2,6 +2,12 @@
 
 # Beskrivande statistik
 
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/process.png"/></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
 ## Frekvenstabeller, central- och spridningsmått
 
 <img src="images/beskrivande1.png"  width="50%" height="50%"  class="cover"/><p>Det är vanligt att man inleder en studie med att studera hur observationsenheterna fördelar sig med
