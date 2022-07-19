@@ -2,7 +2,7 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#e06666"
-  repo: https://github.com/weswasi/SPSS_introduktion
+  repo: https://github.com/weswasi/SPSS_intro
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
