@@ -5,7 +5,7 @@ date: "2022-07-19"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
+url: your book url like https://spss-introduktion.netlify.app/
 cover-image: images/SPSS_intro.png
 suppress-bibliography: true
 ---
