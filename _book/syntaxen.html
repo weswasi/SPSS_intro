@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 4 Syntaxen | SPSS introduktion</title>
+<meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
+<meta property="og:title" content="Chapter 4 Syntaxen | SPSS introduktion">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/images/SPSS_intro.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 4 Syntaxen | SPSS introduktion">
+<meta name="twitter:image" content="/images/SPSS_intro.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig – en...">
+<meta property="og:description" content="Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig – en...">
+<meta name="twitter:description" content="Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig – en...">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">SPSS introduktion</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Om SPSS Introduktion</a></li>
+<li class="book-part">Komma igång med SPSS</li>
+<li><a class="" href="installera-och-starta-spss.html"><span class="header-section-number">1</span> Installera och starta SPSS</a></li>
+<li><a class="" href="tre-viktiga-f%C3%B6nser-i-spss.html"><span class="header-section-number">2</span> Tre viktiga fönser i SPSS</a></li>
+<li class="book-part">Förbereda datamaterialet</li>
+<li><a class="" href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></li>
+<li><a class="active" href="syntaxen.html"><span class="header-section-number">4</span> Syntaxen</a></li>
+<li class="book-part">Analysera data I</li>
+<li><a class="" href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></li>
+<li class="book-part">Analysera data II</li>
+<li><a class="" href="bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler</a></li>
+<li class="book-part">Analysera data III: Hypotesprövning</li>
+<li><a class="" href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></li>
+<li><a class="" href="chi2-test-f%C3%B6r-oberoende.html"><span class="header-section-number">8</span> Chi2-test för oberoende</a></li>
+<li><a class="" href="oberoende-t-test.html"><span class="header-section-number">9</span> Oberoende t-test</a></li>
+<li><a class="" href="enkel-regression.html"><span class="header-section-number">10</span> Enkel regression</a></li>
+<li><a class="" href="multipel-regression.html"><span class="header-section-number">11</span> Multipel regression</a></li>
+<li class="book-part">Visualisera data</li>
+<li><a class="" href="bearbeta-tabeller-och-figurer.html"><span class="header-section-number">12</span> Bearbeta tabeller och figurer</a></li>
+<li><a class="" href="data%C3%B6vningar.html"><span class="header-section-number">13</span> Dataövningar</a></li>
+<li class="book-part">Övrigt</li>
+<li><a class="" href="presentation-av-dataset.html"><span class="header-section-number">14</span> Presentation av dataset</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/weswasi/SPSS_introduktion">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="syntaxen" class="section level1" number="4">
+<h1>
+<span class="header-section-number">4</span> Syntaxen<a class="anchor" aria-label="anchor" href="#syntaxen"><i class="fas fa-link"></i></a>
+</h1>
+<p>Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig – en frekvenstabell,
+korstabell, omkodning av variabler mm. Alla sådana moment har sina egna kommandon.</p>
+<p>Du kan öppna syntax via File &gt; New &gt; Syntax:</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<center>
+<img src="images/syntax.png" width="60%" height="60%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<p>Kommandon kan antingen skrivas direkt i syntax eller så kan du gå via menysystemets funktioner och
+klick på Paste</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<center>
+<img src="images/syntax2.png" width="50%" height="50%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<p>Klickar du på denna knapp så kommer syntax kommandot för denna omkodning att öppnas i
+syntaxfönstret:</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<center>
+<img src="images/syntax3.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<p>“Syntaxspråket” tar ett tag att lära sig, och är heller inte nödvändigt för er att kunna, men att använda
+sig av syntax (direkt eller via ”paste”) kan många gånger underlätta arbetet i SPSS och om du sparar
+syntax får du en loggbok över det du har gjort, på så sättt är det enkelt att gå tillbaka för att se hur du
+gått tillväga vid analyser, omkodningar etc. (Om du sparar de kommandon och körningar du har gjort
+och har användning för i syntax, skriv gärna rubriker/kommentarer som anger vad och varför du gjort
+olika moment. Obs: För att inte programmet ska missta rubriker/kommentarer för kommandon måste
+du skriva en asterisk (*) före dessa och avsluta med en punkt.) Se även Djurfeldt m.fl. 2010/2018
+Appendix 2.</p>
+<div id="exempel-på-variabelkonstruktion-med-hjälp-av-syntax" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Exempel på variabelkonstruktion med hjälp av syntax<a class="anchor" aria-label="anchor" href="#exempel-p%C3%A5-variabelkonstruktion-med-hj%C3%A4lp-av-syntax"><i class="fas fa-link"></i></a>
+</h2>
+<p>Ett exempel på när bearbetningar är bra att göra i SPSS är när man vill kombinera olika variabler och
+svaralternativ för att skapa en ny variabel.</p>
+<p>En funktion för detta är Compute (se exemplet ovan), en annan är funktionen If. Med If kan man
+precisera villkor för variabelvärden utifrån en eller flera variabler.</p>
+<p>I skolunderökningen (Skol05.sav) finns tre variabler som anger födelseland: För eleven själv
+(”fodland1”), för dennes mor (”mfodland”) respektive för dennes far (”pfodland”). Utifrån dessa tre
+variabler kan man skapa en varaibel som anger utländsk bakgrund – ”utl_bkgr” - som får värdet 0 om
+eleven själv och dennes föräldrar är födda i Sverige och värdet 1 om eleven själv och någon av dennes
+föräldrar är födda i annat land.</p>
+<p>Öppna syntax: File / New / Syntax</p>
+<p>Skriv ett kommande som anger hur variabeln ska skapas (granska gärna kommandot nedan och fundera
+över dess innebörd, täcker villkoren in alla? Finns andra möjliga definitioner?):</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<center>
+<img src="images/syntax4.png" width="60%" height="60%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<img src="images/syntax5.png" class="cover"><p>
+Markera programsatsen och klicka på den gröna pilen. I datafilen finns nu den nya variabeln ”utl_bkgr”. Nästa steg är att kontrollera så att den konstruerade
+variabeln blivit korrekt: Ta fram en frekvens (se vidare nedan), ser fördelninge rimlig ut om du jämför
+med ursprungsvariablerna? Kontrollera också gärna ett par av dina observationsenheter – utifrån de
+värden de har på de tre ursprungliga variablerna, har det blivit korrekt? Därefter går du vidare med att
+sätta labels på variabeln.
+</p>
+<p>Obs: När du konstruerar nya variabler är det självfallet viktigt att dessa är genomtänkta och
+välmotiverade.</p>
+
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></div>
+<div class="next"><a href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#syntaxen"><span class="header-section-number">4</span> Syntaxen</a></li>
+<li><a class="nav-link" href="#exempel-p%C3%A5-variabelkonstruktion-med-hj%C3%A4lp-av-syntax"><span class="header-section-number">4.1</span> Exempel på variabelkonstruktion med hjälp av syntax</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/weswasi/SPSS_introduktion/blob/master/04-syntaxen.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/weswasi/SPSS_introduktion/edit/master/04-syntaxen.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-18.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

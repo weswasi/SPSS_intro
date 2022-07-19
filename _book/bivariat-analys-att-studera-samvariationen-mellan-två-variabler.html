@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 6 Bivariat analys: Att studera samvariationen mellan två variabler | SPSS introduktion</title>
+<meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
+<meta property="og:title" content="Chapter 6 Bivariat analys: Att studera samvariationen mellan två variabler | SPSS introduktion">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/images/SPSS_intro.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 6 Bivariat analys: Att studera samvariationen mellan två variabler | SPSS introduktion">
+<meta name="twitter:image" content="/images/SPSS_intro.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller...">
+<meta property="og:description" content="Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller...">
+<meta name="twitter:description" content="Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller...">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">SPSS introduktion</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Om SPSS Introduktion</a></li>
+<li class="book-part">Komma igång med SPSS</li>
+<li><a class="" href="installera-och-starta-spss.html"><span class="header-section-number">1</span> Installera och starta SPSS</a></li>
+<li><a class="" href="viktiga-f%C3%B6nser-i-spss.html"><span class="header-section-number">2</span> Viktiga fönser i SPSS</a></li>
+<li class="book-part">Förbereda datamaterialet</li>
+<li><a class="" href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></li>
+<li><a class="" href="variabelkonstruktion-med-hj%C3%A4lp-av-syntax.html"><span class="header-section-number">4</span> Variabelkonstruktion med hjälp av syntax</a></li>
+<li class="book-part">Analysera data I</li>
+<li><a class="" href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></li>
+<li class="book-part">Analysera data II</li>
+<li><a class="active" href="bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler</a></li>
+<li class="book-part">Analysera data III: Hypotesprövning</li>
+<li><a class="" href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></li>
+<li><a class="" href="chi2-test-f%C3%B6r-oberoende.html"><span class="header-section-number">8</span> Chi2-test för oberoende</a></li>
+<li><a class="" href="oberoende-t-test.html"><span class="header-section-number">9</span> Oberoende t-test</a></li>
+<li><a class="" href="enkel-regression.html"><span class="header-section-number">10</span> Enkel regression</a></li>
+<li><a class="" href="multipel-regression.html"><span class="header-section-number">11</span> Multipel regression</a></li>
+<li class="book-part">Visualisera data</li>
+<li><a class="" href="bearbeta-tabeller-och-figurer.html"><span class="header-section-number">12</span> Bearbeta tabeller och figurer</a></li>
+<li class="book-part">Övrigt</li>
+<li><a class="" href="presentation-av-dataset.html"><span class="header-section-number">13</span> Presentation av dataset</a></li>
+<li><a class="" href="data%C3%B6vningar.html"><span class="header-section-number">14</span> Dataövningar</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/weswasi/SPSS_introduktion">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="bivariat-analys-att-studera-samvariationen-mellan-två-variabler" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler<a class="anchor" aria-label="anchor" href="#bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler"><i class="fas fa-link"></i></a>
+</h1>
+<img src="images/bivariat_1.png" width="50%" height="50%" class="cover"><p>
+Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler.
+Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller
+kvotskala) görs detta vanligtvis genom att studera de båda variablerna i en korstabell (”Crosstab”). Gör
+följande:
+</p>
+<p>Analyze &gt; Descriptive statistics &gt; Crosstabs</p>
+<p>I detta fönster har du likt tidigare en rullista till vänster som innehåller samtliga variabler i
+datamaterialet. Innan du fortsätter är det viktigt att du, med hänvisning till din frågeställning, har gjort
+klart vilken variabel som är tänkt att påverka den andra. Beroende variabel placeras i radled (”Row(s)”)
+och oberoende variabel placeras i kolumnled (”Column(s)”). Vi kan t.ex. vara intresserade av huruvida
+oro för brottsligheten i samhället skiljer sig åt efter kön. Vi gör då en korstabell med variablerna S4 (Oro
+brottslighet) Kön. Identifiera variablerna i rullistan till vänster och för sedan över dessa till ”Row(s)”
+respektive ”Column(s)” genom att använda pilarna. I detta fall gjordes alltså antagandet att Kön är
+oberoende. Som framgår finns ytterligare funktioner/alternativ. För kursen relevanta rutor är här
+”Statistics”, ”Cells” och ”Format”. Under ”Statistics” kan man välja mellan ett flertal olika
+sambandsmått och signifikanstest. Vi återkommer till sambandsmått och signifikanstest, nu ligger
+fokus på att konstruera en korstabell som kan möjliggöra tolkningen av om och i så fall hur våra
+variabler är relaterade till varandra. För att underlätta denna tolkning väljer du först alternativet
+”Cells”.</p>
+<img src="images/bivariat_2.png" width="50%" height="50%" class="cover"><p>
+Att sammanställa tabellen endast med antal observationer i varje cell gör en jämförelse svår. Under
+rubriken ”Percentages” är det är möjligt att markera om korstabellen ska sammanställas med rad-
+(”Row), kolumn- (”Column”), och/eller totalprocent (”Total”). Radprocent innebär att summera
+varje rad till 100 procent, medan totalprocent innebär att redovisa hur stor andel varje cell utgör av
+samtliga observationer. Här har vi valt att markera kolumnprocent, med vilket avses att kolumnerna
+summeras upp till 100 procent.
+</p>
+<p>När den oberoende variabeln är placerad i kolumnled och den beroende variabeln i radled möjliggör
+valet av kolumnprocent tolkningen av huruvida det verkar finnas ett samband mellan variablerna –
+om oro för brottsligheten i samhället skiljer sig åt mellan män och kvinnor. Eftersom vi konsekvent
+väljer att placera våra variabler på detta sätt kommer vi alltså i syfte att utreda ett eventuellt samband
+alltid vilja redovisa korstabellen med kolumnprocent. Klicka på ”Continue” när du gjort ditt val.
+Slutligen ska vi ta en titt på alternativet ”Format”. Här kan du välja om radledet ska redovisas i stigande
+(”Ascending”) eller fallande (”Descending”) ordning. I syfte att tolka riktningen på sambandet kan valet
+av stigande eller fallande ordning underlätta, men detta är en smaksak och du kommer oavsett val
+kunna göra samma tolkning av korstabellen i syfte att utreda ett eventuellt samband. I detta fall har
+standaralternativet stigande ordning valts, vilket innebär att korstabellen i radled kommer att
+sammanställas med det lägsta värdet överst. Klicka på ”Continue” när du gjort ditt val.</p>
+<p>Klicka därefter ”OK” så producerar SPSS en korstabell över relationen mellan kön och oro för brottsligheten.
+Resultatet visas i output fönstret. Så som vi har valt att sammanställa vår korstabell (oberoende variabel
+i kolumnled och beroende variabel i radled och sammanställd med kolumnprocent) är det nu möjligt att
+se om om det verkar finnas ett samband mellan kön och oro för brottsligheten i samhället. Nästa steg är
+att tolka korstabellen. Tekniken är att jämföra kategorierna i den oberoende variabeln radvis.</p>
+<p>I korstabellen kan vi se att 31 procent av männen jämfört med 17,5 procent av kvinnorna svarat att de
+inte alls är oroliga. Det verkar alltså som att det finns ett samband i den meningen att kvinnor är mer
+oroliga för brottsligheten än män.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bivariat_3.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Eftersom vi har en variabel på ordinal nivå (oro) och en på nominal nivå (kön), kan vi inte uttala oss om
+riktningen på sambandet, dvs. om det rör sig om ett positivt eller negativt samband (hur vi kodat
+variabeln kön, dvs. vilket kön som kodats som 1 eller 2, är ju godtyckligt).</p>
+<div id="sambandsmått" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> Sambandsmått<a class="anchor" aria-label="anchor" href="#sambandsm%C3%A5tt"><i class="fas fa-link"></i></a>
+</h2>
+<p>I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
+mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
+syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
+sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
+variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:</p>
+<p>Analyze &gt; Descriptive statistics &gt; Crosstabs</p>
+<img src="images/bivariat_4.png" width="45%" height="45%" class="cover"><p>
+</p>
+<p>Placera din oberoende variabel i kolumnled och din beroende variabel i radled. Välj även, precis som
+tidigare, att sammanställa korstabellen med kolumnprocent under alternativet ”Cells”. Klicka därefter
+på ”Statistics”.</p>
+Här får vi en viss vägledning av SPSS när det gäller vilka sambandsmått som är lämpliga att använda för
+våra variabler beroende på mät/skalnivå. Se vidare Djurfeldt m.fl. 2018: 149.
+
+<div id="samband-mellan-två-numeriska-variabler" class="section level3" number="6.1.1">
+<h3>
+<span class="header-section-number">6.1.1</span> Samband mellan två numeriska variabler<a class="anchor" aria-label="anchor" href="#samband-mellan-tv%C3%A5-numeriska-variabler"><i class="fas fa-link"></i></a>
+</h3>
+<p>När vi har att göra med variabler som befinner sig på intervall- eller kvotskala är varken korstabell eller
+ovan nämnda sambandsmått lämpliga verktyg för att utreda ett eventuellt samband. Föreställ dig till
+exempel att undersöka sambandet mellan ålder och brott i en korstabell, där respondenten i
+enkätundersökningen har fått ange sin ålder och även självskatta antalet begångna brott under det
+senaste året – det skulle resultera i en enorm korstabell eftersom varje specifik ålder- och
+brottkombination kräver sin egen cell.</p>
+<p>I detta fall är istället ett spridningsdiagram (”Scatter plot”) lämpligt att använda för att studera huruvida
+ett samband verkar föreligga. Gör följande:</p>
+<p>Graphs &gt; Chart builder</p>
+<p>Under ”Gallery”, klicka på ”Choose from”, välj ”Scatter / Dot” och dra ”Simple Scatter” upp till rutan
+”Chart Preview”. Dra din oberoende variabel till rutan för x-axeln och din beroende variabel till rutan för
+y-axeln. Klicka därefter ”OK”.</p>
+<p>Vi kan även använda sambandsmått för att beräkna styrka och riktning på sambandet. När vi har att
+göra med två kontinuerliga variabler är sambandsmåttet Pearson’s r (korrelationskoefficienten r)
+lämpligt att använda. Gör följande:</p>
+<p>Analyze &gt; Correlate &gt; Bivariate</p>
+<p>För över de variabler du vill korrelera till rutan ”Variables” och markera Pearson’s r. Klicka därefter
+”OK”. Precis som tidigare nämnda sambandsmått varierar Pearson’s r på en skala mellan -1 och +1, där
+0 indikerar att det inte finns ett samband medan -1 anger ett perfekt negativt samband och +1 anger ett
+perfekt positivt samband.</p>
+<p>Ett alternativ till att studera relationen mellan ålder och brott på ovanstående vis är att klassindela de
+båda kontinuerliga variablerna till kategoriska variabler med hjälp av recode-kommandot (se under
+Databearbetning). Man kan tänka sig att klassindela ålder till de tre klasserna ”ungdom”, ”ung vuxen”
+samt ”vuxen”, samt brott till de tre klasserna ”inga brott”, ”1-2 brott”, ”3 eller fler brott”. På det sättet
+skulle vi konstruera två variabler på ordinal skalnivå utav de två ursprungliga variablerna på kvotskala.
+Därmed kan vi med de nya variablerna studera relationen mellan ålder och brott i en korstabell (i detta
+fall med nio celler) och med de sambandsmått som är lämpliga för variabler på ordinal skalnivå. Tänk på
+att variabler på högre skalnivå alltid kan transformeras till variabler på lägre skalnivå.</p>
+</div>
+<div id="samband-mellan-två-kategoriska-variabler" class="section level3" number="6.1.2">
+<h3>
+<span class="header-section-number">6.1.2</span> Samband mellan två kategoriska variabler<a class="anchor" aria-label="anchor" href="#samband-mellan-tv%C3%A5-kategoriska-variabler"><i class="fas fa-link"></i></a>
+</h3>
+
+</div>
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></div>
+<div class="next"><a href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler"><span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler</a></li>
+<li>
+<a class="nav-link" href="#sambandsm%C3%A5tt"><span class="header-section-number">6.1</span> Sambandsmått</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#samband-mellan-tv%C3%A5-numeriska-variabler"><span class="header-section-number">6.1.1</span> Samband mellan två numeriska variabler</a></li>
+<li><a class="nav-link" href="#samband-mellan-tv%C3%A5-kategoriska-variabler"><span class="header-section-number">6.1.2</span> Samband mellan två kategoriska variabler</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/weswasi/SPSS_introduktion/blob/master/06-bivariat_analys.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/weswasi/SPSS_introduktion/edit/master/06-bivariat_analys.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-19.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
