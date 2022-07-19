@@ -32,11 +32,11 @@ som rör cykelstöld? Genom att frågenumret i frågeformuläret anges i variabe
 exemplet ”C6”, kan vi koppla till frågeformuläret i den tekniska rapporten (Brå 2016, bilaga 1,
 sid 5):
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/ntu_2013.png"/></center>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 
 Ni har enbart tillgång till vissa frågor i NTU – bakgrundsfrågor om t.ex. ålder och kön samt

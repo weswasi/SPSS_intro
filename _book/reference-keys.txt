@@ -21,8 +21,8 @@ sambandsmått
 samband-mellan-två-numeriska-variabler
 samband-mellan-två-kategoriska-variabler
 att-välja-rätt-test-vid-hypotesprövning
-chi2-test-för-oberoende
-oberoende-t-test
+chi2-test
+t-test
 enkel-regression
 multipel-regression
 bearbeta-tabeller-och-figurer

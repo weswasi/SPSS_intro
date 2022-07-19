@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{book}
@@ -38,7 +39,11 @@
 \hypersetup{
   pdftitle={SPSS introduktion},
   pdfauthor={Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson},
-  hidelinks,
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
@@ -83,6 +88,7 @@
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
@@ -641,8 +647,8 @@ Med hjälp av nedanstående flödesschema kan ni avgöra vilket statistiskt test
 test finns omnämnt i flödeschemat (linjär sannolikhetsmodell/logistisk regresssion) men som vi ej kommer gå igenom under kursen gång.
 Den finns med eftersom den introduceras i samband med den kvantitativa metodkursen på avancerad nivå.
 
-\hypertarget{chi2-test-fuxf6r-oberoende}{%
-\chapter{Chi2-test för oberoende}\label{chi2-test-fuxf6r-oberoende}}
+\hypertarget{chi2-test}{%
+\chapter{Chi2-test}\label{chi2-test}}
 
 I exemplet ovan kunde vi se att oro för brottsligheten i samhället skiljer sig för män och kvinnor. Utifrån
 vår korstabell kan vi dock endast uttala oss om förhållandet i urvalet. Vad vi nu vill ta reda på är om detta
@@ -676,8 +682,8 @@ cellerna ha ett förväntat värde som är mindre än 5. I detta fall är dock s
 testet skulle visa sig vara ogiltigt kan lösningen vara att klassindela sina variabler med hjälp av
 kommandot Recode (se ovan under avsnittet Databearbetning).
 
-\hypertarget{oberoende-t-test}{%
-\chapter{Oberoende t-test}\label{oberoende-t-test}}
+\hypertarget{t-test}{%
+\chapter{T-test}\label{t-test}}
 
 När du vill pröva om en skillnad mellan två grupper är signifikant och utfallsvariabeln är kontinuerlig är
 ett oberoende t-test tillämpligt. Här är proceduren att jämföra medelvärden mellan två grupper och

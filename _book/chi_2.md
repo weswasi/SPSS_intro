@@ -1,4 +1,4 @@
-# Chi2-test för oberoende
+# Chi2-test
 
 I exemplet ovan kunde vi se att oro för brottsligheten i samhället skiljer sig för män och kvinnor. Utifrån
 vår korstabell kan vi dock endast uttala oss om förhållandet i urvalet. Vad vi nu vill ta reda på är om detta
@@ -25,11 +25,11 @@ betydelse för dina möjligheter att finna skillnader som går att generalisera 
 värde). Sambandet är signifikant på en procents signifikansnivå och vi kan alltså generalisera våra
 resultat till att gälla för hela populationen.</p>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/chi2_2.png"/></center>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 Observera dock att SPSS anger att 0 celler har förväntade värden som understiger fem. Som regel gäller
 att Chi2-testet är ogiltigt om 20% av cellerna har ett förväntat värde mindre än 5 eller en cell har ett

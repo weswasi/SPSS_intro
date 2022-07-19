@@ -4,4 +4,21 @@ before_chapter_script: _common.R
 delete_merged_file: true
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Kapitel  "
+rmd_files: [
+  "index.Rmd",
+  "att_komma_igång_med_spss.Rmd",
+  "viktiga_fönster.Rmd",
+  "databearbetning.Rmd",
+  "syntaxen.Rmd",
+  "beskrivande_statistik.Rmd",
+  "bivariat_analys.Rmd",
+  "hypotesprövning.Rmd",
+  "chi_2.Rmd",
+  "t_test.Rmd",
+  "enkel_regression.Rmd",
+  "multipel_regression.Rmd",
+  "bearbeta_tabeller_och_figurer.Rmd",
+  "presentation_av_dataset.Rmd",
+  "dataövningar.Rmd"
+]

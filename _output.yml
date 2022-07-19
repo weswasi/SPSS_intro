@@ -2,6 +2,8 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#e06666"
+    base_font:
+      google: Roboto
   repo: https://github.com/weswasi/SPSS_intro
 bookdown::pdf_book:
   includes:

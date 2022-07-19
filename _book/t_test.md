@@ -1,4 +1,4 @@
-# Oberoende t-test
+# T-test
 
 När du vill pröva om en skillnad mellan två grupper är signifikant och utfallsvariabeln är kontinuerlig är
 ett oberoende t-test tillämpligt. Här är proceduren att jämföra medelvärden mellan två grupper och
@@ -8,11 +8,11 @@ jämföra ett sammanfattande mått på deras betyg i kärnämnena svenska, engel
 Betygsvariablerna är på ordinalskala och antar värden 0-3, se frekvenstabell nedan för betyg i
 svenska:
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/t_test_1.png"/></center>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <img src="images/t_test_2.png" class="cover"/><p>Du skapar ett betygsindex (”Mbetyg”) som varierar mellan 0-3 genom att summera de tre betygen
 och dividera med tre med hjälp av funktionen compute (se ovan under databearbetning).För att göra ett oberoende t-test, där du prövar om det finns en signifikant skillnad mellan pojkars och
@@ -31,21 +31,21 @@ Klicka ”OK” och gå till Output-fönstret. Du får nu fram resultaten i två
 redovisas deskriptiva mått som antalet i respektive grupp samt respektive grupps medelvärde och
 standardavvikelse på den beroende variabeln.
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/t_test_4.png"/></center>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 Vi ser att medelvärdet på betygsindex är 1,59 för flickor och 1,39 för pojkar. Flickor har alltså högre
 betyg. Men är denna skillnad signifikant, d.v.s. kan anta att den även existerar mellan pojkar och
 flickor i populationen? För att avgöra det tittar vi på nästa tabell:
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/t_test_5.png" width="90%" height="90%"/></center>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:Salmon">
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 I tabellen ovan redovisas ett antal relevanta mått för det oberoende t-testet. ”Mean Differance” är
 skillnaden mellan de båda medelvärdena. I detta fall är skillnaden i genomsnittligt betyg 0,196.
