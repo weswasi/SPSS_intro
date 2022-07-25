@@ -1,4 +1,4 @@
-# (PART\*) Visualisera data  {-}
+# (PART\*) Övrigt  {-}
 
 # Bearbeta tabeller och figurer
 

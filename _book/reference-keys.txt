@@ -32,10 +32,5 @@ presentation-av-dataset
 ntu-2017-2021
 ntu-2013-2015
 skolundersökning-2005
+glass-och-brott
 pathways-to-desistance
-dataövningar
-dataövning-0
-dataövning-1
-dataövning-2
-dataövning-3
-dataövning-4

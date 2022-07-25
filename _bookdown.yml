@@ -19,6 +19,5 @@ rmd_files: [
   "enkel_regression.Rmd",
   "multipel_regression.Rmd",
   "bearbeta_tabeller_och_figurer.Rmd",
-  "presentation_av_dataset.Rmd",
-  "dataövningar.Rmd"
+  "presentation_av_dataset.Rmd"
 ]

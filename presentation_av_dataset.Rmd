@@ -1,8 +1,10 @@
-# (PART\*) Övrigt  {-}
-
 # Presentation av dataset
 
 ## NTU 2017-2021
+Datasetet <b>NTU 2017-2021 M2.SAV</b> innehåller fem årgångar av NTU och består sammanlagt av 375 590 respondenter. Samtliga individer är anonymiserade vilket innebär att det ej går att härleda vem som förekommer i datamaterialet. Vilka variabler som finns i datamaterialet och hur varje variabel är kodad går att se i <a href="documents/Kodbok NTU 2017-2021.pdf">kodboken för datamaterialet som ni finner här</a>. Detta dokument är viktigt att nyttja i samband med att ni använder datasetet då det inte alltid framgår vad varje variabel betyder och vad dess värden innebär.
+
+Närmare information om urval, datainsamling, frågekonstruktion, kodning och annat relevant återfinns i den
+<a href="https://bra.se/download/18.1f8c9903175f8b2aa70111be/1633935949525/2021_Nationella_trygghetsundersokningen_2021_Teknisk_rapport.pdf">tekniska rapporten för NTU 2021 som ni finner här</a>.
 
 ## NTU 2013-2015
 
@@ -12,13 +14,8 @@ vilket av de tre åren som respektive person ingått i undersökningen, varför 
 behandlas som en tvärsnittsundersökning (NTU 2013-15).
 
 Närmare information om urval, datainsamling, frågekonstruktion, kodning mm återfinns i den
-tekniska rapporten för NTU 2015:
-
-<i>Brå (2016). Den nationella trygghetsundersökningen 2015. Teknisk rapport. Brå
-rapport 2016:3.</i>
-
-Denna finns som pdf fil på kurssajten, men kan även laddas ner <a href="https://www.bra.se/download/18.779f51ff14b83989644245/1424427050948/2015_4_NTU_teknisk_ra
-pport.pdf">härifrån</a>.
+<a href="https://www.bra.se/download/18.779f51ff14b83989644245/1424427050948/2015_4_NTU_teknisk_ra
+pport.pdf">tekniska rapporten för NTU 2015 som ni finner här</a>.
 
 För att arbeta med NTU datamaterialet behöver ni hjälp av information från den tekniska
 rapporten, exempelvis ser ni där hur frågor och svarsalternativ är utformade.
@@ -38,7 +35,6 @@ sid 5):
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-
 Ni har enbart tillgång till vissa frågor i NTU – bakgrundsfrågor om t.ex. ålder och kön samt
 frågor om utsatthet för brott, oro för brott och förtroende för rättsväsendet.
 
@@ -51,25 +47,19 @@ elever). Ni har tillgång till de flesta frågor som ingick i studien, tex om eg
 utsatthet för brott (totalt rör det sig om cirka 190 variabler).
 
 Närmare information om urval, bortfall, datainsamling, frågekonstruktion, kodning mm återfinns
-i den tekniska rapporten för SUB 2005:
-
-<i>Brå (2008). Den nationella skolundersökningen om brott 1995–2005 Teknisk
-rapport. Brå rapport 2008:2.</i>
-
-Denna finns som pdf fil på kurssajten, men kan även laddas ner <a href="https://www.bra.se/download/18.cba82f7130f475a2f180006495/1371914721887/2008_2_nationella_s
-kolundersokningen.pdf">här</a>
+i den <a href="https://www.bra.se/download/18.cba82f7130f475a2f180006495/1371914721887/2008_2_nationella_s
+kolundersokningen.pdf">tekniska rapporten för SUB 2005 som ni finner här</a>.
 
 För att arbeta med skolundersökningen behöver ni hjälp av information från den tekniska
 rapporten, exempelvis ser ni där hur frågor och svarsalternativ är utformade. Utifrån variabelnamn och label i datafilen går det enkelt att identifiera frågorna, för deras exakta
 lydelse får ni dock gå till den tekniska rapporten.
 
+## Glass och brott
+Inte sällan inom samhällsvetenskapen brukar det faktum att korrelation inte nödvändigtvis innebär att det finns ett orsakssamband exemplefieras med hjälp av sambandet mellan glassförsäljning och brott. Ju fler glassar som sälj under en dag <a href="https://slate.com/news-and-politics/2013/07/warm-weather-homicide-rates-when-ice-cream-sales-rise-homicides-rise-coincidence.html">desto fler brott brukar i regel anmälas</a>. Detta samband är dock ett skensamband efters det finns en bakomliggand variabel som orsakar både fler sålda glassar och fler polisanmälda brott: temperatur.
+
+Ett fiktivt (!) datasetet (ice_cream.sav) har skapats för att vidare undersöka detta samband. Datasetet innehåller 60 dagar och som ska representera två sommarmånader. Varje dag innehåller information om hur många brott som polisanmäts, hur många celcius som uppmättes under dagen och om det förekom regn under dagen.
+
 ## Pathways to desistance
-Datamateralet (PATHWAYS_DO2.sav) är hämtat från en amerikansk studie vid namn <i>Pathways to desistance</i>. I studien så fick cirka 1 300 brottsbelastade ungdomar besvara en rad frågor om deras liv.
+The Pathways to Desistance-studien (PATHWAYS_01Baseline.sav) är en longitudinell studie som utfördes på flera platser i USA. Materialet består av cirka 1 300 tonårsbrottslingar under den period i deras liv när de övergår från tonåren till tidig vuxen ålder. De inskrivna ungdomarna var minst 14 år och under 18 år när de begick brott och befanns skyldiga till ett allvarligt brott (främst grova brott, med några få undantag för vissa förseelser egendomsbrott, sexuella övergrepp eller vapenbrott). Varje studiedeltagare följdes upp under en period av tre år efter inskrivningen. Materialet ger en heltäckande bild av livsförändringar inom ett brett spektrum av områden under loppet av tiden de observeras.
 
-Kort information om datamaterialet från projektets egna hemsida: 
-
-<i>The Pathways to Desistance study is a multi-site, longitudinal study of serious adolescent offenders as they transition from adolescence into early adulthood. Between November, 2000 and January, 2003, 1,354 adjudicated youths from the juvenile and adult court systems in Maricopa County (Phoenix), Arizona (N = 654) and Philadelphia County, Pennsylvania (N = 700) were enrolled into the study. The enrolled youth were at least 14 years old and under 18 years old at the time of their committing offense and were found guilty of a serious offense (predominantly felonies, with a few exceptions for some misdemeanor property offenses, sexual assault, or weapons offenses). Each study participant was followed for a period of seven years past enrollment with the end result a comprehensive picture of life changes in a wide array of areas over the course of this time. The study was designed to: 1) To identify distinct initial pathways out of juvenile justice system involvement and the characteristics of the adolescents who progress along each of these pathways. 2) To describe the role of social context and developmental changes in promoting desistance or continuation of antisocial behavior. 3) To compare the effects of sanctions and selected interventions in altering progression along the pathways out of juvenile justice system involvement.</i>
-
-ÖVERSÄTT OCH GÖR ÒVANSTÅENDE TILL EGEN TEXT
-
-Mer information om datamaterialet och studien <a href="https://www.pathwaysstudy.pitt.edu">finner ni här</a>.
+Datamaterialet består av nära 1 000 olika variabler som berör bland annat information om egen brottslighet, skolprestation, familjeförhållanden, umgängeskrets, mental hälsa, rutinaktiviteter. Övergripande information om <a href="https://www.pathwaysstudy.pitt.edu/codebook/constructs.html">vilka variabler som förekommer finner ni här</a>. För mer detaljerad <a href="https://www.icpsr.umich.edu/web/NAHDAP/studies/32881/variables">information om respektive variabel finner ni här</a>. Här kan ni även söka efter de variabler som ni finner i datasetet och få en vidare beskrivning samt vilka värden varje variabel har.
