@@ -10,8 +10,8 @@
 
 ## Dataövning 4
 
-<details><summary>Click here for explanation</summary
+<details><summary>Överkurs: klicka för vidare redogörelse beskrivning av Levene's test</summary
 
-Some text
+Text text...
 
 </details>

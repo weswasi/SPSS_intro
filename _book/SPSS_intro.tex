@@ -82,7 +82,7 @@
 
 \title{SPSS introduktion}
 \author{Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson}
-\date{2022-07-19}
+\date{2022-07-25}
 
 \begin{document}
 \maketitle
@@ -728,15 +728,104 @@ assumed / equal variance not assumed). Skall man gå korrekt tillväga kontrolle
 håller. Det görs med Levene´s test for Equalite of Variances. F är kvoten av de båda gruppernas varians
 och om denna kvot inte är lika med 1 kan det signalera att antagandet om lika varians inte håller. Om
 sannolikheten för detta F-värde är mindre än 0,05 drar vi slutsatsen att skillnaden mellan urvalens
-varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här
-(P = 0,10) går vi till ''Equal variance not assumed''. '' Equal variance assumed'' är mer restriktivt vilket
+varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ''Equal variance not assumed''. '' Equal variance assumed'' är mer restriktivt vilket
 betyder att det är svårare att få ett signifikant resultat. Därför kan ni lika gärna använda detta test.
+
+Överkurs: klicka för vidare redogörelse beskrivning av Levene's test
+
+Text text\ldots{}
 
 \hypertarget{enkel-regression}{%
 \chapter{Enkel regression}\label{enkel-regression}}
 
+I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi predicera värden eller utröna vilken effekt en variabel har påen annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.
+
+Vi är intresserade av att se vilket samband det finns mellan utomhustemperatur (oberoende variabel) och antal anmälda brott i Stockholm (beroende variabel). Ett annat sätt att formulera forskningsfrågan är om vi kan predicera polisanmäld brott utifrån utomhustemperatur.
+
+Vår regressionsmodel kan uttryckas i form av följande matematiska formel:
+
+\(Y_{brott} = b_0 + b_{celcius}\)
+
+Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0) och utomhustemperaturen.
+
+Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (ice\_cream.sav).
+
+Det första vi gör är att ta fram ett spridningsdiagram (scatter plot) med en regressionslinje. Hur man tog fram ett spridningsdiagram gick vi igenom under kapitlet som berörde bivariat analys men här kommer en repetition. Gör följande:
+
+Graphs \textgreater{} Chart builder
+
+Under ''Gallery'', klicka på ''Choose from'', välj ''Scatter / Dot'' och dra ''Simple Scatter'' upp till rutan ''Chart Preview''. Dra din oberoende variabel till rutan för x-axeln och din beroende variabel till rutan för y-axeln. Klicka i Total under Linear Fit Lines för att inkludera en regressionslinje till din figur. Klicka därefter ''OK''.
+
+Som vi kan se med hjälp av regressionslinjen i spridningsdiagramet så verkar det finnas i vårt datamaterial ett starkt positivt samband mellan utomhustemperatur och polisanmäld brottslighet; ju varmare det är desto fler brott polisanmäls.
+
+Frågan är dock om vi kan generalisera detta samband eller om det kanske kan ha uppstått av ren slump. Detta kan vi avgöra med hjälp av en regressionsanalys. Gör följande:
+
+Analyze \textgreater{} Regression \textgreater{} Linear
+
+I rutan som dyker upp matar ni in den oberoende variabeln - utomhustemperatur - i fältet Block 1 of 1
+och den beroende variabeln - polisanmälda brott - i fältet Dependent. Tryck därefter ok.
+
+Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan ``Model Summary''. De mått som där är viktigast att titta på är Square R och Adjusted R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square'' är att det sistnämnda måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ''R Square'' överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.
+
+Eftersom vi enbart har en oberoende variabel så tittar vi på R Square vilket visar att 46.4\% (översätter man andelen 0.464 till procent blir det 46.4\%) av variationen i polisanmäld brott kan förklaras med hjälp av vår oberoende variabel utomhustmperatur.
+
+I ANOVA-rutan kan vi se att vår regressionsmodell är statistisk signifikant p \textless{} 0.001 (skall ej förväxlas med den enskilda oberoende variablelns p-värde!). Det betyder att vår regressionsmodell innehållande en oberoende variabel hjälper oss att förstå den beroende variabeln bättre än enbart informationen från en modell utan en oberoende variabel (det vill säga utifrån enbart informationen om genomsnittlig antal polisanmälda brott).
+
+Den absolut viktigaste rutan är Coefficiens-rutan vilket visar vilken effekt den oberoende variabeln har på den beroende och om denna effekt är signifikant. Vi borjar dock först med att titta på Constant vilket är vår intercept och dess koefficient vilket går att utläsa under Unstandardized B. I vårt exempel kan vi se att interceptet är -609.145. Det betyder att det predicerade värdet för vår beroende variabel är -609.145 när vår oberoende variabel antar värdet 0. Eller mer specifikt uttryckt: när utomhustemperaturen är noll grader begås det -609 brott.
+
+\textbf{Överkurs:}
+Även om interceptet är matematiskt korrekt så kan den vara orealistisk. I vårt exempel är det ett intercept som är mindre realistisk eftersom vi vet att även vid noll grader så begås det brott. Den orsak till varför vi får ett osannolikt intercept (men som är matematisk korrekt!) är att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss icke-realistiska värden. Detta är dock inget problem eftersom vi är ute efter att se sambandet mellan utomhustemperatur och brott under sommaren
+
+Interceptets värde kan vi också se i ovanstående spridningsdiagram om vi anger att diagramets x-axel ska börja på 0 celsius. Nedanstående spridningsdiagram är identiskt med ovansående men med enda skillnaden att x-axeln börjar på 0 celcius. Notera att vi ine har förändrat något beträffande vår data utan endast förlängt diagramets x-axel. Vi kan där se att interceptet - det vill säga där regressionslinjen korsar Y-axeln - är vid -609.145.
+
+Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje temperaturgrads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.
+
+Med hjälp av ovanstående information kan vi predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).
+
+\(Y_{brott} = b_0 + b_{celcius}\)
+
+\(Y_{brott} = -609.145 + (39.894*25)\)
+
+\(Y_{brott} = 388.205\)
+
+Vi predicerar alltså att det i genomsnitt kommer polisanmälas 388 brott under en dag då utomhustemperaturen är 25 grader.
+
 \hypertarget{multipel-regression}{%
 \chapter{Multipel regression}\label{multipel-regression}}
+
+Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46\% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel til vår enkla, bivariata regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:
+
+\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)
+
+Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0), utomhustemperaturen och förekomsten av regn.
+
+Att utföra en multipel regression är snarlikt tillvägagångssättet för en enkel regression. Gör följande:
+
+Analyze \textgreater{} Regression \textgreater{} Linear
+
+Precis som vid en enkel regression så drar vi in vår beroende variabel (polisanmäld brottslighet) till Dependent-fältet. Gör därefter precis som vid den enkla regressionen och dra in den oberoende variaben temperatur till Independents-fältet.
+
+Tryck därefter på knappen Next. Mata därefter in temperaturvaribeln på nytt och sedan vår kontrollvariabel regn. Tryck därefter på OK.
+
+Vi hade lika gärna kunnat vid första steget mata in båda våra oberoende variabler och inte i två separata ``block''. Fördelen med att använda blockfunktione är att vi i SPSS först får ut vår enkla regression och därefter i samma ruta den multipla regressionen. Fördelen med detta tillvägagångssätt är att vi kan se hur effekten för vår oberoende variabel av intresse förändras från den enkla regressionen till den multipla regressionen.
+
+Längst ut till vänster i samtliga rutor kan i se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde en enkel regression.
+
+Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2\% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regrssionen klarade av att förklara.
+
+I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomsten av regn så ökar antalet brott med 43.081 för varje enhets ökning av temperaturvariabeln. Under Sig. kan vi se att p-värdet är under 0.001 vilket beyder att sambandet mellan temperatur och brott är statistiskt signifikant även efter inkluderingen av den oberoende variabeln regn.
+
+Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.
+
+Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar
+
+\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)
+
+\(Y_{brott} = -693,137 + (43,081*25) + (-109,373*1)\)
+
+\(Y_{brott} = 274.515\)
+
+Vi predicerar alltså att det i genomsnitt kommer polisanmälas 374 brott de dagar då utomhustemperaturen är 22 grader och regnar.
 
 \hypertarget{part-visualisera-data}{%
 \part*{Visualisera data}\label{part-visualisera-data}}
@@ -844,7 +933,7 @@ Mer information om datamaterialet och studien finner ni här.
 \hypertarget{datauxf6vning-4}{%
 \section{Dataövning 4}\label{datauxf6vning-4}}
 
-Click here for explanation
+Överkurs: klicka för vidare redogörelse beskrivning av Levene's test
 
   \bibliography{book.bib,packages.bib}
 

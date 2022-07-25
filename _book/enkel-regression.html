@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Kapitel 10 Enkel regression | SPSS introduktion</title>
 <meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
-<meta name="description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta name="description" content="I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt...">
 <meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Kapitel 10 Enkel regression | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/enkel-regression.html">
 <meta property="og:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
-<meta property="og:description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta property="og:description" content="I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kapitel 10 Enkel regression | SPSS introduktion">
-<meta name="twitter:description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta name="twitter:description" content="I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt...">
 <meta name="twitter:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -80,6 +80,74 @@
 <h1>
 <span class="header-section-number">Kapitel  10</span> Enkel regression<a class="anchor" aria-label="anchor" href="#enkel-regression"><i class="fas fa-link"></i></a>
 </h1>
+<p>I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi <i>predicera</i> värden eller utröna vilken effekt en variabel har påen annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.</p>
+<p>Vi är intresserade av att se vilket samband det finns mellan utomhustemperatur (oberoende variabel) och antal anmälda brott i Stockholm (beroende variabel). Ett annat sätt att formulera forskningsfrågan är om vi kan predicera polisanmäld brott utifrån utomhustemperatur.</p>
+<p>Vår regressionsmodel kan uttryckas i form av följande matematiska formel:</p>
+<center>
+<span class="math inline">\(Y_{brott} = b_0 + b_{celcius}\)</span>
+</center>
+<p><br></p>
+<p>Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0) och utomhustemperaturen.</p>
+<p>Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (ice_cream.sav).</p>
+<p>Det första vi gör är att ta fram ett spridningsdiagram (<i>scatter plot</i>) med en regressionslinje. Hur man tog fram ett spridningsdiagram gick vi igenom under kapitlet som berörde bivariat analys men här kommer en repetition. Gör följande:</p>
+<p>Graphs &gt; Chart builder</p>
+<p>Under ”Gallery”, klicka på ”Choose from”, välj ”Scatter / Dot” och dra ”Simple Scatter” upp till rutan ”Chart Preview”. Dra din oberoende variabel till rutan för x-axeln och din beroende variabel till rutan för y-axeln. Klicka i <b>Total</b> under Linear Fit Lines för att inkludera en regressionslinje till din figur. Klicka därefter ”OK”.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/regression_1.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Som vi kan se med hjälp av regressionslinjen i spridningsdiagramet så verkar det finnas i vårt datamaterial ett starkt positivt samband mellan utomhustemperatur och polisanmäld brottslighet; ju varmare det är desto fler brott polisanmäls.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/regression_2.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Frågan är dock om vi kan generalisera detta samband eller om det kanske kan ha uppstått av ren slump. Detta kan vi avgöra med hjälp av en regressionsanalys. Gör följande:</p>
+<p>Analyze &gt; Regression &gt; Linear</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/regression_3.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>I rutan som dyker upp matar ni in den oberoende variabeln - utomhustemperatur - i fältet Block 1 of 1
+och den beroende variabeln - polisanmälda brott - i fältet Dependent. Tryck därefter ok.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/regression_4.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan “Model Summary”. De mått som där är viktigast att titta på är Square R och Adjusted R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square” är att det sistnämnda måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ”R Square” överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.</p>
+<p>Eftersom vi enbart har en oberoende variabel så tittar vi på R Square vilket visar att 46.4% (översätter man andelen 0.464 till procent blir det 46.4%) av variationen i polisanmäld brott kan förklaras med hjälp av vår oberoende variabel utomhustmperatur.</p>
+<p>I ANOVA-rutan kan vi se att vår regressionsmodell är statistisk signifikant p &lt; 0.001 (skall ej förväxlas med den enskilda oberoende variablelns p-värde!). Det betyder att vår regressionsmodell innehållande en oberoende variabel hjälper oss att förstå den beroende variabeln bättre än enbart informationen från en modell utan en oberoende variabel (det vill säga utifrån enbart informationen om genomsnittlig antal polisanmälda brott).</p>
+<p>Den absolut viktigaste rutan är Coefficiens-rutan vilket visar vilken effekt den oberoende variabeln har på den beroende och om denna effekt är signifikant. Vi borjar dock först med att titta på Constant vilket är vår intercept och dess koefficient vilket går att utläsa under Unstandardized B. I vårt exempel kan vi se att interceptet är -609.145. Det betyder att det predicerade värdet för vår beroende variabel är -609.145 när vår oberoende variabel antar värdet 0. Eller mer specifikt uttryckt: när utomhustemperaturen är noll grader begås det -609 brott.</p>
+<div class="rmdnote">
+<p>
+<strong>Överkurs:</strong>
+Även om interceptet är matematiskt korrekt så kan den vara orealistisk. I vårt exempel är det ett intercept som är mindre realistisk eftersom vi vet att även vid noll grader så begås det brott. Den orsak till varför vi får ett osannolikt intercept (men som är matematisk korrekt!) är att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss icke-realistiska värden. Detta är dock inget problem eftersom vi är ute efter att se sambandet mellan utomhustemperatur och brott <b>under sommaren</b>
+</p>
+</div>
+<p>Interceptets värde kan vi också se i ovanstående spridningsdiagram om vi anger att diagramets x-axel ska börja på 0 celsius. Nedanstående spridningsdiagram är identiskt med ovansående men med enda skillnaden att x-axeln börjar på 0 celcius. Notera att vi ine har förändrat något beträffande vår data utan endast förlängt diagramets x-axel. Vi kan där se att interceptet - det vill säga där regressionslinjen korsar Y-axeln - är vid -609.145.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/regression_5.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje temperaturgrads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.</p>
+<p>Med hjälp av ovanstående information kan vi predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).</p>
+<center>
+<span class="math inline">\(Y_{brott} = b_0 + b_{celcius}\)</span>
+</center>
+<p><br></p>
+<center>
+<span class="math inline">\(Y_{brott} = -609.145 + (39.894*25)\)</span>
+</center>
+<p><br></p>
+<center>
+<span class="math inline">\(Y_{brott} = 388.205\)</span>
+</center>
+<p><br></p>
+<p>Vi predicerar alltså att det i genomsnitt kommer polisanmälas 388 brott under en dag då utomhustemperaturen är 25 grader.</p>
 
 </div>
   <div class="chapter-nav">
@@ -104,7 +172,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-19.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-25.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -112,6 +180,34 @@
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>

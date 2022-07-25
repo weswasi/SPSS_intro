@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Kapitel 11 Multipel regression | SPSS introduktion</title>
 <meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
-<meta name="description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta name="description" content="Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen...">
 <meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Kapitel 11 Multipel regression | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/multipel-regression.html">
 <meta property="og:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
-<meta property="og:description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta property="og:description" content="Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kapitel 11 Multipel regression | SPSS introduktion">
-<meta name="twitter:description" content="Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik). Guiden avslutas med en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband.">
+<meta name="twitter:description" content="Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen...">
 <meta name="twitter:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -80,6 +80,50 @@
 <h1>
 <span class="header-section-number">Kapitel  11</span> Multipel regression<a class="anchor" aria-label="anchor" href="#multipel-regression"><i class="fas fa-link"></i></a>
 </h1>
+<p>Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel til vår enkla, bivariata regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:</p>
+<center>
+<span class="math inline">\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)</span>
+</center>
+<p><br></p>
+<p>Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0), utomhustemperaturen och förekomsten av regn.</p>
+<p>Att utföra en multipel regression är snarlikt tillvägagångssättet för en enkel regression. Gör följande:</p>
+<p>Analyze &gt; Regression &gt; Linear</p>
+<p>Precis som vid en enkel regression så drar vi in vår beroende variabel (polisanmäld brottslighet) till Dependent-fältet. Gör därefter precis som vid den enkla regressionen och dra in den oberoende variaben temperatur till Independents-fältet.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/multipel_1.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Tryck därefter på knappen Next. Mata därefter in temperaturvaribeln på nytt och sedan vår kontrollvariabel regn. Tryck därefter på OK.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/multipel_2.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Vi hade lika gärna kunnat vid första steget mata in båda våra oberoende variabler och inte i två separata “block”. Fördelen med att använda blockfunktione är att vi i SPSS först får ut vår enkla regression och därefter i samma ruta den multipla regressionen. Fördelen med detta tillvägagångssätt är att vi kan se hur effekten för vår oberoende variabel av intresse förändras från den enkla regressionen till den multipla regressionen.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/multipel_3.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Längst ut till vänster i samtliga rutor kan i se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde en enkel regression.</p>
+<p>Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regrssionen klarade av att förklara.</p>
+<p>I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomsten av regn så ökar antalet brott med 43.081 för varje enhets ökning av temperaturvariabeln. Under Sig. kan vi se att p-värdet är under 0.001 vilket beyder att sambandet mellan temperatur och brott är statistiskt signifikant även efter inkluderingen av den oberoende variabeln regn.</p>
+<p>Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.</p>
+<p>Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar</p>
+<center>
+<span class="math inline">\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)</span>
+</center>
+<p><br></p>
+<center>
+<span class="math inline">\(Y_{brott} = -693,137 + (43,081*25) + (-109,373*1)\)</span>
+</center>
+<p><br></p>
+<center>
+<span class="math inline">\(Y_{brott} = 274.515\)</span>
+</center>
+<p><br></p>
+<p>Vi predicerar alltså att det i genomsnitt kommer polisanmälas 374 brott de dagar då utomhustemperaturen är 22 grader och regnar.</p>
 
 </div>
 
@@ -107,7 +151,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-19.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-25.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -115,6 +159,34 @@
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>

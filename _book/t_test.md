@@ -61,6 +61,11 @@ assumed / equal variance not assumed). Skall man gå korrekt tillväga kontrolle
 håller. Det görs med Levene´s test for Equalite of Variances. F är kvoten av de båda gruppernas varians
 och om denna kvot inte är lika med 1 kan det signalera att antagandet om lika varians inte håller. Om
 sannolikheten för detta F-värde är mindre än 0,05 drar vi slutsatsen att skillnaden mellan urvalens
-varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här
-(P = 0,10) går vi till ”Equal variance not assumed”. ” Equal variance assumed” är mer restriktivt vilket
+varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ”Equal variance not assumed”. ” Equal variance assumed” är mer restriktivt vilket
 betyder att det är svårare att få ett signifikant resultat. Därför kan ni lika gärna använda detta test.
+
+<details><summary>Överkurs: klicka för vidare redogörelse beskrivning av Levene's test</summary>
+
+Text text...
+
+</details>

@@ -23,7 +23,6 @@ Skriv ett kommande som anger hur variabeln ska skapas (granska gärna kommandot 
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-
 <img src="images/syntax5.png" class="cover"/><p>Markera programsatsen och klicka på den gröna pilen. I datafilen finns nu den nya variabeln ”utl_bkgr”. Nästa steg är att kontrollera så att den konstruerade
 variabeln blivit korrekt: Ta fram en frekvens (se vidare nedan), ser fördelninge rimlig ut om du jämför
 med ursprungsvariablerna? Kontrollera också gärna ett par av dina observationsenheter – utifrån de
