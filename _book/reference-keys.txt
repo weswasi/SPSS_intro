@@ -17,9 +17,9 @@ beskrivande-statistik
 frekvenstabeller-central--och-spridningsmått
 kort-om-grafiska-tekniker
 bivariat-analys-att-studera-samvariationen-mellan-två-variabler
-sambandsmått
-samband-mellan-två-numeriska-variabler
 samband-mellan-två-kategoriska-variabler
+samband-mellan-två-numeriska-variabler
+sambandsmått
 att-välja-rätt-test-vid-hypotesprövning
 chi2-test
 t-test

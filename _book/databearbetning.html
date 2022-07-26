@@ -203,7 +203,8 @@ nej där 1 är ja och 0 är nej. Ett medelvärdesindex kommer därför att varie
 betyder att individen har svarat ja på de ingående enkätfrågorna och 0 betyder att individen har svarat
 nej på de ingående enkätfrågorna. Följande funktion skulle först summera alla individens värden på de
 fem ingående variablerna och därefter dividera summan med fem, d.v.s. antalet variabler:</p>
-<p>(snattkom+kompvand+kompinbro+kommissh+komaktfa)/5</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="op">(</span><span class="va">snattkom</span> <span class="op">+</span> <span class="va">kompvand</span> <span class="op">+</span> <span class="va">kompinbro</span> <span class="op">+</span> <span class="va">kommissh</span> <span class="op">+</span> <span class="va">komaktfa</span><span class="op">)</span> <span class="op">/</span> <span class="fl">5</span></span></code></pre></div>
 <p>Men ovanstående funktion kräver att individen har valida värden på samtliga fem ingående variabler,
 om en enda variabel saknar ett valitt värde så kommer SPSS inte att beräkna ett indexvärde för den
 individen. Detta gör inte så mycket om de ingående variablerna har ett litet internt bortfall för ungefär
@@ -213,12 +214,9 @@ ett mycket stort internt bortfall vilket kan skapa osäkerhet och precisionsför
 En smart lösning på problemet är att bestämma ett visst antal variabler som individen måste ha svarat
 på för att ingå i indexet och beräkna indexvärdet endast på dessa variabler. Säg att du väljer att endast
 tre av de fem ingående enkätfrågorna måste ha besvarats för att ett indexvärde ska beräknas. Detta gör
-du genom att placera en punkt och siffran 3 efter själva mean-funktionen enligt bilden nedan:</p>
-<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
-<center>
-<img src="images/mean_3.png" width="60%" height="60%">
-</center>
-<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+du genom att placera en punkt och siffran 3 efter själva mean-funktionen enligt koden nedan:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">MEAN.3</span><span class="op">(</span><span class="va">snattkom</span>, <span class="va">kompvand</span>, <span class="va">kompinbro</span>, <span class="va">kommissh</span>, <span class="va">komaktfa</span><span class="op">)</span></span></code></pre></div>
 <p>Om du anger mean-funktionen utan att specificera hur många variabler som ska ha valida värden så är
 utgångspunkten att åtminstone två variabler har valida värden. Men detta kan vara lite väl skakigt
 (försämra begreppsvaliditeten, se Bryman) på ett index som består av många variabler. Tänk därför på
@@ -256,7 +254,7 @@ fördelningen i indexet (när du t.ex. vill beskriva variabeln i en frekvenstabe
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-25.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

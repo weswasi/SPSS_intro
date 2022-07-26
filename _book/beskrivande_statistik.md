@@ -2,6 +2,8 @@
 
 # Beskrivande statistik
 
+Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys (även kallad explorativ dataanalys) där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
+
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 <center><img src="images/process.png"/></center>
@@ -51,3 +53,9 @@ Vanliga diagramtyper för att beskriva enskilda variabler är stapeldiagram (”
 (”Pie chart”) och histogram. Med detta verktyg kan du på grafisk väg även studera eventuella samband
 mellan två variabler. Vi återkommer senare till att åskådliggöra samvariationen mellan två kontinuerliga
 variabler genom att ta fram ett så kallat spridningsdiagram (”Scatter plot”).
+
+<img src="images/beskrivande4.png" class="cover"/><p>Det går även att i samband med skapandet av en frekvenstabeller ange att man vill ha ett diagram. De diagram som då finns att tillgå är stapeldiagram, cirkeldiagram och histogram. Klicka er fram till rutan för frekvenstabeller:
+
+Analyze > Descriptive statistics > Frequencies
+
+Mata sedan in den variabel som ni vill skapa ett diagram över. Klicka därfter på knappen Charts. Välj sedan vilket diagram ni önskar att få fram. Klicka därefter på Continue och sedan OK. I output:en ska ni nu ha fått fram en frekvenstabell samt den figur ni har valt.</p>

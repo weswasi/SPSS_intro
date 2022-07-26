@@ -2,26 +2,23 @@
 
 # Bivariat analys: Att studera samvariationen mellan två variabler
 
-<img src="images/bivariat_1.png" width="50%" height="50%" class="cover"/><p>Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler.
+Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Hur sambandet undersöks bestäms helt uifrån vilken datanivå era variabler har.
+
+## Samband mellan två kategoriska variabler
+
 Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller
-kvotskala) görs detta vanligtvis genom att studera de båda variablerna i en korstabell (”Crosstab”). Gör
-följande:</p>
+kvotskala) analyseras sambandet vanligtvis genom att studera de båda variablerna i en korstabell (”Crosstab”). Gör följande:
 
 Analyze > Descriptive statistics > Crosstabs
 
-I detta fönster har du likt tidigare en rullista till vänster som innehåller samtliga variabler i
-datamaterialet. Innan du fortsätter är det viktigt att du, med hänvisning till din frågeställning, har gjort
-klart vilken variabel som är tänkt att påverka den andra. Beroende variabel placeras i radled (”Row(s)”)
-och oberoende variabel placeras i kolumnled (”Column(s)”). Vi kan t.ex. vara intresserade av huruvida
-oro för brottsligheten i samhället skiljer sig åt efter kön. Vi gör då en korstabell med variablerna S4 (Oro
-brottslighet) Kön. Identifiera variablerna i rullistan till vänster och för sedan över dessa till ”Row(s)”
-respektive ”Column(s)” genom att använda pilarna. I detta fall gjordes alltså antagandet att Kön är
+<img src="images/bivariat_1.png" width="50%" height="50%" class="cover"/><p>I detta fönster har du likt tidigare en rullista till vänster som innehåller samtliga variabler i
+datamaterialet. Innan du fortsätter är det viktigt att du, med hänvisning till din frågeställning, har gjort klart vilken variabel som är tänkt att påverka den andra. Beroende variabel placeras i radled (”Row(s)”) och oberoende variabel placeras i kolumnled (”Column(s)”). Vi kan t.ex. vara intresserade av huruvida oro för brottsligheten i samhället skiljer sig åt efter kön. Vi gör då en korstabell med variablerna S4 (Oro brottslighet) Kön. Identifiera variablerna i rullistan till vänster och för sedan över dessa till ”Row(s)” respektive ”Column(s)” genom att använda pilarna. I detta fall gjordes alltså antagandet att Kön är
 oberoende. Som framgår finns ytterligare funktioner/alternativ. För kursen relevanta rutor är här
 ”Statistics”, ”Cells” och ”Format”. Under ”Statistics” kan man välja mellan ett flertal olika
 sambandsmått och signifikanstest. Vi återkommer till sambandsmått och signifikanstest, nu ligger
 fokus på att konstruera en korstabell som kan möjliggöra tolkningen av om och i så fall hur våra
 variabler är relaterade till varandra. För att underlätta denna tolkning väljer du först alternativet
-”Cells”.
+”Cells”.</p>
 
 <img src="images/bivariat_2.png" width="50%" height="50%" class="cover"/><p>Att sammanställa tabellen endast med antal observationer i varje cell gör en jämförelse svår. Under
 rubriken ”Percentages” är det är möjligt att markera om korstabellen ska sammanställas med rad-
@@ -62,24 +59,7 @@ Eftersom vi har en variabel på ordinal nivå (oro) och en på nominal nivå (k�
 riktningen på sambandet, dvs. om det rör sig om ett positivt eller negativt samband (hur vi kodat
 variabeln kön, dvs. vilket kön som kodats som 1 eller 2, är ju godtyckligt).
 
-## Sambandsmått
-
-I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
-mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
-syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
-sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
-variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:
-
-Analyze > Descriptive statistics > Crosstabs
-
-<img src="images/bivariat_4.png" width="45%" height="45%" class="cover"/><p>Placera din oberoende variabel i kolumnled och din beroende variabel i radled. Välj även, precis som
-tidigare, att sammanställa korstabellen med kolumnprocent under alternativet ”Cells”. Klicka därefter
-på ”Statistics”.
-
-Här får vi en viss vägledning av SPSS när det gäller vilka sambandsmått som är lämpliga att använda för
-våra variabler beroende på mät/skalnivå. Se vidare Djurfeldt m.fl. 2018: 149.</p>
-
-### Samband mellan två numeriska variabler
+## Samband mellan två numeriska variabler
 
 När vi har att göra med variabler som befinner sig på intervall- eller kvotskala är varken korstabell eller
 ovan nämnda sambandsmått lämpliga verktyg för att utreda ett eventuellt samband. Föreställ dig till
@@ -117,4 +97,21 @@ Därmed kan vi med de nya variablerna studera relationen mellan ålder och brott
 fall med nio celler) och med de sambandsmått som är lämpliga för variabler på ordinal skalnivå. Tänk på
 att variabler på högre skalnivå alltid kan transformeras till variabler på lägre skalnivå.
 
-### Samband mellan två kategoriska variabler
+## Sambandsmått
+
+<img src="images/bivariat_4.png" width="45%" height="45%" class="cover"/><p>I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
+mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
+syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
+sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
+variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:
+
+Analyze > Descriptive statistics > Crosstabs
+
+Placera din oberoende variabel i kolumnled och din beroende variabel i radled. Välj även, precis som
+tidigare, att sammanställa korstabellen med kolumnprocent under alternativet ”Cells”. Klicka därefter
+på ”Statistics”. Här får vi en viss vägledning av SPSS när det gäller vilka sambandsmått som är lämpliga att använda för våra variabler beroende på datanivå.</p> 
+
+<div class="rmdnote">
+<p>**Överkurs:**
+Vi kommer i denna kurs inte gå på djupet med de sambandsmått som finns och hur man ska tolka resultaten från de. Vill ni dock ha fördjup. Om ni dock önskar att läsa er in på vilka sambandsmått som finns, när ni ska använda de och vilka sambandsmått som passar till vilken typ av variabler <a href="https://journals.sagepub.com/doi/10.1177/8756479308317006">rekommenderar vi följande artikel</a>.</p>
+</div>

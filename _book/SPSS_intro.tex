@@ -34,18 +34,46 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={SPSS introduktion},
-  pdfauthor={Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson},
-  colorlinks=true,
-  linkcolor={Maroon},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -79,10 +107,22 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={SPSS introduktion},
+  pdfauthor={Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
 
 \title{SPSS introduktion}
 \author{Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson}
-\date{2022-07-25}
+\date{2022-07-26}
 
 \begin{document}
 \maketitle
@@ -96,7 +136,7 @@
 \chapter*{Om SPSS Introduktion}\label{om-spss-introduktion}}
 \addcontentsline{toc}{chapter}{Om SPSS Introduktion}
 
-Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik) samt en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband. Guiden avslutas med en genomgång hur man bearbetar figurer och tabeller så att de blir presentationsdugliga samt en presentation av de dataset som kommer att användas i kursen. De dataset som vi kommer att jobba med finns på kurssajten På Athena.
+Denna SPSS-introduktion är avsedd för dig som läser kursen Metod 2 på Kriminologiska institutionen vid Stockholms universitet. Introduktionen inleds med en SPSS-guide som rymmer en genomgång av SPSS olika fönster, hur man lägger in data och hur man öppnar en redan befintlig datafil. Därefter följer grundläggande tillvägagångssätt för bearbetning och beskrivning av data (beskrivande statistik) samt en genomgång av några grundläggande analysmetoder för bivariata och multivariata samband. Guiden avslutas med en genomgång hur man bearbetar figurer och tabeller så att de blir presentationsdugliga samt en presentation av de dataset som kommer att användas under kursens gång. De dataset som vi kommer att jobba med finns på kurssajten i Athena.
 
 SPSS-guiden ger en introduktion till att arbeta med SPSS Version 28 vilket är den senaste versionen och som vi rekommenderar att ni använder. Några mer ingående redogörelser av statistiska metoder ges inte, för sådana får ni gå till kurslitteraturen. Ni får här inte heller någon utförlig beskrivning av datamaterialen som används på kursen. Sådan information hittar ni via Athena.
 
@@ -112,10 +152,12 @@ Dataövningarna under kursen gång ger ytterligare träning i att använda SPSS.
 \hypertarget{ladda-ner-spss}{%
 \section{Ladda ner SPSS}\label{ladda-ner-spss}}
 
-Nedanstående instruktioner är hämtade från Stockholms universitets sida om SPSS. Om någon länk ej fungerar så pröva att besök SU:s SPSS sida. Där hittar ni även information om hur man avinstallerar SPSS eller förnyar licensnyckeln. Installationsfiler för SPSS finns tillgängliga här.
+Nedanstående instruktioner är hämtade från Stockholms universitets sida om SPSS. Om någon länk ej fungerar så pröva att besök SU:s SPSS-sida. Där hittar ni även information om hur man avinstallerar SPSS eller förnyar licensnyckeln.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\item
+  Börja med att klicka in er till sidan för installationsfiler för SPSS.
 \item
   Välj vilket operativsystem du vill installera SPSS på. SPSS finns till Windows, Mac, och Linux. Observera att SPSS inte finns till Chromebook.
 \item
@@ -129,7 +171,6 @@ Nedanstående instruktioner är hämtade från Stockholms universitets sida om S
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
 \tightlist
 \item
   Gå igenom installations-wizarden.
@@ -144,7 +185,7 @@ Nedanstående instruktioner är hämtade från Stockholms universitets sida om S
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{1}
 \item
   När du har gått igenom wizarden \textgreater{} välj Install (detta kan ta några minuter).
 \item
@@ -264,8 +305,7 @@ syntax får du en loggbok över det du har gjort, på så sättt är det enkelt 
 gått tillväga vid analyser, omkodningar etc. (Om du sparar de kommandon och körningar du har gjort
 och har användning för i syntax, skriv gärna rubriker/kommentarer som anger vad och varför du gjort
 olika moment. Obs: För att inte programmet ska missta rubriker/kommentarer för kommandon måste
-du skriva en asterisk (*) före dessa och avsluta med en punkt.) Se även Djurfeldt m.fl. 2010/2018
-Appendix 2.
+du skriva en asterisk (*) före dessa och avsluta med en punkt.). Om ni är intresserade av att lära er mer om syntaxspråket rekommenderas följande sida.
 
 \hypertarget{part-fuxf6rbereda-datamaterialet}{%
 \part*{Förbereda datamaterialet}\label{part-fuxf6rbereda-datamaterialet}}
@@ -387,7 +427,11 @@ betyder att individen har svarat ja på de ingående enkätfrågorna och 0 betyd
 nej på de ingående enkätfrågorna. Följande funktion skulle först summera alla individens värden på de
 fem ingående variablerna och därefter dividera summan med fem, d.v.s. antalet variabler:
 
-(snattkom+kompvand+kompinbro+kommissh+komaktfa)/5
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(snattkom }\SpecialCharTok{+}\NormalTok{ kompvand }\SpecialCharTok{+}\NormalTok{ kompinbro }\SpecialCharTok{+}\NormalTok{ kommissh }\SpecialCharTok{+}\NormalTok{ komaktfa) }\SpecialCharTok{/} \DecValTok{5}
+\end{Highlighting}
+\end{Shaded}
 
 Men ovanstående funktion kräver att individen har valida värden på samtliga fem ingående variabler,
 om en enda variabel saknar ett valitt värde så kommer SPSS inte att beräkna ett indexvärde för den
@@ -398,7 +442,13 @@ ett mycket stort internt bortfall vilket kan skapa osäkerhet och precisionsför
 En smart lösning på problemet är att bestämma ett visst antal variabler som individen måste ha svarat
 på för att ingå i indexet och beräkna indexvärdet endast på dessa variabler. Säg att du väljer att endast
 tre av de fem ingående enkätfrågorna måste ha besvarats för att ett indexvärde ska beräknas. Detta gör
-du genom att placera en punkt och siffran 3 efter själva mean-funktionen enligt bilden nedan:
+du genom att placera en punkt och siffran 3 efter själva mean-funktionen enligt koden nedan:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{MEAN.3}\NormalTok{(snattkom, kompvand, kompinbro, kommissh, komaktfa)}
+\end{Highlighting}
+\end{Shaded}
 
 Om du anger mean-funktionen utan att specificera hur många variabler som ska ha valida värden så är
 utgångspunkten att åtminstone två variabler har valida värden. Men detta kan vara lite väl skakigt
@@ -413,10 +463,9 @@ fördelningen i indexet (när du t.ex. vill beskriva variabeln i en frekvenstabe
 \chapter{Variabelkonstruktion med hjälp av syntax}\label{variabelkonstruktion-med-hjuxe4lp-av-syntax}}
 
 Ett exempel på när bearbetningar är bra att göra i SPSS är när man vill kombinera olika variabler och
-svaralternativ för att skapa en ny variabel.
+svaralternativ för att skapa en ny variabel. En funktion för detta är Compute (se kapitlet Databearbetning), en annan är funktionen If. Med If kan man precisera villkor för variabelvärden utifrån en eller flera variabler.
 
-En funktion för detta är Compute (se exemplet ovan), en annan är funktionen If. Med If kan man
-precisera villkor för variabelvärden utifrån en eller flera variabler.
+Se kapitlet Viktiga rutor i SPSS för en kort beskrivning av syntaxen.
 
 I skolunderökningen (Skol05.sav) finns tre variabler som anger födelseland: För eleven själv
 (''fodland1''), för dennes mor (''mfodland'') respektive för dennes far (''pfodland''). Utifrån dessa tre
@@ -426,17 +475,21 @@ föräldrar är födda i annat land.
 
 Öppna syntax: File / New / Syntax
 
-Skriv ett kommande som anger hur variabeln ska skapas (granska gärna kommandot nedan och fundera
-över dess innebörd, täcker villkoren in alla? Finns andra möjliga definitioner?):
+Skriv ett kommande som anger hur variabeln ska skapas i stil med nedanstående kod. Granska gärna kommandot nedan och fundera över dess innebörd. Täcker villkoren in alla? Finns andra möjliga definitioner?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{if}\NormalTok{ (}\AttributeTok{fodland1=}\DecValTok{0}\NormalTok{ and }\AttributeTok{mfodland=}\DecValTok{0}\NormalTok{ and }\AttributeTok{pfodland=}\DecValTok{0}\NormalTok{) utl\_bkgr}\OtherTok{=}\FloatTok{0.}
+\ControlFlowTok{if}\NormalTok{ (}\AttributeTok{fodland1=}\DecValTok{1}\NormalTok{ or }\AttributeTok{mfodland=}\DecValTok{1}\NormalTok{ or }\AttributeTok{pfodland=}\DecValTok{1}\NormalTok{) utl\_bkgr}\OtherTok{=}\FloatTok{1.}
+\NormalTok{execute.}
+\end{Highlighting}
+\end{Shaded}
 
 Markera programsatsen och klicka på den gröna pilen. I datafilen finns nu den nya variabeln ''utl\_bkgr''. Nästa steg är att kontrollera så att den konstruerade
 variabeln blivit korrekt: Ta fram en frekvens (se vidare nedan), ser fördelninge rimlig ut om du jämför
 med ursprungsvariablerna? Kontrollera också gärna ett par av dina observationsenheter -- utifrån de
 värden de har på de tre ursprungliga variablerna, har det blivit korrekt? Därefter går du vidare med att
-sätta labels på variabeln.
-
-Obs: När du konstruerar nya variabler är det självfallet viktigt att dessa är genomtänkta och
-välmotiverade.
+sätta labels på variabeln. Observera att när du konstruerar nya variabler är det självfallet viktigt att dessa är genomtänkta och välmotiverade.
 
 \hypertarget{part-analysera-data-i}{%
 \part*{Analysera data I}\label{part-analysera-data-i}}
@@ -444,6 +497,8 @@ välmotiverade.
 
 \hypertarget{beskrivande-statistik}{%
 \chapter{Beskrivande statistik}\label{beskrivande-statistik}}
+
+Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys (även kallad explorativ dataanalys) där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
 
 \hypertarget{frekvenstabeller-central--och-spridningsmuxe5tt}{%
 \section{Frekvenstabeller, central- och spridningsmått}\label{frekvenstabeller-central--och-spridningsmuxe5tt}}
@@ -486,6 +541,12 @@ Vanliga diagramtyper för att beskriva enskilda variabler är stapeldiagram (''B
 mellan två variabler. Vi återkommer senare till att åskådliggöra samvariationen mellan två kontinuerliga
 variabler genom att ta fram ett så kallat spridningsdiagram (''Scatter plot'').
 
+Det går även att i samband med skapandet av en frekvenstabeller ange att man vill ha ett diagram. De diagram som då finns att tillgå är stapeldiagram, cirkeldiagram och histogram. Klicka er fram till rutan för frekvenstabeller:
+
+Analyze \textgreater{} Descriptive statistics \textgreater{} Frequencies
+
+Mata sedan in den variabel som ni vill skapa ett diagram över. Klicka därfter på knappen Charts. Välj sedan vilket diagram ni önskar att få fram. Klicka därefter på Continue och sedan OK. I output:en ska ni nu ha fått fram en frekvenstabell samt den figur ni har valt.
+
 \hypertarget{part-analysera-data-ii}{%
 \part*{Analysera data II}\label{part-analysera-data-ii}}
 \addcontentsline{toc}{part}{Analysera data II}
@@ -493,20 +554,18 @@ variabler genom att ta fram ett så kallat spridningsdiagram (''Scatter plot'').
 \hypertarget{bivariat-analys-att-studera-samvariationen-mellan-tvuxe5-variabler}{%
 \chapter{Bivariat analys: Att studera samvariationen mellan två variabler}\label{bivariat-analys-att-studera-samvariationen-mellan-tvuxe5-variabler}}
 
-Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler.
+Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Hur sambandet undersöks bestäms helt uifrån vilken datanivå era variabler har.
+
+\hypertarget{samband-mellan-tvuxe5-kategoriska-variabler}{%
+\section{Samband mellan två kategoriska variabler}\label{samband-mellan-tvuxe5-kategoriska-variabler}}
+
 Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller
-kvotskala) görs detta vanligtvis genom att studera de båda variablerna i en korstabell (''Crosstab''). Gör
-följande:
+kvotskala) analyseras sambandet vanligtvis genom att studera de båda variablerna i en korstabell (''Crosstab''). Gör följande:
 
 Analyze \textgreater{} Descriptive statistics \textgreater{} Crosstabs
 
 I detta fönster har du likt tidigare en rullista till vänster som innehåller samtliga variabler i
-datamaterialet. Innan du fortsätter är det viktigt att du, med hänvisning till din frågeställning, har gjort
-klart vilken variabel som är tänkt att påverka den andra. Beroende variabel placeras i radled (''Row(s)'')
-och oberoende variabel placeras i kolumnled (''Column(s)''). Vi kan t.ex. vara intresserade av huruvida
-oro för brottsligheten i samhället skiljer sig åt efter kön. Vi gör då en korstabell med variablerna S4 (Oro
-brottslighet) Kön. Identifiera variablerna i rullistan till vänster och för sedan över dessa till ''Row(s)''
-respektive ''Column(s)'' genom att använda pilarna. I detta fall gjordes alltså antagandet att Kön är
+datamaterialet. Innan du fortsätter är det viktigt att du, med hänvisning till din frågeställning, har gjort klart vilken variabel som är tänkt att påverka den andra. Beroende variabel placeras i radled (''Row(s)'') och oberoende variabel placeras i kolumnled (''Column(s)''). Vi kan t.ex. vara intresserade av huruvida oro för brottsligheten i samhället skiljer sig åt efter kön. Vi gör då en korstabell med variablerna S4 (Oro brottslighet) Kön. Identifiera variablerna i rullistan till vänster och för sedan över dessa till ''Row(s)'' respektive ''Column(s)'' genom att använda pilarna. I detta fall gjordes alltså antagandet att Kön är
 oberoende. Som framgår finns ytterligare funktioner/alternativ. För kursen relevanta rutor är här
 ''Statistics'', ''Cells'' och ''Format''. Under ''Statistics'' kan man välja mellan ett flertal olika
 sambandsmått och signifikanstest. Vi återkommer till sambandsmått och signifikanstest, nu ligger
@@ -547,26 +606,8 @@ Eftersom vi har en variabel på ordinal nivå (oro) och en på nominal nivå (k�
 riktningen på sambandet, dvs. om det rör sig om ett positivt eller negativt samband (hur vi kodat
 variabeln kön, dvs. vilket kön som kodats som 1 eller 2, är ju godtyckligt).
 
-\hypertarget{sambandsmuxe5tt}{%
-\section{Sambandsmått}\label{sambandsmuxe5tt}}
-
-I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
-mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
-syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
-sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
-variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:
-
-Analyze \textgreater{} Descriptive statistics \textgreater{} Crosstabs
-
-Placera din oberoende variabel i kolumnled och din beroende variabel i radled. Välj även, precis som
-tidigare, att sammanställa korstabellen med kolumnprocent under alternativet ''Cells''. Klicka därefter
-på ''Statistics''.
-
-Här får vi en viss vägledning av SPSS när det gäller vilka sambandsmått som är lämpliga att använda för
-våra variabler beroende på mät/skalnivå. Se vidare Djurfeldt m.fl. 2018: 149.
-
 \hypertarget{samband-mellan-tvuxe5-numeriska-variabler}{%
-\subsection{Samband mellan två numeriska variabler}\label{samband-mellan-tvuxe5-numeriska-variabler}}
+\section{Samband mellan två numeriska variabler}\label{samband-mellan-tvuxe5-numeriska-variabler}}
 
 När vi har att göra med variabler som befinner sig på intervall- eller kvotskala är varken korstabell eller
 ovan nämnda sambandsmått lämpliga verktyg för att utreda ett eventuellt samband. Föreställ dig till
@@ -604,8 +645,23 @@ Därmed kan vi med de nya variablerna studera relationen mellan ålder och brott
 fall med nio celler) och med de sambandsmått som är lämpliga för variabler på ordinal skalnivå. Tänk på
 att variabler på högre skalnivå alltid kan transformeras till variabler på lägre skalnivå.
 
-\hypertarget{samband-mellan-tvuxe5-kategoriska-variabler}{%
-\subsection{Samband mellan två kategoriska variabler}\label{samband-mellan-tvuxe5-kategoriska-variabler}}
+\hypertarget{sambandsmuxe5tt}{%
+\section{Sambandsmått}\label{sambandsmuxe5tt}}
+
+I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
+mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
+syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
+sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
+variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:
+
+Analyze \textgreater{} Descriptive statistics \textgreater{} Crosstabs
+
+Placera din oberoende variabel i kolumnled och din beroende variabel i radled. Välj även, precis som
+tidigare, att sammanställa korstabellen med kolumnprocent under alternativet ''Cells''. Klicka därefter
+på ''Statistics''. Här får vi en viss vägledning av SPSS när det gäller vilka sambandsmått som är lämpliga att använda för våra variabler beroende på datanivå.
+
+\textbf{Överkurs:}
+Vi kommer i denna kurs inte gå på djupet med de sambandsmått som finns och hur man ska tolka resultaten från de. Vill ni dock ha fördjup. Om ni dock önskar att läsa er in på vilka sambandsmått som finns, när ni ska använda de och vilka sambandsmått som passar till vilken typ av variabler rekommenderar vi följande artikel.
 
 \hypertarget{part-analysera-data-iii-hypotespruxf6vning}{%
 \part*{Analysera data III: Hypotesprövning}\label{part-analysera-data-iii-hypotespruxf6vning}}
@@ -726,12 +782,16 @@ assumed / equal variance not assumed). Skall man gå korrekt tillväga kontrolle
 håller. Det görs med Levene´s test for Equalite of Variances. F är kvoten av de båda gruppernas varians
 och om denna kvot inte är lika med 1 kan det signalera att antagandet om lika varians inte håller. Om
 sannolikheten för detta F-värde är mindre än 0,05 drar vi slutsatsen att skillnaden mellan urvalens
-varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ''Equal variance not assumed''. '' Equal variance assumed'' är mer restriktivt vilket
+varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ''Equal variance not assumed''. ''Equal variance assumed'' är mer restriktivt vilket
 betyder att det är svårare att få ett signifikant resultat. Därför kan ni lika gärna använda detta test.
 
-Överkurs: klicka för vidare redogörelse beskrivning av Levene's test
+\textbf{Överkurs:} Enklaste sättet att förstå hur det ser ut när variansen är den samma för två grupper alternativt olika för två grupper är att illustrera gruppernas varians. I figurerna här nedan har vi grupp röd och grupp blå. Grupp röd har i genomsnitt 100 i värde i både den övre och nedre figuren. Grupp blå har i genomsnitt 130 i både den övre och nedre figuren. I den övre figuren har röd en standardavvikelse på 15 och blå har en standardavvikelse på 30. I nedre figuren har både röd och blå 15 i standardavvikelse.
 
-Text text\ldots{}
+Som vi kan se i den övre figuren är alltså spridningen (och därför variansen) större för grupp blå än för grupp röd. I nedre figuren är spridningen den samma (och därför variansen) för båda grupperna.
+
+Om vi ska utföra ett t-test med den data som används för den övre figuren komer SPSS att ange: ''Equal variance not assumed''.
+
+Om vi ska utföra ett t-test med den data som används för den nedre figure kommer SPSS att ange: ''Equal variance assumed''.
 
 \hypertarget{enkel-regression}{%
 \chapter{Enkel regression}\label{enkel-regression}}

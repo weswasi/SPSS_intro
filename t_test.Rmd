@@ -61,11 +61,18 @@ assumed / equal variance not assumed). Skall man gå korrekt tillväga kontrolle
 håller. Det görs med Levene´s test for Equalite of Variances. F är kvoten av de båda gruppernas varians
 och om denna kvot inte är lika med 1 kan det signalera att antagandet om lika varians inte håller. Om
 sannolikheten för detta F-värde är mindre än 0,05 drar vi slutsatsen att skillnaden mellan urvalens
-varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ”Equal variance not assumed”. ” Equal variance assumed” är mer restriktivt vilket
+varians reflekterar en skillnad i populationernas varians. Om så är fallet, vilket det emellertid inte är här (P = 0,10) går vi till ”Equal variance not assumed”. ”Equal variance assumed” är mer restriktivt vilket
 betyder att det är svårare att få ett signifikant resultat. Därför kan ni lika gärna använda detta test.
 
-<details><summary>Överkurs: klicka för vidare redogörelse beskrivning av Levene's test</summary>
+<div class="rmdnote">
+<p>**Överkurs:** Enklaste sättet att förstå hur det ser ut när variansen är den samma för två grupper alternativt olika för två grupper är att illustrera gruppernas varians. I figurerna här nedan har vi grupp röd och grupp blå. Grupp röd har i genomsnitt 100 i värde i både den övre och nedre figuren. Grupp blå har i genomsnitt 130 i både den övre och nedre figuren. I den övre figuren har röd en standardavvikelse på 15 och blå har en standardavvikelse på 30. I nedre figuren har både röd och blå 15 i standardavvikelse.
 
-Text text...
+Som vi kan se i den övre figuren är alltså spridningen (och därför variansen) större för grupp blå än för grupp röd. I nedre figuren är spridningen den samma (och därför variansen) för båda grupperna.
 
-</details>
+Om vi ska utföra ett t-test med den data som används för  den <b>övre</b> figuren komer SPSS att ange: ”Equal variance not assumed”.
+
+Om vi ska utföra ett t-test med den data som används för den <b>nedre</b> figure kommer SPSS att ange: ”Equal variance assumed”.
+
+<img src="images/levenes_test.png" width="99%" height="99%"/>
+</p>
+</div>
