@@ -122,7 +122,7 @@
 
 \title{SPSS introduktion}
 \author{Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson}
-\date{2022-07-26}
+\date{2022-07-27}
 
 \begin{document}
 \maketitle
@@ -892,8 +892,57 @@ Vi predicerar alltså att det i genomsnitt kommer polisanmälas 374 brott de dag
 \hypertarget{bearbeta-tabeller-och-figurer}{%
 \chapter{Bearbeta tabeller och figurer}\label{bearbeta-tabeller-och-figurer}}
 
+För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå igenom hur man effektiviserar och gör SPSS-output estetiskt tillfredsställande. Att bearbeta figurer och tabeller medför oftast också att de komprimeras storleksmässigt vilket innebär att de inte tar lika stor plats i en text. Inte sällan tampas vi med ord- eller sidbegränsningar när vi skriver och tabeller som tar upp onöidigt stor plats kan leda till att vi inte kanske kan få med all den text som vi önskar.
+
 \hypertarget{tabeller}{%
 \section{Tabeller}\label{tabeller}}
+
+I detta exempel ska vi effektivisera och snygga till en korstabell med tillhörand chi2-test. Notera att ni även kan följa denna guide även om ni gör en enkel frekvenstabeller (eller annan typ av tabell). I SPSS ser outputen ut som följande:
+
+Notera för det första hur mycket av outputen som antingen behöver bearbetas eller som kan strykas. Det är exempelvis ord som är på englska, variabelnamn som innehåller tecken/ord som inte bör vara där, stora delar av chi2-testet som är överflöding information. Vi vill effektivisera outputen med målet att göra en tabell som ser ut som följande:
+
+Notera hur vi har inte nog med skapat en snygg tabell även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen som tidigare finns har helt försvunnit och dn information som är relevant finns nu under korstabellen.
+
+För att återskpa den reviderade tabellen gör vi som följande:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Innan vi ens skapar korstabellen klickar vi in oss på: Edit \textgreater{} Options och därefter fliken Pivot Tables.
+\item
+  Markera sedan APA\_SansSerif\_10pt. Klicka därefter på OK. Vi har nu angett att samtliga tabeller som vi skapar ska följa den mall vi precis angivit (notera att det inte finns något krav att just denna mall skall följas utan ni kan klicka er runt och använda er av andra mallar om ni önskar).
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Skapa därefter den korstabell ni önskar.
+\item
+  När ni har fått fram tabellen i output-fönstret så dubbelklickar ni var som helst på korstabellen.
+\item
+  Ni ska nu ha fått fram Pivot Table-rutan. Det är här ni redigerar innehållet i er tabell.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\item
+  Vi börjar med att skapa en kommentar under tabellen med information från chi2-test. Klicka på Insert \textgreater{} Caption. Skriv därefer in chi2-värdet (Pearson Chi-Square), frihetsgraderna (df) och därefter p-värdet (Asymptotic Significance (2-sided)) precis som vi gjorde i den färdiga tabellen här ovan.
+\item
+  Nu ska vi redigera variabelnamnen, titeln och annat så att tabellen ser prydlig ut. För att redigera rubrik och annan text dubbelklickar ni helt enkelt på delen av tabellen som ni vill textredigera. Ett textfält ska då dyka upp där ni skriver in den nya text ni önskar. Notera att SPSS kan vara lite envis ibland och vägra ge er textfältet. Dubbelklicka på nytt eller testa att klicka någon annan stans och sedan dubbelklicka på nytt på texten så ska SPSS till slut ge med sig.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\item
+  När ni känner er klara så klicka File \textgreater{} Close. Nu ska er tabell ha uppdaterats utifrån era önskemål.
+\item
+  För att förflytta tabellen från output-fönstret till Word så högerklickar ni på tabellen, väljer Copy As \textgreater{} Image. Tabellen är nu kopierad som bild vilket innebär att ni nu kan klistra in den i Word.
+\end{enumerate}
+
+Nu är nu klara och har en avsevärt prydligare och komprimerad tabell!
 
 \hypertarget{figurer}{%
 \section{Figurer}\label{figurer}}

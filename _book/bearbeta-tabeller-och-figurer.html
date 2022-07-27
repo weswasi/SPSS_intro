@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Kapitel 12 Bearbeta tabeller och figurer | SPSS introduktion</title>
 <meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
-<meta name="description" content="12.1 Tabeller   12.2 Figurer">
+<meta name="description" content="För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå...">
 <meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Kapitel 12 Bearbeta tabeller och figurer | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/bearbeta-tabeller-och-figurer.html">
 <meta property="og:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
-<meta property="og:description" content="12.1 Tabeller   12.2 Figurer">
+<meta property="og:description" content="För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kapitel 12 Bearbeta tabeller och figurer | SPSS introduktion">
-<meta name="twitter:description" content="12.1 Tabeller   12.2 Figurer">
+<meta name="twitter:description" content="För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå...">
 <meta name="twitter:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -78,10 +78,63 @@
 <h1>
 <span class="header-section-number">Kapitel  12</span> Bearbeta tabeller och figurer<a class="anchor" aria-label="anchor" href="#bearbeta-tabeller-och-figurer"><i class="fas fa-link"></i></a>
 </h1>
+<p>För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå igenom hur man effektiviserar och gör SPSS-output estetiskt tillfredsställande. Att bearbeta figurer och tabeller medför oftast också att de komprimeras storleksmässigt vilket innebär att de inte tar lika stor plats i en text. Inte sällan tampas vi med ord- eller sidbegränsningar när vi skriver och tabeller som tar upp onöidigt stor plats kan leda till att vi inte kanske kan få med all den text som vi önskar.</p>
 <div id="tabeller" class="section level2" number="12.1">
 <h2>
 <span class="header-section-number">12.1</span> Tabeller<a class="anchor" aria-label="anchor" href="#tabeller"><i class="fas fa-link"></i></a>
 </h2>
+<p>I detta exempel ska vi effektivisera och snygga till en korstabell med tillhörand chi2-test. Notera att ni även kan följa denna guide även om ni gör en enkel frekvenstabeller (eller annan typ av tabell). I SPSS ser outputen ut som följande:</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_1.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Notera för det första hur mycket av outputen som antingen behöver bearbetas eller som kan strykas. Det är exempelvis ord som är på englska, variabelnamn som innehåller tecken/ord som inte bör vara där, stora delar av chi2-testet som är överflöding information. Vi vill effektivisera outputen med målet att göra en tabell som ser ut som följande:</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_2.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Notera hur vi har inte nog med skapat en snygg tabell även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen som tidigare finns har helt försvunnit och dn information som är relevant finns nu under korstabellen.</p>
+<p>För att återskpa den reviderade tabellen gör vi som följande:</p>
+<ol style="list-style-type: decimal">
+<li><p>Innan vi ens skapar korstabellen klickar vi in oss på: Edit &gt; Options och därefter fliken Pivot Tables.</p></li>
+<li><p>Markera sedan APA_SansSerif_10pt. Klicka därefter på OK. Vi har nu angett att samtliga tabeller som vi skapar ska följa den mall vi precis angivit (notera att det inte finns något krav att just denna mall skall följas utan ni kan klicka er runt och använda er av andra mallar om ni önskar).</p></li>
+</ol>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_3.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<ol start="3" style="list-style-type: decimal">
+<li><p>Skapa därefter den korstabell ni önskar.</p></li>
+<li><p>När ni har fått fram tabellen i output-fönstret så dubbelklickar ni var som helst på korstabellen.</p></li>
+<li><p>Ni ska nu ha fått fram Pivot Table-rutan. Det är här ni redigerar innehållet i er tabell.</p></li>
+</ol>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_4.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<ol start="6" style="list-style-type: decimal">
+<li><p>Vi börjar med att skapa en kommentar under tabellen med information från chi2-test. Klicka på Insert &gt; Caption. Skriv därefer in chi2-värdet (<i>Pearson Chi-Square</i>), frihetsgraderna (<i>df</i>) och därefter p-värdet (<i>Asymptotic Significance (2-sided)</i>) precis som vi gjorde i den färdiga tabellen här ovan.</p></li>
+<li><p>Nu ska vi redigera variabelnamnen, titeln och annat så att tabellen ser prydlig ut. För att redigera rubrik och annan text dubbelklickar ni helt enkelt på delen av tabellen som ni vill textredigera. Ett textfält ska då dyka upp där ni skriver in den nya text ni önskar. Notera att SPSS kan vara lite envis ibland och vägra ge er textfältet. Dubbelklicka på nytt eller testa att klicka någon annan stans och sedan dubbelklicka på nytt på texten så ska SPSS till slut ge med sig.</p></li>
+</ol>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_5.png" width="90%" height="90%">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<ol start="8" style="list-style-type: decimal">
+<li><p>När ni känner er klara så klicka File &gt; Close. Nu ska er tabell ha uppdaterats utifrån era önskemål.</p></li>
+<li><p>För att förflytta tabellen från output-fönstret till Word så högerklickar ni på tabellen, väljer Copy As &gt; Image. Tabellen är nu kopierad som bild vilket innebär att ni nu kan klistra in den i Word.</p></li>
+</ol>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/bearbeta_6.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Nu är nu klara och har en avsevärt prydligare och komprimerad tabell!</p>
 </div>
 <div id="figurer" class="section level2" number="12.2">
 <h2>
@@ -116,7 +169,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-26.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-07-27.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
