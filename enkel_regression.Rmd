@@ -47,7 +47,7 @@ och den beroende variabeln - polisanmälda brott - i fältet Dependent. Tryck d�
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/regression_4.png" width="90%" height="90%"/></center>
+<center><img src="images/regression_4.png" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

@@ -1,7 +1,7 @@
 # Presentation av dataset
 
 ## NTU 2017-2021
-Datasetet <b>NTU 2017-2021 M2.SAV</b> innehåller fem årgångar av NTU och består sammanlagt av 375 590 respondenter. Samtliga individer är anonymiserade vilket innebär att det ej går att härleda vem som förekommer i datamaterialet. Vilka variabler som finns i datamaterialet och hur varje variabel är kodad går att se i <a href="documents/Kodbok NTU 2017-2021.pdf">kodboken för datamaterialet som ni finner här</a>. Detta dokument är viktigt att nyttja i samband med att ni använder datasetet då det inte alltid framgår vad varje variabel betyder och vad dess värden innebär.
+Datasetet <b>NTU 2017-2021 M2.SAV</b> innehåller fem årgångar av NTU och består sammanlagt av 375 590 respondenter. Samtliga individer är anonymiserade vilket innebär att det ej går att härleda vem som förekommer i datamaterialet. Vilka variabler som finns i datamaterialet och hur varje variabel är kodad går att se i kodboken för datamaterialet som ni finner i Athena. Detta dokument är viktigt att nyttja i samband med att ni använder datasetet då det inte alltid framgår vad varje variabel betyder och vad dess värden innebär.
 
 Närmare information om urval, datainsamling, frågekonstruktion, kodning och annat relevant återfinns i den
 <a href="https://bra.se/download/18.1f8c9903175f8b2aa70111be/1633935949525/2021_Nationella_trygghetsundersokningen_2021_Teknisk_rapport.pdf">tekniska rapporten för NTU 2021 som ni finner här</a>.

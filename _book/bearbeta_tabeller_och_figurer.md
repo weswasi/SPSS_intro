@@ -65,7 +65,7 @@ För att återskpa den reviderade tabellen gör vi som följande:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/bearbeta_6.png" width="90%" height="90%" /></center>
+<center><img src="images/bearbeta_6.png" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -77,7 +77,7 @@ Figurera i SPSS är till stora delar redan publikationsredo och det som ibland k
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/bearbeta_figur_1.png" /></center>
+<center><img src="images/bearbeta_figur_1.png" width="100%" height="100%" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
