@@ -8,7 +8,7 @@ studera vissa observationsenheter, t.ex. bara kvinnor? Eller så kanske du vill 
 svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler
 befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.
 
-## Select Cases: analysera enbart vissa observationssenheter
+## Select Cases: Analysera enbart vissa observationssenheter
 
 <img src="images/variables.png" class="cover"/><p>Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de
 flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen
@@ -42,7 +42,23 @@ vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om
 ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på
 variabellistan till vänster och markerar ”Display Variable Names”.
 
-## Recode: att koda om befintliga variabler
+## Split Files: Separata analyser för förutbestämda grupper
+
+Till skillnad från ovanstående exempel där vi exkluderade pojkar för att enbart studera flickor ska vi nu studera både flickor och pojkar men separat. På så sätt kan vi exempelvis se hur utsattheten för grovt våld ser ut bland flickor respektive pojkar. Gör så här:
+
+Data > Split File
+
+Bocka för <b>Compare groups</b>. Välj därefer den variabel som innehåller de grupper som du vill separera dina observationer på. Det kan exempelvis vara könsvariabeln exempelvis eller födelselandsvariabeln. Tryck på OK.
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/select_cases.png" width="80%" height="80%"/></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+De analyser du nu gör kommer att göras utifrån gruppnivå. Tänk på att om du vill åter göra aggregerade analyser (och inte på gruppnivå) så behöver du återställa gruppinställningen. För att göra det klickar du åter in dig till Split file-rutan. Tryck därefer på <b>Reset</b> och sedan OK. Nu är gruppindelningen borttagen och vidare analyser görs på hela datamaterialet.
+
+## Recode: Koda om befintliga variabler
 
 Funktionen Recode kan användas till att koda om variabler (koda om befintlig variabel: ”Recode into
 Same Variables”, eller till en ny variabel: ”Recode into Different Variables”). ”Recode” används ofta då

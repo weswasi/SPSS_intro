@@ -2,7 +2,7 @@
 
 # Bearbeta tabeller och figurer
 
-För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. I detta kapitel kommer vi gå igenom hur man effektiviserar och gör SPSS-output estetiskt tillfredsställande. Att bearbeta figurer och tabeller medför oftast också att de komprimeras storleksmässigt vilket innebär att de inte tar lika stor plats i en text. Inte sällan tampas vi med ord- eller sidbegränsningar när vi skriver och tabeller som tar upp onöidigt stor plats kan leda till att vi inte kanske kan få med all den text som vi önskar. 
+För att öka förståelsen för den berättelse som en rapport eller uppsats vill förmedla gäller det att bland annat ha lättlästa (och snygga!) tabeller och figurer. Ibland kallas denna process för att göra tabeller och figurer <i>publikationsredo</i>. I detta kapitel kommer vi gå igenom hur man effektiviserar och gör SPSS-output estetiskt tillfredsställande. Att bearbeta figurer och tabeller medför oftast också att de komprimeras storleksmässigt vilket innebär att de inte tar lika stor plats i en text. Inte sällan tampas vi med ord- eller sidbegränsningar när vi skriver och tabeller som tar upp onöidigt stor plats kan leda till att vi inte kanske kan få med all den text som vi önskar. 
 
 ## Tabeller
 
@@ -65,10 +65,48 @@ För att återskpa den reviderade tabellen gör vi som följande:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/bearbeta_6.png" /></center>
+<center><img src="images/bearbeta_6.png" width="90%" height="90%" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 Nu är nu klara och har en avsevärt prydligare och komprimerad tabell!
 
 ## Figurer
+
+Figurera i SPSS är till stora delar redan publikationsredo och det som ibland kan vara lämpligt att förändra är kanske mindre kosmetiska saker så som att översätta engelska ord eller se till att vissa ord börjar på stor bokstav. Målen med denna guide är att gå från följande figur:
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/bearbeta_figur_1.png" /></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+Till följande:
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/bearbeta_figur_2.png" width="90%" height="90%" /></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+Förändringarna vi har gjort är inte lika stora som förändringarna för frekvenstabellen här ovan. Inte heller är de förändringar som gjorts nödvändiga utan vissa av åtgärderna är mest gjorda för att visa er var i SPSS som man kan göra förändringar av figurer. Det som är förändrat är att de horisontella linjerna (<i>grid lines</i>) är borttagna, färgen på staplarna är förändrade, stor bokstav på variabelvärdena, tagit bort rubriken och översatt engelskt ord. Det finns även andra saker man kan tänkas göra för att förbättra figuren men dessa få åtgärder är en bra start och visar vilka fönster som finns att tillgå för att förändra en figur.
+
+Börja med att skapa en figur via Graphs > Chart builder eller Charts-knappen när ni skapar en frekvenstabell. Därefter dubbelklickar ni var som helst på figuren alternativt högerklickar och trycker på Edit. Chart editor-fönstret ska nu öppnas upp. Det är härifrån ni gör samtliga era förändringar på figuren.
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/bearbeta_figur_3.png" width="90%" height="90%" /></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+Först ut tar vi bort rubriken. Högerklicka på rubriken och tryck därefter på Delete. Nu är rubriken borta. Om ni iställt vill redigera rubriken så enkelklickar ni på rubriken. Vänta sedan någon sekund och enkelklicka igen på rubriken. Nu kan ni redigera den.
+
+Näst på tur är att översätta rubiken för y-axeln, från engelska till svenska. Enkelklicka på texten, vänta en sekund och enkelklicka sedan igen. Nu kan ni redigera texten till svenska.
+
+För att redigera variabelnvärdena på x-axeln så att de alla börjar med stor bokstav så gör ni på samma sätt som här ovan. Enkelklicka på en av värdena, vänta en sekund och sedan enkelklicka på nytt. Nu kan ni redigrera texten. Gör så på samtliga variabelvärden.
+
+För att ta bort de horisontella linjerna (<i>grid lines</i>) trycker ni på Options > Hide Grid Lines.
+
+Slutligen ska vi ändra färgen på staplarna. Dubbelklicka på någon av staplarna. Tryck sedan på fliken Fill & Border. Välj därefter vilken färg ni vill ha på staplarna (under Fill). Tryck därefter på Apply.
+
+När ni känner er klara med era förändringar så klickar ni på File > Close. Nu ska er befintliga figur har uppdaterats efter era önskemål.

@@ -10,7 +10,8 @@ output-fönstret-output
 syntax-syntax-editor
 databearbetning
 select-cases-analysera-enbart-vissa-observationssenheter
-recode-att-koda-om-befintliga-variabler
+split-files-separata-analyser-för-förutbestämda-grupper
+recode-koda-om-befintliga-variabler
 compute-att-skapa-nya-variabler-utifrån-befintliga-variabler
 variabelkonstruktion-med-hjälp-av-syntax
 beskrivande-statistik
