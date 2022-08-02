@@ -26,6 +26,9 @@ chi2-test
 t-test
 enkel-regression
 multipel-regression
+logistisk-regression
+enkel-logistisk-regression
+multipel-logistisk-regression
 bearbeta-tabeller-och-figurer
 tabeller
 figurer

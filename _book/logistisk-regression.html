@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Kapitel 12 Logistisk regression | SPSS introduktion</title>
+<meta name="author" content="Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson">
+<meta name="description" content="När den oberoende variabel är numerisk och den beroende variabel dikotom och således enbart kan anta två värden har man traditionellt använt sig av analysmetoden logistisk regression. Här nedan...">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
+<meta property="og:title" content="Kapitel 12 Logistisk regression | SPSS introduktion">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://spss-introduktion.netlify.app/logistisk-regression.html">
+<meta property="og:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
+<meta property="og:description" content="När den oberoende variabel är numerisk och den beroende variabel dikotom och således enbart kan anta två värden har man traditionellt använt sig av analysmetoden logistisk regression. Här nedan...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kapitel 12 Logistisk regression | SPSS introduktion">
+<meta name="twitter:description" content="När den oberoende variabel är numerisk och den beroende variabel dikotom och således enbart kan anta två värden har man traditionellt använt sig av analysmetoden logistisk regression. Här nedan...">
+<meta name="twitter:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/_Roboto-0.4.1/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">SPSS introduktion</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Om SPSS Introduktion</a></li>
+<li class="book-part">Komma igång med SPSS</li>
+<li><a class="" href="installera-och-starta-spss.html"><span class="header-section-number">1</span> Installera och starta SPSS</a></li>
+<li><a class="" href="viktiga-f%C3%B6nser-i-spss.html"><span class="header-section-number">2</span> Viktiga fönser i SPSS</a></li>
+<li class="book-part">Förbereda datamaterialet</li>
+<li><a class="" href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></li>
+<li><a class="" href="variabelkonstruktion-med-hj%C3%A4lp-av-syntax.html"><span class="header-section-number">4</span> Variabelkonstruktion med hjälp av syntax</a></li>
+<li class="book-part">Analysera data I</li>
+<li><a class="" href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></li>
+<li class="book-part">Analysera data II</li>
+<li><a class="" href="bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler</a></li>
+<li class="book-part">Analysera data III: Hypotesprövning</li>
+<li><a class="" href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></li>
+<li><a class="" href="chi2-test.html"><span class="header-section-number">8</span> Chi2-test</a></li>
+<li><a class="" href="t-test.html"><span class="header-section-number">9</span> T-test</a></li>
+<li><a class="" href="enkel-regression.html"><span class="header-section-number">10</span> Enkel regression</a></li>
+<li><a class="" href="multipel-regression.html"><span class="header-section-number">11</span> Multipel regression</a></li>
+<li><a class="active" href="logistisk-regression.html"><span class="header-section-number">12</span> Logistisk regression</a></li>
+<li class="book-part">Övrigt</li>
+<li><a class="" href="bearbeta-tabeller-och-figurer.html"><span class="header-section-number">13</span> Bearbeta tabeller och figurer</a></li>
+<li><a class="" href="presentation-av-dataset.html"><span class="header-section-number">14</span> Presentation av dataset</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/weswasi/SPSS_intro">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="logistisk-regression" class="section level1" number="12">
+<h1>
+<span class="header-section-number">Kapitel  12</span> Logistisk regression<a class="anchor" aria-label="anchor" href="#logistisk-regression"><i class="fas fa-link"></i></a>
+</h1>
+<p>När den oberoende variabel är numerisk och den beroende variabel dikotom och således enbart kan anta två värden har man traditionellt använt sig av analysmetoden logistisk regression.
+Här nedan följer först instruktioner hur man utför en enkel logistisk regression och som sedan följs upp av instruktioner hur man genomför en multipel logistisk regression.</p>
+<div id="enkel-logistisk-regression" class="section level2" number="12.1">
+<h2>
+<span class="header-section-number">12.1</span> Enkel logistisk regression<a class="anchor" aria-label="anchor" href="#enkel-logistisk-regression"><i class="fas fa-link"></i></a>
+</h2>
+<p>I detta exempel kommer att använda oss av Pathways to desistance-datasetet. Den frågeställning vi ställer är följande: Finns det ett samband mellan att ha skjutit en annan person och att ha en pappa som lagförts för ett brott?” Ett annat sätt att formulera frågan är: Kan vi predicera huruvida en individ har skjutit en annan person utifrån information om faderns lagföringshistorik? Den beroende variabeln är dikotom och kan anta värdet 0 om individen ej har skjutit en annan person och 1 om personen tidigare har skjutit en annan person. Den oberoende variabeln antar värdet 0 om personens fader aldrig tidigare lagförts för ett brott och 1 om fadern har tidigare lagförts för ett brott. För att genomföra den enkla logistiska regressionen gör ni som följande:</p>
+<p>Analyze &gt; Regression &gt; Binary Logistic</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/logistic_1.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Därefter placerar ni den beroende variabeln - skjutit en annan person - i Dependent-fältet och den oberoende variabeln - lagförd fader - i Covariates-fältet.</p>
+<p>Inte helt oväntat kommer ni få ut en rad olika rutor med en mängd information. Vi tar en i taget. Rutan Case Processing Summary ger er deskriptiv information om hur många individer som förekommer i analysen samt hur många som är missing. I rutan Dependent Variable Coding framgår det hur SPSS har valt att koda om den beroende variabeln så att den verkligen enbart antar värdena 0 och 1. Därefter kommer rad rutor under Block 0: Beginning Block. Block 0 är den logistiska modellen utan en oberoende variabel. Det vill säga en modell med enbart interceptet (och dess information om individen skjutit någon eller ej). Vi kan hoppa över hela Block 0 eftersom ingen information där är av intresse för oss.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/logistic_2.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Under Block 1: Method = Enter börjar det bli lite intressantare. Under Omnibus Tests of Model Coefficients och det tillhörande P-värdet för Model hittar ni information om vår angivna modell presterar bättre än en modell utan vår oberoende variabel. Det motsvarar informationen i ANOVA-rutang ällande f-färdet och p-värdet för regressionsmodellen när ni utför en regressionsanalys (se kapitlet om enkel och multipel regression). Vi kan i vårt fall se att vår modell är signifikant. Under Model Summary hittar ni information om hur pass bra er logistiska modell passar er data. Cox &amp; Snell R Square och Nagelkerke R Square är så kallade pseudo-R2 som ska efterlikna R2-värdet man får ut när man genomför en regressionanalys. Värdena för pseudo-R2 kan dock inte tolkas som estimat för förklarad varians. Enklast är istället att tänka att värdena kan gå från 0 till 1 och att höga värden indikerar att de oberoende variablerna är bättre på att predicera den beroende variabeln. I vårt fall har vi överlag ganska låga värden vilket betyder att även om den kan hjälpa oss predicera den beroende variabel så är dess prediktiva förmåga låg. -2 Log Likelihood är lite svårare att tolka men enkelt uttryck kan man säga att ju lägre värde desto bättre.</p>
+<p>Under Classification Table hittar ni information om hur ofta (uttryckt i procent) som vår modell lyckades predicera rätt att en individ skjutit en annan person (alternativt ej) utifrån information om faders tidigare lagföring. Vår modell lyckades pricka rätt 87,9 % av fallen. Även om denna siffra är hög så ska det dock noteras att vår modell lyckades inte predicera att någon av våra individer som skjutit en annan person trots att vi faktiskt har 162 individer som gjort det. Det går att förklara med kombinationen att det är förhållandevis få som skjutit en annan person och det faktu att vi har en oberoende variabel som har en låg prediktiv förmåga.</p>
+<p>Nu kommer vi äntligen till den viktigaste rutan: Variables in the Equation. Här ser vi information gällande vår hypotesprövning så som vilken effekt vår oberoende variabel har på vår beroende samt om denna effekt är statistisk signifikant. När vi utför en logistisk regression uttrycks betakoefficienten i termer av så kallade logaritmerade oddskvoter (<i>log odds ratios</i>). Att tolka logaritmerade värden är minst sagt krångligt så därför brukar man ta exponenten av de logaritmerade värdena så att man får ut icke-logaritmerade betakofficienter. Dessa värden hittar ni under Exp(B). Enklaste sättet att tolka dessa koeffeicitenter är att värden som överstiger 1 visar positiva samband och värden som understiger 1 visar negativa samband. Ett värd på 1 visar inget samband alls. Eftersom vår oberoende variabeln har koefficienten 2.364 så har vi ett positivt förhållande: det finns ett samband mellan att ha en lagförd fader och att ha skjutit en annan person. Eftersom p-värdet är &lt; .001 är detta samband statistiskt signifikant.</p>
+<div class="rmdnote">
+<p>
+</p>
+<p><strong>Överkurs:</strong> Även om icke-logaritmerade oddskvoter är enklare att tolka än logaritmerad så är estimaten fortfarande något krångliga att förstå. Vad betyder det exempelvis att vår oberoende variabel har värdet 2.364? Eller för den delen att konstanten är .095?</p>
+<p>Konstanten är som vi alla vet de vars värde på de eller den oberoende är noll. Variabeln i vårt fall är de vars far ej lagförts för ett brott. Oddset för att ha skjutit en annan person är därför 0.095 för de som ej har en far som tidigare lagförts. Eftersom 0.095 är cirka en tiondel av 1 kan vi säga att det är nära tio gånger lägre odds att en individ med en icke-lagförd fader ej skjutit någon än ha gjort det. Vad säger då vår oberoende variabel med värdet 2.364? Jo, den beskriver att oddset att ha skjutit någon är 2.364 gånger högre för en individ vars fader är lagförd än en individ vars fader ej är lagförd.</p>
+Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln var faderns inkomst uttryckt i dollar per månad och att koefficienten fortfarande är 2.364. Koefficienten hade då tolkats som den genomsnittliga förändringen i odds per en enhets ökning. Så en individ vars far har en lön på 1000 dollar per månad har 2364 högre odds (2.364x1000) att ha skjutit någon än en individ fars far har 0 i inkomst (ja, jätteorealistiskt exempel men vi kör på detta av pedagogiska skäl).
+
+</div>
+</div>
+<div id="multipel-logistisk-regression" class="section level2" number="12.2">
+<h2>
+<span class="header-section-number">12.2</span> Multipel logistisk regression<a class="anchor" aria-label="anchor" href="#multipel-logistisk-regression"><i class="fas fa-link"></i></a>
+</h2>
+<p>Nu är det dags att inkludera en ytterligare variabel till vår modell. Kan det kanske teoretiskt vara så att det finns en viss könsskillnad i den effekt som faderns lagföring har på risken att ha skjutit någon annan? Det kanske är så att pojkar löper högre risk eftersom det teoretiskt kan vara så att pojkar tar efter sin fader i högre utsträckning än flickor gör. För att justera/kontrollera för denna effekt inkluderar vi därför variabeln kön i vår modell. Vi gör i princip på samma sätt som tidigare:</p>
+<p>Analyze &gt; Regression &gt; Binary Logistic</p>
+<p>Vi börjar med att placerar vår beroende varibel - skjutit annan person - i Dependent-fältet. För att kunna se hur vår koefficient för lagförd fader förändras när vi går från en enkel till multipel logistisk regression så väljer vi att ha två modeller. Börja med att placera enbart den oberoende variabeln lagförd fader i Block 1-rutan. Tryck sedan på next och lägg på nytt den oberoende variabeln lagförd fader i rutan som nu dock heter Block 2. Placera därefter även in den obeoende variabeln kön i samma ruta. Tryck därefter på OK.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/logistic_3.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<p>Precis som tidigare så får vi en uppsjö av rutor och denna gången även fler. Vi hoppar direkt ner till Block 1: Method = Enter (eftersom de föregående rutorna har vi samtliga redan gått igenom). Denna ruta är vår enkla logistiska regression och är således identisk med den som vi utförde här ovan. Alla värden ska vara identiska som i den enkla logistiska regressionen. Eftersom inget har förändrats här så går vi raskt över till Block 2: Method = Enter vilket är vår multipla logistiska regressions som innehåller modellen med våra två oberoende variabler.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+<center>
+<img src="images/logistic_4.png">
+</center>
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="multipel-regression.html"><span class="header-section-number">11</span> Multipel regression</a></div>
+<div class="next"><a href="bearbeta-tabeller-och-figurer.html"><span class="header-section-number">13</span> Bearbeta tabeller och figurer</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#logistisk-regression"><span class="header-section-number">12</span> Logistisk regression</a></li>
+<li><a class="nav-link" href="#enkel-logistisk-regression"><span class="header-section-number">12.1</span> Enkel logistisk regression</a></li>
+<li><a class="nav-link" href="#multipel-logistisk-regression"><span class="header-section-number">12.2</span> Multipel logistisk regression</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/weswasi/SPSS_intro/blob/master/logistisk_regression.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/weswasi/SPSS_intro/edit/master/logistisk_regression.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>SPSS introduktion</strong>" was written by Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson. It was last built on 2022-08-02.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

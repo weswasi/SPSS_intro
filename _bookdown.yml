@@ -18,6 +18,7 @@ rmd_files: [
   "t_test.Rmd",
   "enkel_regression.Rmd",
   "multipel_regression.Rmd",
+  "logistisk_regression.Rmd",
   "bearbeta_tabeller_och_figurer.Rmd",
   "presentation_av_dataset.Rmd"
 ]
