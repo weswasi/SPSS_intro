@@ -1,7 +1,7 @@
 --- 
 title: "SPSS introduktion"
 author: "Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson"
-date: "2022-08-02"
+date: "2022-08-03"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: bookdown::bs4_book
@@ -19,6 +19,8 @@ cover-image: "images/SPSS_intro.png"
 
 
 # Om SPSS Introduktion {-}
+
+<b>LÅNGT IFRÅN FÄRDIG - UNDER KONSTRUKTION</b>
 
 <img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. På vänster sida har nu de olika teman som guiden består av. Samtliga guider innehåller instruktioner i textformat men i slutet av varje guide finns även videoinstruktioner med alla de steg som beskrivits i texten.
 
