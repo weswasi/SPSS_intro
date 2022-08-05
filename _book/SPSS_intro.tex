@@ -122,7 +122,7 @@
 
 \title{SPSS introduktion}
 \author{Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson}
-\date{2022-08-03}
+\date{2022-08-05}
 
 \begin{document}
 \maketitle
@@ -921,22 +921,28 @@ Under Classification Table hittar ni information om hur ofta (uttryckt i procent
 
 Nu kommer vi äntligen till den viktigaste rutan: Variables in the Equation. Här ser vi information gällande vår hypotesprövning så som vilken effekt vår oberoende variabel har på vår beroende samt om denna effekt är statistisk signifikant. När vi utför en logistisk regression uttrycks betakoefficienten i termer av så kallade logaritmerade oddskvoter (log odds ratios). Att tolka logaritmerade värden är minst sagt krångligt så därför brukar man ta exponenten av de logaritmerade värdena så att man får ut icke-logaritmerade betakofficienter. Dessa värden hittar ni under Exp(B). Enklaste sättet att tolka dessa koeffeicitenter är att värden som överstiger 1 visar positiva samband och värden som understiger 1 visar negativa samband. Ett värd på 1 visar inget samband alls. Eftersom vår oberoende variabeln har koefficienten 2.364 så har vi ett positivt förhållande: det finns ett samband mellan att ha en lagförd fader och att ha skjutit en annan person. Eftersom p-värdet är \textless{} .001 är detta samband statistiskt signifikant.
 
-\textbf{Överkurs:} Även om icke-logaritmerade oddskvoter är enklare att tolka än logaritmerad så är estimaten fortfarande något krångliga att förstå. Vad betyder det exempelvis att vår oberoende variabel har värdet 2.364? Eller för den delen att konstanten är .095?
+\textbf{Överkurs:} Även om icke-logaritmerade oddskvoter är enklare att tolka än logaritmerad så är estimaten fortfarande något krångliga att förstå. Vad betyder det exempelvis att vår oberoende variabel har värdet 2.364? Koefficienten beskriver hur oddset för att ha skjutit någon förändras av en enhets ökning av den oberoende variabeln. Vår oberoende variabel beskriver därför att oddset att ha skjutit någon är 2.364 gånger högre för en individ vars fader är lagförd än en individ vars fader ej är lagförd.
 
-Konstanten är som vi alla vet de vars värde på de eller den oberoende är noll. Variabeln i vårt fall är de vars far ej lagförts för ett brott. Oddset för att ha skjutit en annan person är därför 0.095 för de som ej har en far som tidigare lagförts. Eftersom 0.095 är cirka en tiondel av 1 kan vi säga att det är nära tio gånger lägre odds att en individ med en icke-lagförd fader ej skjutit någon än ha gjort det. Vad säger då vår oberoende variabel med värdet 2.364? Jo, den beskriver att oddset att ha skjutit någon är 2.364 gånger högre för en individ vars fader är lagförd än en individ vars fader ej är lagförd.
+Ett möjligtvis lättare sätt att begripa koefficienterna är att omvandla de till procentuella förändringar. Ett odds på 1 beskriver hur oddset inte förändras alls av en enhetsökning av den oberoende variabeln (det vill säga en 0-procenting förändring). En koefficient på 2.364 betyder därför att oddset för att ha skjutit en annan person ökar med 136.4 procent.
 
-Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln var faderns inkomst uttryckt i dollar per månad och att koefficienten fortfarande är 2.364. Koefficienten hade då tolkats som den genomsnittliga förändringen i odds per en enhets ökning. Så en individ vars far har en lön på 1000 dollar per månad har 2364 högre odds (2.364x1000) att ha skjutit någon än en individ fars far har 0 i inkomst (ja, jätteorealistiskt exempel men vi kör på detta av pedagogiska skäl).
+Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln är antal lagförda vänner och att koefficienten fortfarande är 2.364. En individ med 10 lagförda vänner har då 23.64 gånger högre odds (2.364x10) att ha skjutit någon än en individ med inga lagförda vänner.
 
 \hypertarget{multipel-logistisk-regression}{%
 \section{Multipel logistisk regression}\label{multipel-logistisk-regression}}
 
-Nu är det dags att inkludera en ytterligare variabel till vår modell. Kan det kanske teoretiskt vara så att det finns en viss könsskillnad i den effekt som faderns lagföring har på risken att ha skjutit någon annan? Det kanske är så att pojkar löper högre risk eftersom det teoretiskt kan vara så att pojkar tar efter sin fader i högre utsträckning än flickor gör. För att justera/kontrollera för denna effekt inkluderar vi därför variabeln kön i vår modell. Vi gör i princip på samma sätt som tidigare:
+Nu är det dags att inkludera en ytterligare variabel till vår modell. Kan det kanske teoretiskt vara så att det finns en viss könsskillnad i den effekt som faderns lagföring har på risken att ha skjutit någon annan? Det kanske är så att pojkar löper högre risk eftersom det teoretiskt kan vara så att pojkar tar efter sin fader i högre utsträckning än flickor gör. För att justera/kontrollera för denna effekt inkluderar vi därför variabeln kön i vår modell.
+
+Innan vi utför vår logistiska regression behöver vi koda om könsvariabel. I nulägt är 1 = male och 2 = female. Vi gör om den så att 0 = female och 1 = male (se kapitlet databearbetning).
+
+Vi gör i princip på samma sätt som tidigare:
 
 Analyze \textgreater{} Regression \textgreater{} Binary Logistic
 
 Vi börjar med att placerar vår beroende varibel - skjutit annan person - i Dependent-fältet. För att kunna se hur vår koefficient för lagförd fader förändras när vi går från en enkel till multipel logistisk regression så väljer vi att ha två modeller. Börja med att placera enbart den oberoende variabeln lagförd fader i Block 1-rutan. Tryck sedan på next och lägg på nytt den oberoende variabeln lagförd fader i rutan som nu dock heter Block 2. Placera därefter även in den obeoende variabeln kön i samma ruta. Tryck därefter på OK.
 
 Precis som tidigare så får vi en uppsjö av rutor och denna gången även fler. Vi hoppar direkt ner till Block 1: Method = Enter (eftersom de föregående rutorna har vi samtliga redan gått igenom). Denna ruta är vår enkla logistiska regression och är således identisk med den som vi utförde här ovan. Alla värden ska vara identiska som i den enkla logistiska regressionen. Eftersom inget har förändrats här så går vi raskt över till Block 2: Method = Enter vilket är vår multipla logistiska regressions som innehåller modellen med våra två oberoende variabler.
+
+Det vi kan se se är att den effekt som en faders lagföring har på ens sannolikhet att ha skjutit en annan person inte förändras nämnvärt när vi konstanthåller för kön. Effekten är fortfarande fortfarande signifikant.
 
 \hypertarget{part-uxf6vrigt}{%
 \part*{Övrigt}\label{part-uxf6vrigt}}
