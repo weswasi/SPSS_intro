@@ -27,8 +27,16 @@ knitr::write_bib(c(
 
 <b>LÅNGT IFRÅN FÄRDIG - UNDER KONSTRUKTION</b>
 
-<img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. På vänster sida har nu de olika teman som guiden består av. Samtliga guider innehåller instruktioner i textformat men i slutet av varje guide finns även videoinstruktioner med alla de steg som beskrivits i texten.
+<img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden innehåller alla de moment i SPSS för att kunna pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
 
-Första temat rymmer en genomgång hur man installerar SPSS och öppnar ett dataset. Därefter följer en genomgång av SPSS olika fönster. Nästa tema ger grundläggande tillvägagångssätt för bearbetning av data. Därefter kommer första temat för dataanalys vilket består av en genomgång om hur man tar fram deskriptiv statistik. Andra temat av dataanalys består av en genomgång av sambandsanalys av två variabler. I det sista temat om datanalys preseneras en rad analysmetoder för bivariata och multivariata samband. Guiden avslutas med en genomgång hur man bearbetar figurer och tabeller så att de blir presentationsdugliga samt en presentation av de dataset några av de dataset som finns att tillgå. </p>
+På vänster sida har nu de olika teman som guiden består av. Samtliga guider innehåller instruktioner i textformat men även videoinstruktioner finns i respektive kapitel med alla de steg som beskrivits i texten.</p>
+<br>
+Första temat rymmer en genomgång hur man installerar SPSS och öppnar ett dataset. Därefter följer en genomgång av SPSS olika fönster. Nästa tema ger grundläggande tillvägagångssätt för bearbetning av data. Därefter kommer första temat för dataanalys vilket består av en genomgång om hur man tar fram deskriptiv statistik. Andra temat av dataanalys består av en genomgång av sambandsanalys av två variabler. I det sista temat om datanalys preseneras en rad analysmetoder för bivariata och multivariata samband. Guiden avslutas med en genomgång hur man bearbetar figurer och tabeller så att de blir presentationsdugliga samt en presentation av de dataset några av de dataset som finns att tillgå.
 
-SPSS introduktion ger en guide till att arbeta med SPSS Version 28 vilket är den senaste versionen och som vi rekommenderar att ni använder.
+<center><img src="images/animation.gif" width="75%" height="75%"/></center><br>
+
+SPSS introduktion ger en guide till att arbeta med SPSS Version 28 vilket är den senaste versionen och som vi rekommenderar att ni använder. Tidigare versioner av SPSS kan avvika något gälland tillvägagångsätten för vissa av de instruktioner som här presenteras.
+
+<div class="rmdnote">
+Om ni hittar något fel eller har förbättrningsförslag får ni mer än gärna mejla de till <a href = "mailto: enes.al.weswasi@criminology.su.se">enes.al.weswasi@criminology.su.se</a>.
+</div>

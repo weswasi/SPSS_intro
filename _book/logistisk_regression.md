@@ -5,7 +5,11 @@ Här nedan följer först instruktioner hur man utför en enkel logistisk regres
 
 ## Enkel logistisk regression
 
-I detta exempel kommer att använda oss av Pathways to desistance-datasetet. Den frågeställning vi ställer är följande: Finns det ett samband mellan att ha skjutit en annan person och att ha en pappa som lagförts för ett brott?" Ett annat sätt att formulera frågan är: Kan vi predicera huruvida en individ har skjutit en annan person utifrån information om faderns lagföringshistorik? Den beroende variabeln är dikotom och kan anta värdet 0 om individen ej har skjutit en annan person och 1 om personen tidigare har skjutit en annan person. Den oberoende variabeln antar värdet 0 om personens fader aldrig tidigare lagförts för ett brott och 1 om fadern har tidigare lagförts för ett brott. För att genomföra den enkla logistiska regressionen gör ni som följande:
+I detta exempel kommer att använda oss av Pathways to desistance-datasetet. Den frågeställning vi ställer är följande: Finns det ett samband mellan att ha skjutit en annan person och att ha en pappa som lagförts för ett brott?" Ett annat sätt att formulera frågan är: Kan vi predicera huruvida en individ har skjutit en annan person utifrån information om faderns lagföringshistorik? 
+
+<center>$log(Y_{skjutit}) = b_0 + b_{lagfördfader}$</center><br>
+
+Den beroende variabeln är dikotom och kan anta värdet 0 om individen ej har skjutit en annan person och 1 om personen tidigare har skjutit en annan person. Den oberoende variabeln antar värdet 0 om personens fader aldrig tidigare lagförts för ett brott och 1 om fadern har tidigare lagförts för ett brott. För att genomföra den enkla logistiska regressionen gör ni som följande:
 
 Analyze > Regression > Binary Logistic
 
@@ -36,12 +40,15 @@ Nu kommer vi äntligen till den viktigaste rutan: Variables in the Equation. Hä
 
 Ett möjligtvis lättare sätt att begripa koefficienterna är att omvandla de till procentuella förändringar. Ett odds på 1 beskriver hur oddset inte förändras alls av en enhetsökning av den oberoende variabeln (det vill säga en 0-procenting förändring). En koefficient på 2.364 betyder därför att oddset för att ha skjutit en annan person ökar med 136.4 procent.
 
-Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln är antal lagförda vänner och att koefficienten fortfarande är 2.364. En individ med 10 lagförda vänner har då 23.64 gånger högre odds (2.364x10) att ha skjutit någon än en individ med inga lagförda vänner.</p>
+Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln är antal lagförda vänner och att koefficienten fortfarande är 2.364. En individ med 10 lagförda vänner har då 23.64 gånger högre odds (2.364x10) att ha skjutit någon än en individ med inga lagförda vänner.
+</p>
 </div>
 
 ## Multipel logistisk regression
 
 Nu är det dags att inkludera en ytterligare variabel till vår modell. Kan det kanske teoretiskt vara så att det finns en viss könsskillnad i den effekt som faderns lagföring har på risken att ha skjutit någon annan? Det kanske är så att pojkar löper högre risk eftersom det teoretiskt kan vara så att pojkar tar efter sin fader i högre utsträckning än flickor gör. För att justera/kontrollera för denna effekt inkluderar vi därför variabeln kön i vår modell. 
+
+<center>$log(Y_{skjutit}) = b_0 + b_{lagfördfader} + b_{pojke}$</center><br>
 
 Innan vi utför vår logistiska regression behöver vi koda om könsvariabel. I nulägt är 1 = male och 2 = female. Vi gör om den så att 0 = female och 1 = male (se kapitlet databearbetning).
 
