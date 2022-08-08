@@ -14,13 +14,13 @@ svenska:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<img src="images/t_test_2.png" class="cover"/><p>Du skapar ett betygsindex (”Mbetyg”) som varierar mellan 0-3 genom att summera de tre betygen
+<img src="images/t_test_2.png" width="40%" height="40%" class="cover"/><p>Du skapar ett betygsindex (”Mbetyg”) som varierar mellan 0-3 genom att summera de tre betygen
 och dividera med tre med hjälp av funktionen compute (se ovan under databearbetning).För att göra ett oberoende t-test, där du prövar om det finns en signifikant skillnad mellan pojkars och
 flickors genomsnittliga betyg, är tillvägagångssättet följande: </p>
 
 Analyze > Compare Means > Independent Samples T-test
 
-<img src="images/t_test_3.png" class="cover"/><p>Oberoende variabel är i detta fall ”kon” medan den beroende variabeln är ”Mbetyg”. Flytta den
+<img src="images/t_test_3.png" width="60%" height="60%" class="cover"/><p>Oberoende variabel är i detta fall ”kon” medan den beroende variabeln är ”Mbetyg”. Flytta den
 beroende variabeln till rutan ”Test Variable(s)” och den oberoende variabeln till rutan ”Grouping
 Variable”. Därefter måste du definiera vilka grupper inom denna variabel som du är intresserad av.
 Genom att i variabelfönstret undersöka variabeln ”kon” ser du att variabelvärde 0 står för ”flickor”
@@ -43,7 +43,7 @@ flickor i populationen? För att avgöra det tittar vi på nästa tabell:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/t_test_5.png" width="90%" height="90%"/></center>
+<center><img src="images/t_test_5.png" width="100%" height="100%"/></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -53,7 +53,7 @@ Frågan är emellertid om skillnaden är tillräckligt stor för att fastställa
 populationen? P-värdet vid ett tvåsidigt hypotestest går att finna under rubriken ”Sig. (2-tailed)”. Ett
 värde under 0,05 är signifikant på fem procents nivån. Här har vi ett värde på 0,00 vilket understiger
 denna gräns. Vi kan således förkasta nollhypotesen som uttryckte att det genomsnittliga betyget är
-samma för pojkar och flickor. (se vidare Djurfeldt m.fl. 2010/2018, s 230ff).
+samma för pojkar och flickor.
 
 När vi gått igenom t-test på lektionerna har ett antagande gjorts om att de båda grupperna har samma
 varians. Det finns emellertid två olika test - med eller utan antagande om lika varians (equal variance

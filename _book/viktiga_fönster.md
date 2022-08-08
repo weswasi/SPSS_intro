@@ -36,12 +36,12 @@ mellan Data View och Variable View.
 
 ### Mer om variabelfönstret (Variable view)
 
-När du öppnar ett befintligt datamaterial får du upp detta i datamatrisfönstret (Data View), antingen
-med variabelvärden i text (bilden till vänster) eller som siffror (till höger). Hur man väljer att se värdena kan man ange via menyns ”View”):
+<img src="images/a1.png" class="cover"/><p>När du öppnar ett befintligt datamaterial får du upp detta i datamatrisfönstret (Data View), antingen
+med variabelvärden i text (bilden till vänster) eller som siffror (till höger). Hur man väljer att se värdena kan man ange genom att trycka på knappen till höger.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/variable_view_text.png" width="50%" height="50%" style="padding: 10px"/>  <img src="images/variable_view_dummy.png" width="50%" height="50%" style="padding: 10px"/></center>
+<center><img src="images/variable_view_text.png" width="47%" height="47%" style="padding: 10px"/>  <img src="images/variable_view_dummy.png" width="53%" height="53%" style="padding: 10px"/></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -100,7 +100,7 @@ Du kan öppna syntax via File > New > Syntax:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/syntax.png" width="60%" height="60%"/></center>
+<center><img src="images/syntax.png" width="90%" height="90%"/></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -109,7 +109,7 @@ klick på Paste
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/syntax2.png" width="50%" height="50%"/></center>
+<center><img src="images/syntax2.png" width="90%" height="90%" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

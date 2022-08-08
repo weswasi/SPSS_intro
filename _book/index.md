@@ -1,7 +1,7 @@
 --- 
 title: "SPSS introduktion"
 author: "Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson"
-date: "2022-08-06"
+date: "2022-08-08"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: bookdown::bs4_book

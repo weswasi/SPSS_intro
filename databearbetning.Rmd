@@ -56,7 +56,7 @@ Bocka för <b>Compare groups</b>. Välj därefer den variabel som innehåller de
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/select_cases.png" width="80%" height="80%"/></center>
+<center><img src="images/split_file.png" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -92,7 +92,7 @@ Variable” och ange vad den nya variabeln ska ha för variabelnamn (”Name”)
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/recode_into_diff.png" width="60%" height="60%"/></center>
+<center><img src="images/recode_into_diff.png" width="90%" height="90%"/></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -106,7 +106,7 @@ har fått den nya variabeln tillagd längst ner i variabellistan (Variable view)
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/recode_into_diff_2.png" width="60%" height="60%"/></center>
+<center><img src="images/recode_into_diff_2.png" width="90%" height="90%"/></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -123,12 +123,12 @@ variabelvärden i den nya variabeln betyder letar du upp denna i variabelfönstr
 
 ## Compute: att skapa nya variabler utifrån befintliga variabler
 
-<img src="images/theft_violence.png" width="50%" height="50%" class="cover"/><p>Med hjälp av funktionen Compute kan du skapa nya variabler. Antag att du vill slå samman – summera -
+<img src="images/theft_violence.png" width="40%" height="40%" class="cover"/><p>Med hjälp av funktionen Compute kan du skapa nya variabler. Antag att du vill slå samman – summera -
 två variabler till en variabel. Att summera variabler kan användas för att skapa summaindex. Index
 innebär alltså att man summerar värdena på flera variabler till en totalsumma. Istället för flera variabler
 som mäter samma underliggande fenomen (i exemplet: brott) får vi en sammanfattande variabel.
 Utifrån skolundersökningen kan index exempelvis skapas utifrån frågor om brottslighet, betyg, attityder
-osv (se vidare Djurfeldt m.fl. 2010/2018, Appendix 3).</p>
+osv.</p>
 
 I detta exempel består datamaterialet av 6 individer och två variabler – antal stöldbrott (”Stöldbrott”)
 och antal våldsbrott (”Våldsbrott”).
@@ -143,7 +143,7 @@ som skall summeras (+):
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-<center><img src="images/compute_variable.png" width="60%" height="60%"/></center>
+<center><img src="images/compute_variable.png" /></center>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

@@ -39,12 +39,14 @@ multipel-regression
 videoinstruktioner-10
 logistisk-regression
 enkel-logistisk-regression
+videoinstruktioner-11
 multipel-logistisk-regression
+videoinstruktioner-12
 bearbeta-tabeller-och-figurer
 tabeller
-videoinstruktioner-11
+videoinstruktioner-13
 figurer
-videoinstruktioner-12
+videoinstruktioner-14
 presentation-av-dataset
 ntu-2017-2021
 ntu-2013-2015

@@ -1,17 +1,19 @@
 # Presentation av dataset
 
 ## NTU 2017-2021
-Datasetet <b>NTU 2017-2021 M2.SAV</b> innehåller fem årgångar av NTU och består sammanlagt av 375 590 respondenter. Samtliga individer är anonymiserade vilket innebär att det ej går att härleda vem som förekommer i datamaterialet. Vilka variabler som finns i datamaterialet och hur varje variabel är kodad går att se i kodboken för datamaterialet som ni finner i Athena. Detta dokument är viktigt att nyttja i samband med att ni använder datasetet då det inte alltid framgår vad varje variabel betyder och vad dess värden innebär.
+Datasetet <b>NTU 2017-2021.SAV</b> innehåller fem årgångar av NTU och består sammanlagt av 375 590 respondenter. Samtliga individer är anonymiserade vilket innebär att det ej går att härleda vem som förekommer i datamaterialet. Vilka variabler som finns i datamaterialet och hur varje variabel är kodad går att se i kodboken för datamaterialet som ni finner i Athena. Detta dokument är viktigt att nyttja i samband med att ni använder datasetet då det inte alltid framgår vad varje variabel betyder och vad dess värden innebär.
+
+Datasetet finns i två versioner: en stor fil innehållande alla fem årgårdar alternativt uppdelade årgångar så att varje dataset innehåller enbart en årgång.
 
 Närmare information om urval, datainsamling, frågekonstruktion, kodning och annat relevant återfinns i den
 <a href="https://bra.se/download/18.1f8c9903175f8b2aa70111be/1633935949525/2021_Nationella_trygghetsundersokningen_2021_Teknisk_rapport.pdf">tekniska rapporten för NTU 2021 som ni finner här</a>.
 
 ## NTU 2013-2015
 
-Datafilen ”NTU 2013-15 M2.sav” är en SPSS fil som rymmer tre hela årgångar av NTU,
+Datafilen ”NTU 2013-15.sav” är en SPSS fil som rymmer tre hela årgångar av NTU,
 sammanlagt 37 118 observationer (personer som besvarat frågorna). Det går inte att identifiera
 vilket av de tre åren som respektive person ingått i undersökningen, varför datamaterialet
-behandlas som en tvärsnittsundersökning (NTU 2013-15).
+behandlas som en tvärsnittsundersökning (NTU 2013-15). Frågorna som förekommer i detta dataset skiljer sig till viss del från datasetet NTU 2017-2021.
 
 Närmare information om urval, datainsamling, frågekonstruktion, kodning mm återfinns i den
 <a href="https://www.bra.se/download/18.779f51ff14b83989644245/1424427050948/2015_4_NTU_teknisk_ra
