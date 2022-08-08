@@ -1,6 +1,6 @@
 --- 
 title: "SPSS introduktion"
-author: "Enes Al Weswasi, Olof Bäckman, Anders Nilsson och Fredrik Sivertsson"
+author: "Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi"
 date: "2022-08-08"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -19,8 +19,6 @@ cover-image: "images/SPSS_intro.png"
 
 
 # Om SPSS Introduktion {-}
-
-<b>LÅNGT IFRÅN FÄRDIG - UNDER KONSTRUKTION</b>
 
 <img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden innehåller alla de moment i SPSS för att kunna pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
 
