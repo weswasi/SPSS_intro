@@ -17,13 +17,13 @@ compute-att-skapa-nya-variabler-utifrån-befintliga-variabler
 videoinstruktioner-1
 variabelkonstruktion-med-hjälp-av-syntax
 videoinstruktioner-2
-beskrivande-statistik
 frekvenstabeller-central--och-spridningsmått
+frekvenstabeller-central--och-spridningsmått-1
 videoinstruktioner-3
 kort-om-grafiska-tekniker
 videoinstruktioner-4
-bivariat-analys-att-studera-samvariationen-mellan-två-variabler
-samband-mellan-två-kategoriska-variabler
+studera-samvariationen-mellan-två-variabler
+korstabell---samband-mellan-två-kategoriska-variabler
 videoinstruktioner-5
 samband-mellan-två-numeriska-variabler
 videoinstruktioner-6

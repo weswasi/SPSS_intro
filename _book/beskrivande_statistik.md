@@ -1,8 +1,8 @@
-# (PART\*) Analysera data I {-}
+# (PART\*) Analysera data I: Beskrivande statistik {-}
 
-# Beskrivande statistik
+# Frekvenstabeller, central- och spridningsmått
 
-Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys (även kallad explorativ dataanalys) där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
+Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

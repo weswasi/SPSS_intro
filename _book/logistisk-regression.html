@@ -54,10 +54,10 @@
 <li class="book-part">Förbereda datamaterialet</li>
 <li><a class="" href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></li>
 <li><a class="" href="variabelkonstruktion-med-hj%C3%A4lp-av-syntax.html"><span class="header-section-number">4</span> Variabelkonstruktion med hjälp av syntax</a></li>
-<li class="book-part">Analysera data I</li>
-<li><a class="" href="beskrivande-statistik.html"><span class="header-section-number">5</span> Beskrivande statistik</a></li>
-<li class="book-part">Analysera data II</li>
-<li><a class="" href="bivariat-analys-att-studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Bivariat analys: Att studera samvariationen mellan två variabler</a></li>
+<li class="book-part">Analysera data I: Beskrivande statistik</li>
+<li><a class="" href="frekvenstabeller-central--och-spridningsm%C3%A5tt.html"><span class="header-section-number">5</span> Frekvenstabeller, central- och spridningsmått</a></li>
+<li class="book-part">Analysera data II: Bivariat analys</li>
+<li><a class="" href="studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Studera samvariationen mellan två variabler</a></li>
 <li class="book-part">Analysera data III: Hypotesprövning</li>
 <li><a class="" href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></li>
 <li><a class="" href="chi2-test.html"><span class="header-section-number">8</span> Chi2-test</a></li>
@@ -112,7 +112,7 @@ Här nedan följer först instruktioner hur man utför en enkel logistisk regres
 <p>Vi börjar med tolkningen av koefficienter som är logaritmerade. I vårt exempel är koefficienten .86. Vad den säger är att när vår oberoende variabel ökar med en enhet (vilket i vårt fall innebär de vars fader är lagförd) så ökar <strong>logaritmen</strong> av oddset att skjuta en annan person med .86. Ett annat sätt att uttrycka det är att logaritmen av oddset att skjuta en annan person ökar med 86 procent (.86*100). Notera att vi ej talar om procentenheter utan procent.</p>
 <p>Även om ovanstående beskrivning begripliggör koefficienten en aning så kan det fortfarande vara svårt att förstå förändringar av logaritmerade odds vilket är anledningen till varför man istället ta exponenten av koefficienten (se Exp(b)) vilket då uttrycker oddskvoter.</p>
 <p>Oddskvoter innebär kortfattat oddsförhållandet mellan två grupper. Föreställ att du har två grupper: Grupp 1 vars fader ej är lagförd och grupp 2 vars fader är lagförd. I grupp 1 är sannolikheten att en sak ska hända ,5 (och därför sannolikheten att denna sak ej ska hända ,5). Oddset är då 1 (,5 / ,5). I grupp 2 är sannolikheten ,67 att samma sak ska hända. Oddset är då 2 (,67/,33). Om vi delar grupp 2:s odds med grupp 1:s odds får vi 2 / 1 = 2. Detta är oddskvoten mellan dessa två grupper. Det vill säga ett dubbelt så högt odds att saken i fråga ska hända för grupp 1 jämfört med grupp 2.</p>
-<p>I vårt exempel är exponenten av koefficienten - Exp(b) - 2.364. Det betyder att oddset att skjuta någon är 2.364 gånger högre för någon som har en lagförd fader jämfört med någon som ej har en lagförd fader. Alternativt om man önskar att uttrycka det i procent kan man säga att oddset att skjuta någon är 136,4 procent högre ((2.364-1)* 100) för någon som har en lagförd fader jämfört med någon som ej har en lagförd fader</p>
+<p>I vårt exempel är exponenten av koefficienten - Exp(b) - 2.364. Det betyder att oddset att skjuta någon är 2.364 gånger högre för någon som har en lagförd fader jämfört med någon som ej har en lagförd fader. Alternativt om man önskar att uttrycka det i procent kan man säga att oddset att skjuta någon är 136,4 procent högre ((2.364-1)* 100) för någon som har en lagförd fader jämfört med någon som ej har en lagförd fader.</p>
 <p>Av pedagogiska skäl har vi som sagt valt en dikotom oberoende variabel men hur skulle man tolka koefficienten om den var kontinuerlig istället? Säg att den oberoende variabeln är antal lagförda vänner och att koefficienten fortfarande är 2.364. Koefficienten beskriver då hur mycket oddskvoten ökar för varje enhets ökning av den oberoende variabeln. En individ med 10 lagförda vänner har då 23.64 gånger högre odds (2.364x10) att ha skjutit någon än en individ med inga lagförda vänner.</p>
 </div>
 <div id="videoinstruktioner-11" class="section level3" number="12.1.1">

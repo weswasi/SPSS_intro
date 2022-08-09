@@ -1,10 +1,10 @@
-# (PART\*) Analysera data II {-}
+# (PART\*) Analysera data II: Bivariat analys {-}
 
-# Bivariat analys: Att studera samvariationen mellan två variabler
+# Studera samvariationen mellan två variabler
 
 Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Hur sambandet undersöks bestäms helt uifrån vilken datanivå era variabler har.
 
-## Samband mellan två kategoriska variabler
+## Korstabell - Samband mellan två kategoriska variabler 
 
 Under förutsättning att variablernas skalnivåer är nominal- eller ordinalskala (ej intervall- eller
 kvotskala) analyseras sambandet vanligtvis genom att studera de båda variablerna i en korstabell (”Crosstab”). Gör följande:
