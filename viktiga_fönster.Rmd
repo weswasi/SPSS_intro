@@ -105,7 +105,7 @@ Du kan öppna syntax via File > New > Syntax:
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 Kommandon kan antingen skrivas direkt i syntax eller så kan du gå via menysystemets funktioner och
-klick på Paste
+klick på **Paste**.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

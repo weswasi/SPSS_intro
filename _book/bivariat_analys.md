@@ -2,7 +2,7 @@
 
 # Studera samvariationen mellan två variabler
 
-Under denna kurs kommer du vilja undersöka huruvida det finns ett samband mellan två variabler. Hur sambandet undersöks bestäms helt uifrån vilken datanivå era variabler har.
+Ofta vill vi se hur två variabler korrelerar eller samvarierar. Hur bivariata samband undersöks bestäms helt uifrån vilken datanivå era variabler har. Notera  att när vi utför hypotesprövningar kan även dessa bestå av bivariata samband. Här nedan följer dock några sätt för att studera specifikt bivariata samband.  
 
 ## Korstabell - Samband mellan två kategoriska variabler 
 
@@ -77,9 +77,21 @@ ett samband verkar föreligga. Gör följande:
 
 Graphs > Chart builder
 
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/regression_1.png" width="90%" height="90%"/></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
 Under ”Gallery”, klicka på ”Choose from”, välj ”Scatter / Dot” och dra ”Simple Scatter” upp till rutan
 ”Chart Preview”. Dra din oberoende variabel till rutan för x-axeln och din beroende variabel till rutan för
-y-axeln. Klicka därefter ”OK”.
+y-axeln. Bocka även för Total under Linear Fit Lines för att få ut en linje anpassad efter observationerna. Klicka därefter ”OK”.
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/regression_2.png" width="90%" height="90%"/></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 Vi kan även använda sambandsmått för att beräkna styrka och riktning på sambandet. När vi har att
 göra med två kontinuerliga variabler är sambandsmåttet Pearson’s r (korrelationskoefficienten r)
@@ -92,11 +104,19 @@ För över de variabler du vill korrelera till rutan ”Variables” och markera
 0 indikerar att det inte finns ett samband medan -1 anger ett perfekt negativt samband och +1 anger ett
 perfekt positivt samband.
 
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/bivariat_5.png" /></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+
 ### Videoinstruktioner
 
 <center><iframe id="kaltura_player" src="https://api.kaltura.nordu.net/p/365/sp/36500/embedIframeJs/uiconf_id/23452190/partner_id/365?iframeembed=true&playerId=kaltura_player&entry_id=0_wzs7l4wl&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=sv_SE&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_7aik97ec" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe></center>
 
-Ett alternativ till att studera relationen mellan ålder och brott på ovanstående vis är att klassindela de
+Ett alternativ till att studera relationen mellan exempelvis ålder och brott är att klassindela de
 båda kontinuerliga variablerna till kategoriska variabler med hjälp av recode-kommandot (se under
 Databearbetning). Man kan tänka sig att klassindela ålder till de tre klasserna ”ungdom”, ”ung vuxen”
 samt ”vuxen”, samt brott till de tre klasserna ”inga brott”, ”1-2 brott”, ”3 eller fler brott”. På det sättet
@@ -107,11 +127,7 @@ att variabler på högre skalnivå alltid kan transformeras till variabler på l
 
 ## Sambandsmått
 
-<img src="images/bivariat_4.png" width="45%" height="45%" class="cover"/><p>I ovanstående exempel kunde vi, genom att tolka korstabellen, se att ett samband verkar föreligga
-mellan kön och oro för brottslighet. Ibland vill man även uttala sig om sambandets styrka och i detta
-syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger
-sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för
-variabler som befinner sig på olika skalnivåer. För att välja sambandsmått börja med följande:
+<img src="images/bivariat_4.png" width="45%" height="45%" class="cover"/><p>Ibland vill man även uttala sig om sambandets styrka och i detta syfte är användningen av sambandsmått bra. I de fall som sambandets riktning är tolkningsbart ger sambandsmåttet även denna information. Statistiker har tagit fram olika sambandsmått som gäller för variabler som befinner sig på olika datanivåer. För att välja sambandsmått börja med följande:
 
 Analyze > Descriptive statistics > Crosstabs
 
@@ -121,5 +137,5 @@ på ”Statistics”. Här får vi en viss vägledning av SPSS när det gäller 
 
 <div class="rmdnote">
 <p>**Överkurs:**
-Vi kommer i denna kurs inte gå på djupet med de sambandsmått som finns och hur man ska tolka resultaten från de. Vill ni dock ha fördjup. Om ni dock önskar att läsa er in på vilka sambandsmått som finns, när ni ska använda de och vilka sambandsmått som passar till vilken typ av variabler <a href="https://journals.sagepub.com/doi/10.1177/8756479308317006">rekommenderar vi följande artikel</a>.</p>
+Om ni  önskar att läsa er in på vilka sambandsmått som finns, när ni ska använda de och vilka sambandsmått som passar till vilken typ av variabler <a href="https://journals.sagepub.com/doi/10.1177/8756479308317006">rekommenderar vi följande artikel</a>.</p>
 </div>

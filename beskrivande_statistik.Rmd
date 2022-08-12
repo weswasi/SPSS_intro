@@ -10,26 +10,18 @@ Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-## Frekvenstabeller, central- och spridningsmått
+## Frekvenstabell
 
 <img src="images/beskrivande1.png"  width="50%" height="50%"  class="cover"/><p>Det är vanligt att man inleder en studie med att studera hur observationsenheterna fördelar sig med
 avseende på en enskild variabel. Viktiga verktyg i detta ändamål är frekvenstabeller, centralmått och
 spridningsmått. Anta att du studerar den Nationella trygghetsundersökningen (NTU 2013-15 M2.sav)
-och vill ha information om oro över brottsligheten i samhället:</p>
+och vill ha information om oro över brottsligheten i samhället:
 
-Analyze > Descriptive statistics > Frequencies
+Analyze > Descriptive statistics > Frequencies</p>
 
 Börja med att söka upp den variabel du är intresserad av i rullistan till vänster (kom ihåg att du kan
 välja att visa variabelnamn eller variabeletiketter genom att högerklicka på listan). Därefter markerar
-du variabeln och flyttar över den till den högra rutan genom att använda pilen mellan rutorna
-<img src="images/beskrivande2.png"  width="50%" height="50%" class="cover"/><p>alternativt dubbelklicka på variabeln. Om du nu väljer alternativet ”OK” kommer SPSS att producera en
-frekvenstabell på variabeln. Detta är standardvalet (som du kan se är valet ”Display frequency tables”
-markerat), men ofta vill man sammanfatta sin variabel lite mer utförligt. Längst till höger finns
-möjligheter att ytterligare specificera vad du vill få fram för statistik. Till exempel kan du genom att
-klicka på ”Statistics” välja central- och spridningsmått</p>
-
-Skalnivån (mätnivån) för frågan om oro är på ordinal nivå varför vi i detta fall nöjer oss med en
-frekvenstabell:
+du variabeln och flyttar över den till den högra rutan genom att använda pilen mellan rutorna alternativt dubbelklicka på variabeln. Klicka därefter på **OK**.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -44,6 +36,20 @@ inte alls är oroliga.
 ### Videoinstruktioner
 
 <center><iframe id="kaltura_player" src="https://api.kaltura.nordu.net/p/365/sp/36500/embedIframeJs/uiconf_id/23452190/partner_id/365?iframeembed=true&playerId=kaltura_player&entry_id=0_oa93699k&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=sv_SE&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_0ogmypot" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe></center>
+
+##  Central- och spridningsmått
+
+<img src="images/beskrivande2.png"  width="50%" height="50%" class="cover"/><p>För att få en förståelse för de enstaka variablernas tyngdpunkt samt spridning tas oftast central- och spridningsmått fram. På så sätt får man fram genomsnittligt värde samt spridningen runt genomsnittet.
+
+För att få fram central- och spridningsmått gör vi precis som här ovan:</p>
+
+Analyze > Descriptive statistics > Frequencies
+
+Vi matar in den variabel som vi vill ta fram mått för och trycker därefter på **Statistics**. Under **Central Tendency** kan vi välja de olika centralmåtten som finns att tillgå och under **Dispersion** kan vi välja de olika spridningsmåtten. När vi har markerat de mått vi önskar trycker vi  **Continue** och därefter **OK**,
+
+<img src="images/beskrivande5.png" class="cover"/><p>I detta exempel har vi tagit ut genomsnittet och medianen samt standardavvikelse för variabeln TotBrott från Skolundersöknigen 2005. Variabeln i fråga redogör för antal självuppskattade brott en ungdom har begått senaste året.
+
+Här kan vi se att genomsnittlig brottslighet är 9.4 och att medianen är 3. Vidare ser vi att standardavvikelsen är 18.7.</p>
 
 ## Kort om grafiska tekniker
 

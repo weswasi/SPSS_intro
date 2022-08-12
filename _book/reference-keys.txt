@@ -18,8 +18,9 @@ videoinstruktioner-1
 variabelkonstruktion-med-hjälp-av-syntax
 videoinstruktioner-2
 frekvenstabeller-central--och-spridningsmått
-frekvenstabeller-central--och-spridningsmått-1
+frekvenstabell
 videoinstruktioner-3
+central--och-spridningsmått
 kort-om-grafiska-tekniker
 videoinstruktioner-4
 studera-samvariationen-mellan-två-variabler
