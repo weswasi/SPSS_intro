@@ -28,7 +28,6 @@ Nedanstående instruktioner är hämtade från <a href="https://www.su.se/utbild
 3. När installationen är genomförd > välj License Product. Du kommer att se en lista på de applikationer som är temporärt licensierade i 14 dagar. Klicka på Next > se till att alternativet Authorized User License är valt > välj Next.
 
 4. För att få åtkomst till aktuella behörighetskoder, <a href="https://download.su.se/student/SPSS_AMOS/">klickar du här</a>. Klistra in koden för den version du har valt att licensiera > välj Next. Du ser nu en progressruta och denna avslutas med **End of Transaction** Successfully processed all codes > välj Next. Du ser nu en ruta som bekräftar de licensierade modulerna. Klicka på Finish för att avsluta licensieringen.
-Verifiera
 
 5. Verifiera installationen genom att kontrollera att det går bra att starta programmet.
 

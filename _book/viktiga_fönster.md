@@ -71,7 +71,7 @@ av variabeln. Under kolumnen ”Values” anges vad variabelns olika värden sva
 ”Values” och klickar därefter på den lilla rutan till höger. Nu kommer fönstret ”Value Labels” upp.
 Om variabeln saknar etiketterade variabelvärden kan du ange dessa genom att föra in värdet i rutan
 ”Value” och vad värdet står för i rutan ”Label”. Klicka därefter ”Add”. När du etiketterat samtliga
-variabelvärden klickar du ”OK”.</p>
+variabelvärden klickar du **OK**.</p>
 
 Tänk på att variabelns värden endast behöver specificeras för variabler som befinner sig på nominaleller
 ordinal skalnivå. Om du till exempel har en kontinuerlig variabel som mäter ålder i antal år
