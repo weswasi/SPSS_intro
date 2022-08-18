@@ -25,13 +25,8 @@ populationen. Ett annat sätt att uttrycka detta på är att risken att vi förk
 fem procent (kallas även typ 1-fel).
 
 Vilket statistiskt test man behöver använda för att utföra en hypotesprövning bestäms helt utifrån de variabler man använder sig av.
-Listan på vilka statistiska test som finns att tillgå är lång men det finns några få som förekommer ofta eller som är praktiska att känna till 
-eftersom de underlättar förståelsen för andra statistiska test. I kursen Metod II kommer ni att stifta bekanskap med tre statistiska test:
-t-test, chi2 och regression. Den sistnämnda kan i sin tur delas in i två kategorier: enkel och multipel.
-
-Med hjälp av nedanstående flödesschema kan ni avgöra vilket statistiskt test som lämpar sig bäst för de variabler som ni önskar att analysera. Observera att ett ytterligare
-test finns omnämnt i flödeschemat (linjär sannolikhetsmodell/logistisk regresssion) men som vi ej kommer gå igenom under kursen gång. 
-Den finns med eftersom den introduceras i samband med den kvantitativa metodkursen på avancerad nivå.
+Listan på vilka statistiska test som finns att tillgå är lång men det finns några få som förekommer ofta och  som är praktiska att känna till 
+eftersom de underlättar förståelsen för andra statistiska test. Med hjälp av nedanstående flödesschema kan ni avgöra vilket statistiskt test som lämpar sig bäst för de variabler som ni önskar att analysera.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 

@@ -1,4 +1,4 @@
-# (PART\*) Analysera data I: Beskrivande statistik {-}
+# (PART\*) Analysera data I: Univariat analys & beskrivande statistik {-}
 
 # Frekvenstabeller, central- och spridningsmått
 
@@ -73,6 +73,12 @@ variabler genom att ta fram ett så kallat spridningsdiagram (”Scatter plot”
 Analyze > Descriptive statistics > Frequencies
 
 Mata sedan in den variabel som ni vill skapa ett diagram över. Klicka därfter på knappen Charts. Välj sedan vilket diagram ni önskar att få fram. Klicka därefter på Continue och sedan OK. I output:en ska ni nu ha fått fram en frekvenstabell samt den figur ni har valt.</p>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
+
+<center><img src="images/bearbeta_figur_1.png" width="100%" height="100%" /></center>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
 ### Videoinstruktioner
 
