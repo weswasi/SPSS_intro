@@ -1,7 +1,0 @@
-# (PART\*) Visualisera data  {-}
-
-# Bearbeta tabeller och figurer
-
-## Tabeller
-
-## Figurer

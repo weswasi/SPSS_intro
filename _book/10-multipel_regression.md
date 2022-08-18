@@ -1,1 +1,0 @@
-# Multipel regression
