@@ -25,7 +25,7 @@ knitr::write_bib(c(
 
 # Om SPSS Introduktion {-}
 
-<img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden är skriven och skapad av Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. SPSS-introduktion innehåller alla de moment i SPSS för att kunna pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
+<img src="images/SPSS_intro.png" width="250" height="285" class="cover"/><p>Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden är skriven och skapad av Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. SPSS-introduktion innehåller alla de moment i SPSS för att kunna bearbeta dataset, pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
 
 På vänster sida har nu de olika teman som guiden består av. Samtliga guider innehåller instruktioner i textformat men även videoinstruktioner finns i respektive kapitel med alla de steg som beskrivits i texten.</p>
 <br>
