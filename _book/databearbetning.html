@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Kapitel 3 Databearbetning | SPSS introduktion</title>
 <meta name="author" content="Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi">
-<meta name="description" content="En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara...">
-<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta name="description" content="En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske...">
+<meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Kapitel 3 Databearbetning | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/databearbetning.html">
 <meta property="og:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
-<meta property="og:description" content="En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara...">
+<meta property="og:description" content="En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kapitel 3 Databearbetning | SPSS introduktion">
-<meta name="twitter:description" content="En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara...">
+<meta name="twitter:description" content="En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske...">
 <meta name="twitter:image" content="https://spss-introduktion.netlify.app/images/SPSS_intro.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -79,24 +79,15 @@
 <h1>
 <span class="header-section-number">Kapitel  3</span> Databearbetning<a class="anchor" aria-label="anchor" href="#databearbetning"><i class="fas fa-link"></i></a>
 </h1>
-<p>En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner
-i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att
-studera vissa observationsenheter, t.ex. bara kvinnor? Eller så kanske du vill koda om variabler (slå ihop
-svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler
-befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.</p>
+<p>En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att studera vissa observationsenheter så som exempelvis enbart kvinnor. Eller så kanske du vill koda om variabler (slå ihop svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.</p>
 <div id="select-cases-analysera-enbart-vissa-observationssenheter" class="section level2" number="3.1">
 <h2>
 <span class="header-section-number">3.1</span> Select Cases: Analysera enbart vissa observationssenheter<a class="anchor" aria-label="anchor" href="#select-cases-analysera-enbart-vissa-observationssenheter"><i class="fas fa-link"></i></a>
 </h2>
 <img src="images/variables.png" class="cover"><p>
-Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de
-flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen
-(du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS
-genom att välja Utilities &gt; Variables, leta reda på Kön i listan och titta i rutan ”Variable
-information”.
+Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen (du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS genom att välja Utilities &gt; Variables, leta reda på Kön i listan och titta i rutan ”Variable information”.
 </p>
-<p>Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ”kon”. För att enbart välja ut de observationsenheter som
-är flickor (alltså har värdet ”0” på variabeln ”kon”) gör du följande:</p>
+<p>Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ”kon”. För att enbart välja ut de observationsenheter som är flickor (alltså har värdet ”0” på variabeln ”kon”) gör du följande:</p>
 <p>Data &gt; Select Cases &gt; If condition is satisfied &gt; If</p>
 <p>Lyft in den aktuella variabeln i fönstret och ange villkor (variabelvärde för att tas med), därefter:</p>
 <p>Continue &gt; OK</p>
@@ -105,14 +96,9 @@ information”.
 <img src="images/select_cases.png" width="80%" height="80%">
 </center>
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
-<p>Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ”0” på
-variabeln ”kon”. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och
-flickor), klickar du på alternativet ”All cases”. Alltså:</p>
+<p>Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ”0” på variabeln ”kon”. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och flickor), klickar du på alternativet ”All cases”. Alltså:</p>
 <p>Data &gt; Select Cases &gt; All cases</p>
-<p>Notera att det är variabeletiketten (”Kön”) och inte variabelnamnet (”kon”) som står i rullistan till
-vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men
-ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på
-variabellistan till vänster och markerar ”Display Variable Names”.</p>
+<p>Notera att det är variabeletiketten (”Kön”) och inte variabelnamnet (”kon”) som står i rullistan till vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på variabellistan till vänster och markerar ”Display Variable Names”.</p>
 <div id="videoinstruktioner" class="section level3" number="3.1.1">
 <h3>
 <span class="header-section-number">3.1.1</span> Videoinstruktioner<a class="anchor" aria-label="anchor" href="#videoinstruktioner"><i class="fas fa-link"></i></a>
@@ -300,7 +286,7 @@ fördelningen i indexet (när du t.ex. vill beskriva variabeln i en frekvenstabe
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. It was last built on 2022-10-12.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. It was last built on 2022-10-13.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

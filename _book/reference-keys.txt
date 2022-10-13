@@ -5,8 +5,7 @@ starta-spss
 viktiga-fönser-i-spss
 datamatrisfönstret-data-view
 variabelfönstret-variable-view
-mer-om-variabelfönstret-variable-view
-output-fönstret-output
+resultatfönstret-output
 syntax-syntax-editor
 databearbetning
 select-cases-analysera-enbart-vissa-observationssenheter

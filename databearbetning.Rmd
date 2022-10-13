@@ -2,22 +2,13 @@
 
 # Databearbetning
 
-En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner
-i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att
-studera vissa observationsenheter, t.ex. bara kvinnor? Eller så kanske du vill koda om variabler (slå ihop
-svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler
-befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.
+En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att studera vissa observationsenheter så som exempelvis enbart kvinnor. Eller så kanske du vill koda om variabler (slå ihop svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.
 
 ## Select Cases: Analysera enbart vissa observationssenheter
 
-<img src="images/variables.png" class="cover"/><p>Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de
-flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen
-(du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS
-genom att välja Utilities > Variables, leta reda på Kön i listan och titta i rutan ”Variable
-information”.</p>
+<img src="images/variables.png" class="cover"/><p>Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen (du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS genom att välja Utilities > Variables, leta reda på Kön i listan och titta i rutan ”Variable information”.</p>
 
-Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ”kon”. För att enbart välja ut de observationsenheter som
-är flickor (alltså har värdet ”0” på variabeln ”kon”) gör du följande:
+Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ”kon”. För att enbart välja ut de observationsenheter som är flickor (alltså har värdet ”0” på variabeln ”kon”) gör du följande:
 
 Data > Select Cases > If condition is satisfied > If
 
@@ -31,16 +22,11 @@ Continue > OK
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ”0” på
-variabeln ”kon”. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och
-flickor), klickar du på alternativet ”All cases”. Alltså:
+Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ”0” på variabeln ”kon”. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och flickor), klickar du på alternativet ”All cases”. Alltså:
 
 Data > Select Cases > All cases
 
-Notera att det är variabeletiketten (”Kön”) och inte variabelnamnet (”kon”) som står i rullistan till
-vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men
-ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på
-variabellistan till vänster och markerar ”Display Variable Names”.
+Notera att det är variabeletiketten (”Kön”) och inte variabelnamnet (”kon”) som står i rullistan till vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på variabellistan till vänster och markerar ”Display Variable Names”.
 
 ### Videoinstruktioner
 
