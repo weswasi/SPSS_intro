@@ -1,10 +1,10 @@
 # Multipel regression
 
-Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel til vår enkla, bivariata regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:
+Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel till vår enkla regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket betyder att den kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:
 
 <center>$Y_{brott} = b_0 + b_{celcius} + b_{regn}$</center><br>
 
-Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0),  utomhustemperaturen och förekomsten av regn.
+Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept (b0), utomhustemperaturen och förekomsten av regn.
 
 Att utföra en multipel regression är snarlikt tillvägagångssättet för en enkel regression. Gör följande:
 
@@ -34,16 +34,15 @@ Vi hade lika gärna kunnat vid första steget mata in båda våra oberoende vari
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-Längst ut till vänster i samtliga rutor kan i se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde en enkel regression.
+Längst ut till vänster i samtliga rutor kan vi se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde den enkela regressionen.
 
-Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regrssionen klarade av att förklara.
+Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regressionen klarade av att förklara.
 
 I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomsten av regn så ökar antalet brott med 43.081 för varje enhets ökning av temperaturvariabeln. Under Sig. kan vi se att p-värdet är under 0.001 vilket beyder att sambandet mellan temperatur och brott är statistiskt signifikant även efter inkluderingen av den oberoende variabeln regn.
 
 Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.
 
-Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar
-
+Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar.
 
 <center>$Y_{brott} = b_0 + b_{celcius} + b_{regn}$</center><br>
 

@@ -2,7 +2,7 @@
 
 # Frekvenstabeller, central- och spridningsmått
 
-Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
+Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där datamaterialet och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av frekvenstabeller, central- och spridningsmått samt olika grafiska presentationer.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
@@ -17,7 +17,7 @@ avseende på en enskild variabel. Viktiga verktyg i detta ändamål är frekvens
 spridningsmått. Anta att du studerar den Nationella trygghetsundersökningen (NTU 2013-15 M2.sav)
 och vill ha information om oro över brottsligheten i samhället:
 
-Analyze > Descriptive statistics > Frequencies</p>
+Analyze > Descriptive statistics > Frequencies</p><br>
 
 Börja med att söka upp den variabel du är intresserad av i rullistan till vänster (kom ihåg att du kan
 välja att visa variabelnamn eller variabeletiketter genom att högerklicka på listan). Därefter markerar
@@ -41,7 +41,7 @@ inte alls är oroliga.
 
 <img src="images/beskrivande2.png"  width="50%" height="50%" class="cover"/><p>För att få en förståelse för de enstaka variablernas tyngdpunkt samt spridning tas oftast central- och spridningsmått fram. På så sätt får man fram genomsnittligt värde samt spridningen runt genomsnittet.
 
-För att få fram central- och spridningsmått gör vi precis som här ovan:</p>
+För att få fram central- och spridningsmått gör vi precis som här ovan:</p><br>
 
 Analyze > Descriptive statistics > Frequencies
 

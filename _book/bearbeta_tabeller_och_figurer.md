@@ -22,9 +22,9 @@ Notera för det första hur mycket av outputen som antingen behöver bearbetas e
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-Notera hur vi har inte nog med skapat en snygg tabell även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen som tidigare finns har helt försvunnit och dn information som är relevant finns nu under korstabellen.
+Inte nog med att vi har skapat en snygg tabell, vi har även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen helt försvunnit och den information som fanns i den och som är relevant finns nu prydligt under korstabellen.
 
-För att återskpa den reviderade tabellen gör vi som följande:
+För att återskapa den reviderade tabellen gör vi som följande:
 
 1. Innan vi ens skapar korstabellen klickar vi in  oss på: Edit > Options och därefter fliken Pivot Tables.
 

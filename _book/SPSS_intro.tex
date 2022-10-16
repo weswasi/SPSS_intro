@@ -122,7 +122,7 @@
 
 \title{SPSS introduktion}
 \author{Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi}
-\date{2022-08-18}
+\date{2022-10-16}
 
 \begin{document}
 \maketitle
@@ -136,13 +136,13 @@
 \chapter*{Om SPSS Introduktion}\label{om-spss-introduktion}}
 \addcontentsline{toc}{chapter}{Om SPSS Introduktion}
 
-Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden är skriven och skapad av Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. SPSS-introduktion innehåller alla de moment i SPSS för att kunna pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
+Denna SPSS-introduktion är avsedd för dig som läser på Kriminologiska institutionen vid Stockholms universitet. Guiden är skriven och skapad av Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. SPSS-introduktion innehåller alla de moment i SPSS för att kunna bearbeta dataset, pröva hypoteser och besvara frågeställningar. Tanken är att ni ska nyttja denna sida när ni utför de dataövningar som de kvantitativa metodkurserna tillhandahåller.
 
 På vänster sida har nu de olika teman som guiden består av. Samtliga guider innehåller instruktioner i textformat men även videoinstruktioner finns i respektive kapitel med alla de steg som beskrivits i texten.
 
 Första temat rymmer en genomgång hur man installerar SPSS och öppnar ett dataset. Därefter följer en genomgång av SPSS olika fönster. Nästa tema ger grundläggande tillvägagångssätt för bearbetning av data. Därefter kommer första temat för dataanalys vilket består av en genomgång om hur man tar fram deskriptiv statistik. Andra temat av dataanalys består av en genomgång av sambandsanalys av två variabler. I det sista temat om datanalys preseneras en rad analysmetoder för bivariata och multivariata samband. Guiden avslutas med en genomgång hur man bearbetar figurer och tabeller så att de blir presentationsdugliga samt en presentation av de dataset några av de dataset som finns att tillgå.
 
-SPSS introduktion ger en guide till att arbeta med \textbf{SPSS Version 28} vilket är den senaste versionen och som vi rekommenderar att ni använder. Tidigare versioner av SPSS kan avvika något gälland tillvägagångsätten för vissa av de instruktioner som här presenteras.
+SPSS introduktion ger en guide till att arbeta med \textbf{SPSS Version 28} vilket är den senaste versionen av SPSS och som vi rekommenderar att ni använder. Tidigare versioner av SPSS kan avvika något gälland tillvägagångsätten för vissa av de instruktioner som här presenteras.
 
 Om ni hittar något fel eller har förbättrningsförslag får ni mer än gärna mejla de till enes.al.weswasi@criminology.su.se.
 
@@ -223,35 +223,19 @@ Om du vill öppna ett befintligt dataset väljer du:
 \hypertarget{viktiga-fuxf6nser-i-spss}{%
 \chapter{Viktiga fönser i SPSS}\label{viktiga-fuxf6nser-i-spss}}
 
-SPSS innehåller flera olika fönster med skilda
-funktioner.
+SPSS består i huvudsak av tre olika fönster med skilda funktioner: Datamatrisfönstret, variabelfönstret och resultatfönstret. Därutöver finns det ett ytterligare fönster - Syntaxfönstret - vilket inte används lika ofta. Här nedan finns en beskrivning vad respektive fönster avser.
 
 \hypertarget{datamatrisfuxf6nstret-data-view}{%
 \section{Datamatrisfönstret (Data view)}\label{datamatrisfuxf6nstret-data-view}}
 
-Detta fönster redovisar variablerna (t.ex. en
-fråga i en enkäteundersökning) kolumnvis
-och observationsenheterna (exempelvis de
-skolelever som svarat på en enkät) radvis. En
-enskild cell redovisar alltså en specifik
-observationsenhets värde på en specifik
-variabel.
+Detta fönster redovisar variablerna (t.ex. en fråga i en enkäteundersökning) kolumnvis och observationsenheterna (exempelvis de skolelever som svarat på en enkät) radvis. En enskild cell redovisar alltså en specifik observationsenhets värde på en specifik variabel. Klicka på Data view-knappen längst nere till vänster för att öppna datamatrisfönstret.
 
 \hypertarget{variabelfuxf6nstret-variable-view}{%
 \section{Variabelfönstret (Variable view)}\label{variabelfuxf6nstret-variable-view}}
 
-I detta fönster visas de olika variablerna och
-deras egenskaper. Variablerna redovisas
-radvis och egenskaperna kolumnvis.
-Byte av fönster görs enkelt genom att klicka
-nere i vänstra hörnet, där man kan välja
-mellan Data View och Variable View.
+I detta fönster visas de olika variablerna och deras egenskaper. Variablerna redovisas radvis och egenskaperna kolumnvis. Byte av fönster görs enkelt genom att klicka nere i vänstra hörnet, där man kan välja mellan Data View och Variable View.
 
-\hypertarget{mer-om-variabelfuxf6nstret-variable-view}{%
-\subsection{Mer om variabelfönstret (Variable view)}\label{mer-om-variabelfuxf6nstret-variable-view}}
-
-När du öppnar ett befintligt datamaterial får du upp detta i datamatrisfönstret (Data View), antingen
-med variabelvärden i text (bilden till vänster) eller som siffror (till höger). Hur man väljer att se värdena kan man ange genom att trycka på knappen till höger.
+När du öppnar ett befintligt datamaterial får du upp datamatrisfönstret (Data View), antingen med variabelvärden i text (bilden till vänster) eller som siffror (till höger). Hur man väljer att se värdena kan man ange genom att trycka på knappen till höger.
 
 I exemplet har datafilen Skol05.sav öppnats och varje rad motsvarar här en skolelev och dennes svar på
 de olika frågorna i enkäten. Vid kodningen har varje svar kodats in med en siffra och dessa värden har
@@ -260,55 +244,29 @@ getts etiketter/labels.
 Om du byter till Variable View (detta görs enkelt längst ner till vänster) ser du hur materialet kodats in
 med etiketter (labels) som anger både en precisering av de olika variablerna och de olika variabelvärdena:
 
-I variabelfönstret redovisas alltså variablerna radvis och dess egenskaper kolumnvis. I detta fönster
-finns ett antal kolumner som är viktiga att känna till. Under den första kolumnen ''Name'' listas
-variabelnamnet på varje variabel i ditt dataset. Variabelnamnet hålls vanligtvis kort och det blir därför
-ofta svårt att utläsa vad variabeln mäter. Information om vad variablerna mäter och hur de är
-konstruerade finns ibland i en separat kodbok eller variabellista men du kan även förtydliga dina
-variabler i själva datafilen. Under kolumnen ''Label'' anges variabeletiketten, som är en kort beskrivning
-av variabeln. Under kolumnen ''Values'' anges vad variabelns olika värden svarar mot.
+I variabelfönstret redovisas alltså variablerna radvis och dess egenskaper kolumnvis. I detta fönster finns ett antal kolumner som är viktiga att känna till. Under den första kolumnen ''Name'' listas variabelnamnet på varje variabel i ditt dataset. Variabelnamnet hålls vanligtvis kort och det blir därför ofta svårt att utläsa vad variabeln mäter. Information om vad variablerna mäter och hur de är konstruerade finns ibland i en separat kodbok eller variabellista men du kan även förtydliga dina variabler i själva datafilen. Under kolumnen ''Label'' anges variabeletiketten, som är en kort beskrivning av variabeln. Under kolumnen ''Values'' anges vad variabelns olika värden svarar mot.
 
-Variabeln ''kon'' har till exempel värde 0 eller 1, där värde 0 betyder ''flicka'' och värde 1 betyder
-''pojke''. För att undersöka detta markerar du cellen för den aktuella variabeln under kolumnen
-''Values'' och klickar därefter på den lilla rutan till höger. Nu kommer fönstret ''Value Labels'' upp.
-Om variabeln saknar etiketterade variabelvärden kan du ange dessa genom att föra in värdet i rutan
-''Value'' och vad värdet står för i rutan ''Label''. Klicka därefter ''Add''. När du etiketterat samtliga
-variabelvärden klickar du \textbf{OK}.
+Variabeln ''kon'' har till exempel värde 0 eller 1, där värde 0 betyder ''flicka'' och värde 1 betyder ''pojke''. För att undersöka detta markerar du cellen för den aktuella variabeln under kolumnen ''Values'' och klickar därefter på den lilla rutan till höger. Nu kommer fönstret ''Value Labels'' upp. Om variabeln saknar etiketterade variabelvärden kan du ange dessa genom att föra in värdet i rutan ''Value'' och vad värdet står för i rutan ''Label''. Klicka därefter ''Add''. När du etiketterat samtliga variabelvärden klickar du \textbf{OK}.
 
-Tänk på att variabelns värden endast behöver specificeras för variabler som befinner sig på nominaleller
-ordinal skalnivå. Om du till exempel har en kontinuerlig variabel som mäter ålder i antal år
-(kvotskala) är variabelvärdena i sig informativa och du behöver inte förtydliga vad dessa står för.
+Tänk på att variabelns värden endast behöver specificeras för variabler som befinner sig på nominal eller ordinal skalnivå. Om du till exempel har en kontinuerlig variabel som mäter ålder i antal år (kvotskala) är variabelvärdena i sig informativa och du behöver inte förtydliga vad dessa står för.
 
-\hypertarget{output-fuxf6nstret-output}{%
-\section{Output-fönstret (Output)}\label{output-fuxf6nstret-output}}
+\hypertarget{resultatfuxf6nstret-output}{%
+\section{Resultatfönstret (Output)}\label{resultatfuxf6nstret-output}}
 
-I detta fönster visas resultat. Det kan röra sig
-om frekvenstabeller, korstabeller eller olika
-typer av diagram. Till vänster finns en
-översiktsmeny där du enkelt kan bläddra
-mellan dina resultat.
+I detta fönster visas resultat. Det kan röra sig om resultat från hypotesprövningar, frekvenstabeller, korstabeller eller olika typer av diagram. Till vänster finns en översiktsmeny där du enkelt kan bläddra mellan dina resultat.
 
 \hypertarget{syntax-syntax-editor}{%
 \section{Syntax (Syntax editor)}\label{syntax-syntax-editor}}
 
-Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig -- en frekvenstabell,
-korstabell, omkodning av variabler mm. Alla sådana moment har sina egna kommandon.
+Vissa bearbetningar av data där man vill kombinera olika variabler kan vara enklare att göra i syntax. I syntax kan du skriva kommandon, dvs. det du vill att SPSS ska göra åt dig -- en frekvenstabell, korstabell, omkodning av variabler mm. Alla sådana moment har sina egna kommandon.
 
 Du kan öppna syntax via File \textgreater{} New \textgreater{} Syntax:
 
-Kommandon kan antingen skrivas direkt i syntax eller så kan du gå via menysystemets funktioner och
-klick på \textbf{Paste}.
+Kommandon kan antingen skrivas direkt i syntax eller så kan du gå via menysystemets funktioner och klick på \textbf{Paste}.
 
-Klickar du på denna knapp så kommer syntax kommandot för denna omkodning att öppnas i
-syntaxfönstret:
+Klickar du på denna knapp så kommer syntax kommandot för denna omkodning att öppnas i syntaxfönstret:
 
-``Syntaxspråket'' tar ett tag att lära sig, och är heller inte nödvändigt för er att kunna, men att använda
-sig av syntax (direkt eller via ''paste'') kan många gånger underlätta arbetet i SPSS och om du sparar
-syntax får du en loggbok över det du har gjort, på så sättt är det enkelt att gå tillbaka för att se hur du
-gått tillväga vid analyser, omkodningar etc. (Om du sparar de kommandon och körningar du har gjort
-och har användning för i syntax, skriv gärna rubriker/kommentarer som anger vad och varför du gjort
-olika moment. Obs: För att inte programmet ska missta rubriker/kommentarer för kommandon måste
-du skriva en asterisk (*) före dessa och avsluta med en punkt.). Om ni är intresserade av att lära er mer om syntaxspråket rekommenderas följande sida.
+``Syntaxspråket'' tar ett tag att lära sig, och är heller inte nödvändigt för er att kunna, men att använda sig av syntax (direkt eller via ''paste'') kan många gånger underlätta arbetet i SPSS och om du sparar syntax får du en loggbok över det du har gjort, på så sättt är det enkelt att gå tillbaka för att se hur du gått tillväga vid analyser, omkodningar etc. (Om du sparar de kommandon och körningar du har gjort och har användning för i syntax, skriv gärna rubriker/kommentarer som anger vad och varför du gjort olika moment. Obs: För att inte programmet ska missta rubriker/kommentarer för kommandon måste du skriva en asterisk (*) före dessa och avsluta med en punkt.). Om ni är intresserade av att lära er mer om syntaxspråket rekommenderas följande sida.
 
 \hypertarget{part-fuxf6rbereda-datamaterialet}{%
 \part*{Förbereda datamaterialet}\label{part-fuxf6rbereda-datamaterialet}}
@@ -317,23 +275,14 @@ du skriva en asterisk (*) före dessa och avsluta med en punkt.). Om ni är intr
 \hypertarget{databearbetning}{%
 \chapter{Databearbetning}\label{databearbetning}}
 
-En stor del av arbetet består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner
-i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att
-studera vissa observationsenheter, t.ex. bara kvinnor? Eller så kanske du vill koda om variabler (slå ihop
-svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler
-befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.
+En stor del av arbetet med en rapport består av att bearbeta sitt datamaterial inför analys. Det finns ett antal funktioner i SPSS med vilka man enkelt bearbetar materialet efter kodning. Kanske är du bara intresserad av att studera vissa observationsenheter så som exempelvis enbart kvinnor. Eller så kanske du vill koda om variabler (slå ihop svarskategorier eller klassindela) eller skapa nya variabler som bygger på information i två eller fler befintliga variabler (t.ex. skapa ett index). Några funktioner för detta presenteras nedan.
 
 \hypertarget{select-cases-analysera-enbart-vissa-observationssenheter}{%
 \section{Select Cases: Analysera enbart vissa observationssenheter}\label{select-cases-analysera-enbart-vissa-observationssenheter}}
 
-Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de
-flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen
-(du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS
-genom att välja Utilities \textgreater{} Variables, leta reda på Kön i listan och titta i rutan ''Variable
-information''.
+Funktionen används när du endast vill undersöka vissa observationsenheter, exempelvis endast de flickor som ingår i skolundersökningen. Hur variabeln kön har kodats framgår av variabelförteckningen (du hittar denna som pdf fil i Athena), alternativt kan du markera variabeln i SPSS genom att välja Utilities \textgreater{} Variables, leta reda på Kön i listan och titta i rutan ''Variable information''.
 
-Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ''kon''. För att enbart välja ut de observationsenheter som
-är flickor (alltså har värdet ''0'' på variabeln ''kon'') gör du följande:
+Följande kan då utläsas: Du finner att flickor har värdet 0 på variabeln ''kon''. För att enbart välja ut de observationsenheter som är flickor (alltså har värdet ''0'' på variabeln ''kon'') gör du följande:
 
 Data \textgreater{} Select Cases \textgreater{} If condition is satisfied \textgreater{} If
 
@@ -341,16 +290,11 @@ Lyft in den aktuella variabeln i fönstret och ange villkor (variabelvärde för
 
 Continue \textgreater{} OK
 
-Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ''0'' på
-variabeln ''kon''. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och
-flickor), klickar du på alternativet ''All cases''. Alltså:
+Tänk på att du nu har angett att kommande analyser endast ska göras för de med värde ''0'' på variabeln ''kon''. Om du vill återgå till att analysera samtliga observationsenheter (både pojkar och flickor), klickar du på alternativet ''All cases''. Alltså:
 
 Data \textgreater{} Select Cases \textgreater{} All cases
 
-Notera att det är variabeletiketten (''Kön'') och inte variabelnamnet (''kon'') som står i rullistan till
-vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men
-ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på
-variabellistan till vänster och markerar ''Display Variable Names''.
+Notera att det är variabeletiketten (''Kön'') och inte variabelnamnet (''kon'') som står i rullistan till vänster i bilden ovan. Standardinställningen är att visa variabeletiketten om en sådan finns, men ibland är det smidigare att istället visa variabelnamnet. För att göra detta högerklickar du på variabellistan till vänster och markerar ''Display Variable Names''.
 
 \hypertarget{videoinstruktioner}{%
 \subsection{Videoinstruktioner}\label{videoinstruktioner}}
@@ -521,7 +465,7 @@ sätta labels på variabeln. Observera att när du konstruerar nya variabler är
 \hypertarget{frekvenstabeller-central--och-spridningsmuxe5tt}{%
 \chapter{Frekvenstabeller, central- och spridningsmått}\label{frekvenstabeller-central--och-spridningsmuxe5tt}}
 
-Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där ens datamaterial och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av att frekvenstabeller, central- och spridningsmått.
+Innan ens hypoteser sätts på prov utförs en så kallad deskriptiv analys där datamaterialet och i synnerhet de aktuella variabler sammanfattas på olika kvantitativa sätt. Oftast görs det med hjälp av frekvenstabeller, central- och spridningsmått samt olika grafiska presentationer.
 
 \hypertarget{frekvenstabell}{%
 \section{Frekvenstabell}\label{frekvenstabell}}
@@ -830,7 +774,7 @@ skillnaden mellan de båda medelvärdena. I detta fall är skillnaden i genomsni
 \hypertarget{enkel-regression}{%
 \chapter{Enkel regression}\label{enkel-regression}}
 
-I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi predicera värden eller utröna vilken effekt en variabel har påen annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.
+I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi predicera värden eller utröna vilken effekt en variabel har på en annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.
 
 Vi är intresserade av att se vilket samband det finns mellan utomhustemperatur (oberoende variabel) och antal anmälda brott i Stockholm (beroende variabel). Ett annat sätt att formulera forskningsfrågan är om vi kan predicera polisanmäld brott utifrån utomhustemperatur.
 
@@ -838,9 +782,9 @@ Vår regressionsmodel kan uttryckas i form av följande matematiska formel:
 
 \(Y_{brott} = b_0 + b_{celcius}\)
 
-Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0) och utomhustemperaturen.
+Det vår modell säger är att vi kan predicera polisanmälda brott utifrån vårt intercept (b0) och utomhustemperaturen.
 
-Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (ice\_cream.sav).
+Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (\textbf{ice\_cream.sav}).
 
 Det första vi gör är att ta fram ett spridningsdiagram (scatter plot) med en regressionslinje. Hur man tog fram ett spridningsdiagram gick vi igenom under kapitlet som berörde bivariat analys men här kommer en repetition. Gör följande:
 
@@ -857,7 +801,7 @@ Analyze \textgreater{} Regression \textgreater{} Linear
 I rutan som dyker upp matar ni in den oberoende variabeln - utomhustemperatur - i fältet Block 1 of 1
 och den beroende variabeln - polisanmälda brott - i fältet Dependent. Tryck därefter ok.
 
-Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan ``Model Summary''. De mått som där är viktigast att titta på är Square R och Adjusted R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square'' är att det sistnämnda måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ''R Square'' överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.
+Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan ``Model Summary''. De mått som där är viktigast att titta på är Square R och Adjusted R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende variabel kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square är att det sistnämnda måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ''R Square'' överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.
 
 Eftersom vi enbart har en oberoende variabel så tittar vi på R Square vilket visar att 46.4\% (översätter man andelen 0.464 till procent blir det 46.4\%) av variationen i polisanmäld brott kan förklaras med hjälp av vår oberoende variabel utomhustmperatur.
 
@@ -866,13 +810,13 @@ I ANOVA-rutan kan vi se att vår regressionsmodell är statistisk signifikant p 
 Den absolut viktigaste rutan är Coefficiens-rutan vilket visar vilken effekt den oberoende variabeln har på den beroende och om denna effekt är signifikant. Vi borjar dock först med att titta på Constant vilket är vår intercept och dess koefficient vilket går att utläsa under Unstandardized B. I vårt exempel kan vi se att interceptet är -609.145. Det betyder att det predicerade värdet för vår beroende variabel är -609.145 när vår oberoende variabel antar värdet 0. Eller mer specifikt uttryckt: när utomhustemperaturen är noll grader begås det -609 brott.
 
 \textbf{Överkurs:}
-Även om interceptet är matematiskt korrekt så kan den vara orealistisk. I vårt exempel är det ett intercept som är mindre realistisk eftersom vi vet att även vid noll grader så begås det brott. Den orsak till varför vi får ett osannolikt intercept (men som är matematisk korrekt!) är att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss icke-realistiska värden. Detta är dock inget problem eftersom vi är ute efter att se sambandet mellan utomhustemperatur och brott under sommaren
+Även om interceptet är matematiskt korrekt så kan ett intercept vara orealistisk. I vårt exempel är det ett intercept som är orealistiskt - men matematiskt korrekt - eftersom vi vet att även vid noll grader så begås det brott. Orsaken till varför vi får ett osannolikt intercept beror på att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera (eller extrapolera som det också kallas) hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss i det här fallet ett icke-realistiska intercept.
 
 Interceptets värde kan vi också se i ovanstående spridningsdiagram om vi anger att diagramets x-axel ska börja på 0 celsius. Nedanstående spridningsdiagram är identiskt med ovansående men med enda skillnaden att x-axeln börjar på 0 celcius. Notera att vi ine har förändrat något beträffande vår data utan endast förlängt diagramets x-axel. Vi kan där se att interceptet - det vill säga där regressionslinjen korsar Y-axeln - är vid -609.145.
 
-Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje temperaturgrads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.
+Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje ökad grads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.
 
-Med hjälp av ovanstående information kan vi predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).
+Med hjälp av ovanstående information kan vi även predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).
 
 \(Y_{brott} = b_0 + b_{celcius}\)
 
@@ -888,11 +832,11 @@ Vi predicerar alltså att det i genomsnitt kommer polisanmälas 388 brott under 
 \hypertarget{multipel-regression}{%
 \chapter{Multipel regression}\label{multipel-regression}}
 
-Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46\% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel til vår enkla, bivariata regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:
+Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46\% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel till vår enkla regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket betyder att den kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:
 
 \(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)
 
-Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0), utomhustemperaturen och förekomsten av regn.
+Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept (b0), utomhustemperaturen och förekomsten av regn.
 
 Att utföra en multipel regression är snarlikt tillvägagångssättet för en enkel regression. Gör följande:
 
@@ -904,15 +848,15 @@ Tryck därefter på knappen Next. Mata därefter in temperaturvaribeln på nytt 
 
 Vi hade lika gärna kunnat vid första steget mata in båda våra oberoende variabler och inte i två separata ``block''. Fördelen med att använda blockfunktione är att vi i SPSS först får ut vår enkla regression och därefter i samma ruta den multipla regressionen. Fördelen med detta tillvägagångssätt är att vi kan se hur effekten för vår oberoende variabel av intresse förändras från den enkla regressionen till den multipla regressionen.
 
-Längst ut till vänster i samtliga rutor kan i se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde en enkel regression.
+Längst ut till vänster i samtliga rutor kan vi se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde den enkela regressionen.
 
-Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2\% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regrssionen klarade av att förklara.
+Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2\% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regressionen klarade av att förklara.
 
 I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomsten av regn så ökar antalet brott med 43.081 för varje enhets ökning av temperaturvariabeln. Under Sig. kan vi se att p-värdet är under 0.001 vilket beyder att sambandet mellan temperatur och brott är statistiskt signifikant även efter inkluderingen av den oberoende variabeln regn.
 
 Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.
 
-Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar
+Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar.
 
 \(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)
 
@@ -1005,9 +949,9 @@ I detta exempel ska vi effektivisera och snygga till en korstabell med tillhöra
 
 Notera för det första hur mycket av outputen som antingen behöver bearbetas eller som kan strykas. Det är exempelvis ord som är på englska, variabelnamn som innehåller tecken/ord som inte bör vara där, stora delar av chi2-testet som är överflöding information. Vi vill effektivisera outputen med målet att göra en tabell som ser ut som följande:
 
-Notera hur vi har inte nog med skapat en snygg tabell även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen som tidigare finns har helt försvunnit och dn information som är relevant finns nu under korstabellen.
+Inte nog med att vi har skapat en snygg tabell, vi har även gjort den avsevärt mycket mer komprimerad vilket innebär att vi får plas med mer text. Chi2-tabellen helt försvunnit och den information som fanns i den och som är relevant finns nu prydligt under korstabellen.
 
-För att återskpa den reviderade tabellen gör vi som följande:
+För att återskapa den reviderade tabellen gör vi som följande:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

@@ -1,6 +1,6 @@
 # Enkel regression
 
-I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi <i>predicera</i> värden eller utröna vilken effekt en variabel har påen annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.
+I nästa steg är vi intresserade av att se sambandet mellan två numeriska variabler. Eftersom vi enbart använder oss av två variabler och båda är numeriska är enkel regression ett lämpligt statistiska test. Med hjälp av enkel regression kan vi <i>predicera</i> värden eller utröna vilken effekt en variabel har på en annan. Vad det innebär att predicera och hur effekter redogörs kommer att exemplifieras här nedan.
 
 Vi är intresserade av att se vilket samband det finns mellan utomhustemperatur (oberoende variabel) och antal anmälda brott i Stockholm (beroende variabel). Ett annat sätt att formulera forskningsfrågan är om vi kan predicera polisanmäld brott utifrån utomhustemperatur. 
 
@@ -8,9 +8,9 @@ Vår regressionsmodel kan uttryckas i form av följande matematiska formel:
 
 <center>$Y_{brott} = b_0 + b_{celcius}$</center><br>
 
-Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0) och utomhustemperaturen.
+Det vår modell säger är att vi kan predicera polisanmälda brott utifrån vårt intercept (b0) och utomhustemperaturen.
 
-Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (ice_cream.sav). 
+Hypotesen är - utifrån rutinaktivitetsteorin - att ju varmare det är, desto fler personer vistas utomhus vilket leder till fler brottstillfällen. Datamaterialet vi använder för denna forskningsfråga är materialet från det fiktiva datasetet som innehåller uppgifter om glassförsäljning, anmälda brott, utomhustemperatur och förekomsten av regn (__ice_cream.sav__). 
 
 Det första vi gör är att ta fram ett spridningsdiagram (<i>scatter plot</i>) med en regressionslinje. Hur man tog fram ett spridningsdiagram gick vi igenom under kapitlet som berörde bivariat analys men här kommer en repetition. Gör följande:
 
@@ -51,7 +51,7 @@ och den beroende variabeln - polisanmälda brott - i fältet Dependent. Tryck d�
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan "Model Summary". De mått som där är viktigast att titta på är Square R och Adjusted  R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square” är att det sistnämnda  måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ”R Square” överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.
+Vi kan utifrån ovanstående resultat se flera saker värda att notera. Vi börjar med informationen i rutan "Model Summary". De mått som där är viktigast att titta på är Square R och Adjusted  R Squared. Det anger hur stor andel varians/variation i vår beroende variabel som vår oberoende variabel kan förklara. Det vill säga, hur stor andel variation i polisanmälda brott från dag till dag kan förklaras utifrån uthomhustemperaturen. Skillnaden mellan R Square och Adjusted R Square är att det sistnämnda  måttet tar hänsyn till antalet oberoende variabler som ingår i ens regression. Om man inkluderar många oberoende variabler kan ”R Square” överskatta den förklarade variansen och därför brukar man generellt använda sig av Adjusted R Square när man har fler än en oberoende variabel.
 
 Eftersom vi enbart har en oberoende variabel så tittar vi på R Square vilket visar att 46.4% (översätter man andelen 0.464 till procent blir det 46.4%) av variationen i polisanmäld brott kan förklaras med hjälp av vår oberoende variabel utomhustmperatur. 
 
@@ -61,7 +61,7 @@ Den absolut viktigaste rutan är Coefficiens-rutan vilket visar vilken effekt de
 
 <div class="rmdnote">
 <p>**Överkurs:**
-Även om interceptet är matematiskt korrekt så kan den vara orealistisk. I vårt exempel är det ett intercept som är mindre realistisk eftersom vi vet att även vid noll grader så begås det brott. Den orsak till varför vi får ett osannolikt intercept (men som är matematisk korrekt!) är att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss icke-realistiska värden. Detta är dock inget problem eftersom vi är ute efter att se sambandet mellan utomhustemperatur och brott <b>under sommaren</b></p>
+Även om interceptet är matematiskt korrekt så kan ett intercept vara orealistisk. I vårt exempel är det ett intercept som är orealistiskt - men matematiskt korrekt - eftersom vi vet att även vid noll grader så begås det brott. Orsaken till varför vi får ett osannolikt intercept beror på att vi enbart samlat in data under sommaren och inte under vinterhalvåret. Vår modell försöker så gott det går att predicera (eller extrapolera som det också kallas) hur det skulle se ut vid noll grader men eftersom vi saknar data för höst och vinter så ger modellen oss i det  här fallet ett icke-realistiska intercept.</p>
 </div>
 
 Interceptets värde kan vi också se i ovanstående spridningsdiagram om vi anger att diagramets x-axel ska börja på 0 celsius. Nedanstående spridningsdiagram är identiskt med ovansående men med enda skillnaden att x-axeln börjar på 0 celcius. Notera att vi ine har förändrat något beträffande vår data utan endast förlängt diagramets x-axel. Vi kan där se att interceptet - det vill säga där regressionslinjen korsar Y-axeln - är vid -609.145.
@@ -72,9 +72,9 @@ Interceptets värde kan vi också se i ovanstående spridningsdiagram om vi ange
 
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
 
-Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje temperaturgrads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.
+Vidare kan vi se att koefficienten för vår oberoende variabel är 39.894 och under Sig. kan vi se att vårt p-värde är mindre än 0.001. Det betyder att för varje enhets ökning av temperaturvariabeln (alltså för varje ökad grads ökning) så ökar antalet polisanmälda brott med 39.894 och eftersom p-värdet är mindre än 0.05 (vilket är vårt alfavärde) så är denna effekt statistiskt signifikant.
 
-Med hjälp av ovanstående information kan vi predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).
+Med hjälp av ovanstående information kan vi även predicera hur många brott som kommer polisanmälas under en dag då det exempelvis är 25 grader utomhus. För att göra det tar vi vårt intercept, adderar därefter produkten av koefficenten för vår oberoende variabel och 25 (vilket är den temperatur som vi exemplefierar med).
 
 <center>$Y_{brott} = b_0 + b_{celcius}$</center><br>
 

@@ -7,7 +7,7 @@
 <title>Kapitel 11 Multipel regression | SPSS introduktion</title>
 <meta name="author" content="Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi">
 <meta name="description" content="Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen...">
-<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Kapitel 11 Multipel regression | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/multipel-regression.html">
@@ -79,12 +79,12 @@
 <h1>
 <span class="header-section-number">Kapitel  11</span> Multipel regression<a class="anchor" aria-label="anchor" href="#multipel-regression"><i class="fas fa-link"></i></a>
 </h1>
-<p>Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel til vår enkla, bivariata regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:</p>
+<p>Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen av polisanmäld brottslighet. Även om denna siffra är hög så kan vi tänka oss att det finns ytterligare faktorer som möjligtvis kan förklara varför brottslighet varierar från dag till dag. En sådan faktor är om det regnar utomhus. Därför kommer vi att inkludera en kontrollvariabel till vår enkla regression. På så sätt blir det en multipel regression. Variabeln regn är en så kallad dummyvariabel vilket betyder att den kan anta två värden: 1 för dagar det regnar och 0 för dagar då det ej regnar. Vår regressionsmodell kommer då se ut som följande:</p>
 <center>
 <span class="math inline">\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)</span>
 </center>
 <p><br></p>
-<p>Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept/konstant (b0), utomhustemperaturen och förekomsten av regn.</p>
+<p>Det vår modell säger är att vikan predicera polisanmälda brott utifrån vårt intercept (b0), utomhustemperaturen och förekomsten av regn.</p>
 <p>Att utföra en multipel regression är snarlikt tillvägagångssättet för en enkel regression. Gör följande:</p>
 <p>Analyze &gt; Regression &gt; Linear</p>
 <p>Precis som vid en enkel regression så drar vi in vår beroende variabel (polisanmäld brottslighet) till Dependent-fältet. Gör därefter precis som vid den enkla regressionen och dra in den oberoende variaben temperatur till Independents-fältet.</p>
@@ -105,11 +105,11 @@
 <img src="images/multipel_3.png">
 </center>
 <hr style="height:2px;border-width:0;color:gray;background-color:LavenderBlush">
-<p>Längst ut till vänster i samtliga rutor kan i se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde en enkel regression.</p>
-<p>Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regrssionen klarade av att förklara.</p>
+<p>Längst ut till vänster i samtliga rutor kan vi se indikatorer på om de olika värdena avser modell 1 (den enkla regressionen) eller modell 2 (den multipla regressionen). Värdena i modell 1 är identiska som i föregående exemplet när vi utförde den enkela regressionen.</p>
+<p>Vi börjar med att se hur vårt R Square-värde förändras. Eftersom vi har fler än en oberoende variabel så använder vi oss av värdet från Adjusted R Square vilket är 0.532. Det betyder att våra oberoende variabler kan förklara 53.2% av variationen i vår beroende variabel vilket är en ökning med cirka 7 procentenheter jämfört med vad den enkla regressionen klarade av att förklara.</p>
 <p>I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomsten av regn så ökar antalet brott med 43.081 för varje enhets ökning av temperaturvariabeln. Under Sig. kan vi se att p-värdet är under 0.001 vilket beyder att sambandet mellan temperatur och brott är statistiskt signifikant även efter inkluderingen av den oberoende variabeln regn.</p>
 <p>Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.</p>
-<p>Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar</p>
+<p>Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar.</p>
 <center>
 <span class="math inline">\(Y_{brott} = b_0 + b_{celcius} + b_{regn}\)</span>
 </center>
@@ -158,7 +158,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>SPSS introduktion</strong>" was written by Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. It was last built on 2022-10-13.</p>
+    <p>"<strong>SPSS introduktion</strong>" was written by Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi. It was last built on 2022-10-16.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
