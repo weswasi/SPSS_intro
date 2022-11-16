@@ -7,7 +7,7 @@
 <title>Kapitel 11 Multipel regression | SPSS introduktion</title>
 <meta name="author" content="Olof Bäckman, Anders Nilsson, Fredrik Sivertsson och Enes Al Weswasi">
 <meta name="description" content="Som vi såg i vårt förra exempel så fann vi ett statistiskt signifikant samband mellan utomhustemperatur och polisanmäld brott samt att vår enkla regressionsmodell kunde förklara 46% av variationen...">
-<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta name="generator" content="bookdown 0.30 with bs4_book()">
 <meta property="og:title" content="Kapitel 11 Multipel regression | SPSS introduktion">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://spss-introduktion.netlify.app/multipel-regression.html">
@@ -20,7 +20,7 @@
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Roboto-0.4.2/font.css" rel="stylesheet">
-<script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs3compat-0.4.1/transition.js"></script><script src="libs/bs3compat-0.4.1/tabs.js"></script><script src="libs/bs3compat-0.4.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -46,29 +46,7 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">Om SPSS Introduktion</a></li>
-<li class="book-part">Komma igång med SPSS</li>
-<li><a class="" href="installera-och-starta-spss.html"><span class="header-section-number">1</span> Installera och starta SPSS</a></li>
-<li><a class="" href="viktiga-f%C3%B6nser-i-spss.html"><span class="header-section-number">2</span> Viktiga fönser i SPSS</a></li>
-<li class="book-part">Förbereda datamaterialet</li>
-<li><a class="" href="databearbetning.html"><span class="header-section-number">3</span> Databearbetning</a></li>
-<li><a class="" href="variabelkonstruktion-med-hj%C3%A4lp-av-syntax.html"><span class="header-section-number">4</span> Variabelkonstruktion med hjälp av syntax</a></li>
-<li class="book-part">Analysera data I: Univariat analys &amp; beskrivande statistik</li>
-<li><a class="" href="frekvenstabeller-central--och-spridningsm%C3%A5tt.html"><span class="header-section-number">5</span> Frekvenstabeller, central- och spridningsmått</a></li>
-<li class="book-part">Analysera data II: Bivariat analys</li>
-<li><a class="" href="studera-samvariationen-mellan-tv%C3%A5-variabler.html"><span class="header-section-number">6</span> Studera samvariationen mellan två variabler</a></li>
-<li class="book-part">Analysera data III: Hypotesprövning</li>
-<li><a class="" href="att-v%C3%A4lja-r%C3%A4tt-test-vid-hypotespr%C3%B6vning.html"><span class="header-section-number">7</span> Att välja rätt test vid hypotesprövning</a></li>
-<li><a class="" href="chi2-test.html"><span class="header-section-number">8</span> Chi2-test</a></li>
-<li><a class="" href="t-test.html"><span class="header-section-number">9</span> T-test</a></li>
-<li><a class="" href="enkel-regression.html"><span class="header-section-number">10</span> Enkel regression</a></li>
-<li><a class="active" href="multipel-regression.html"><span class="header-section-number">11</span> Multipel regression</a></li>
-<li><a class="" href="logistisk-regression.html"><span class="header-section-number">12</span> Logistisk regression</a></li>
-<li class="book-part">Övrigt</li>
-<li><a class="" href="bearbeta-tabeller-och-figurer.html"><span class="header-section-number">13</span> Bearbeta tabeller och figurer</a></li>
-<li><a class="" href="presentation-av-dataset.html"><span class="header-section-number">14</span> Presentation av dataset</a></li>
-</ul>
+        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">Kapitel  11</span> Multipel regression</a></li></ul>
 
         <div class="book-extra">
           <p><a id="book-repo" href="https://github.com/weswasi/SPSS_intro">View book source <i class="fab fa-github"></i></a></p>
@@ -115,14 +93,14 @@
 </center>
 <p><br></p>
 <center>
-<span class="math inline">\(Ŷ_{brott} = -693,137 + (43,081*25) + (-109,373*1)\)</span>
+<span class="math inline">\(Ŷ_{brott} = -693,137 + (43,081*22) + (-109,373*1)\)</span>
 </center>
 <p><br></p>
 <center>
 <span class="math inline">\(Ŷ_{brott} = 274.515\)</span>
 </center>
 <p><br></p>
-<p>Vi predicerar alltså att det i genomsnitt kommer polisanmälas 374 brott de dagar då utomhustemperaturen är 22 grader och regnar.</p>
+<p>Vi predicerar alltså att det i genomsnitt kommer polisanmälas 274.5 brott de dagar då utomhustemperaturen är 22 grader och regnar.</p>
 <div id="videoinstruktioner-11" class="section level3" number="11.0.1">
 <h3>
 <span class="header-section-number">11.0.1</span> Videoinstruktioner<a class="anchor" aria-label="anchor" href="#videoinstruktioner-11"><i class="fas fa-link"></i></a>
@@ -135,18 +113,15 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="enkel-regression.html"><span class="header-section-number">10</span> Enkel regression</a></div>
-<div class="next"><a href="logistisk-regression.html"><span class="header-section-number">12</span> Logistisk regression</a></div>
+<div class="empty"></div>
+<div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li>
-<a class="nav-link" href="#multipel-regression"><span class="header-section-number">11</span> Multipel regression</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#videoinstruktioner-11"><span class="header-section-number">11.0.1</span> Videoinstruktioner</a></li></ul>
-</li></ul>
+      <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/weswasi/SPSS_intro/blob/master/multipel_regression.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/weswasi/SPSS_intro/edit/master/multipel_regression.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+          
         </ul>
 </div>
     </nav>
