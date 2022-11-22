@@ -50,7 +50,7 @@ Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det ä
 
 <center>$Ŷ_{brott} = 274.515$</center><br>
 
-Vi predicerar alltså att det i genomsnitt kommer polisanmälas 274.5 brott de dagar då utomhustemperaturen är 22 grader och regnar.
+Vi predicerar alltså att det i genomsnitt kommer polisanmälas 274.5 brott de dagar då utomhustemperaturen är 22 grader celcius och regnar.
 
 ### Videoinstruktioner
 
