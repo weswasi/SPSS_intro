@@ -42,11 +42,11 @@ I Coefficients-rutan och modell 2 kan vi se att konstanthållet för förekomste
 
 Vidare kan vi se att koffecienten för den oberoend variabeln regn är -109.373. Det betyder att konstanthållet för den övriga oberoende variabler så begås det 109 färre brott under de dagar det regnar jämfört med regnfria dagar.
 
-Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 22 celcius och regnar.
+Slutligen ska vi försöka predicera antalet brott det anmäls en dag då det är 25 celcius och regnar.
 
 <center>$Y_{brott} = b_0 + b_{celcius} + b_{regn}$</center><br>
 
-<center>$Ŷ_{brott} = -693,137 + (43,081*22) + (-109,373*1)$</center><br>
+<center>$Ŷ_{brott} = -693,137 + (43,081*25) + (-109,373*1)$</center><br>
 
 <center>$Ŷ_{brott} = 274.515$</center><br>
 
