@@ -5,7 +5,7 @@ Här nedan följer först instruktioner hur man utför en enkel logistisk regres
 
 ## Enkel logistisk regression
 
-I detta exempel kommer att använda oss av Pathways to desistance-datasetet. Den frågeställning vi ställer är följande: Finns det ett samband mellan att ha skjutit en annan person och att ha en pappa som lagförts för ett brott?" Ett annat sätt att formulera frågan är: Kan vi predicera huruvida en individ har skjutit en annan person utifrån information om faderns lagföringshistorik? 
+I detta exempel kommer att använda oss av <a href="https://www.pathwaysstudy.pitt.edu/">Pathways to desistance-datasetet</a>. Den frågeställning vi ställer är följande: Finns det ett samband mellan att ha skjutit en annan person och att ha en pappa som lagförts för ett brott?" Ett annat sätt att formulera frågan är: Kan vi predicera huruvida en individ har skjutit en annan person utifrån information om faderns lagföringshistorik? 
 
 <center>$log(Y_{skjutit}) = b_0 + b_{lagfördfader}$</center><br>
 
